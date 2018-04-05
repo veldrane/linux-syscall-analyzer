@@ -1,0 +1,833 @@
+1522783548.892458;select;5, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;1 (in [3]);54.922875>
+1522783603.816888;select;7, [3<socket:[27885] 4<socket:[27896]> 6<pipe:[27929]>], NULL, NULL, NULL;1 (in [6]);1.543868>
+1522783605.360847;select;7, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;1 (in [3]);45.878704>
+1522783651.251554;select;7, [3<socket:[27885] 4<socket:[27896]> 6<pipe:[49655]>], NULL, NULL, NULL;1 (in [6]);1.908947>
+1522783653.160650;select;7, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;1 (in [3]);49.583762>
+1522783702.755576;select;7, [3<socket:[27885] 4<socket:[27896]> 6<pipe:[58246]>], NULL, NULL, NULL;1 (in [6]);3.540967>
+1522783706.297368;select;7, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;? ERESTARTNOHAND (To be restarted if no handler);5.905899>
+1522783712.203602;select;7, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;? ERESTARTNOHAND (To be restarted if no handler);3.917429>
+1522783716.121332;select;7, [3<socket:[27885] 4<socket:[27896]>], NULL, NULL, NULL;unfinished ...>
+1522783605.573308;select;6, [3<socket:[27928] 5<pipe:[36219]>], [3<socket:[27928]>], NULL, NULL;2 (in [3], out [3]);0.000013>
+1522783605.574511;select;6, [3<socket:[27928] 5<pipe:[36219]>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000011>
+1522783605.574714;select;6, [3<socket:[27928] 5<pipe:[36219]>], [], NULL, NULL;1 (in [3]);0.037438>
+1522783605.620475;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000015>
+1522783605.620918;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.012256>
+1522783605.633387;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000012>
+1522783605.633729;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.159667>
+1522783605.793763;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000021>
+1522783605.794204;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000933>
+1522783605.795431;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000021>
+1522783605.795805;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000215>
+1522783605.796246;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000010>
+1522783605.796545;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.881851>
+1522783606.679690;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783606.681554;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783606.682869;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783606.684792;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.065775>
+1522783606.751889;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783606.753770;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783606.755434;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000087>
+1522783606.757877;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.018882>
+1522783606.778421;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000075>
+1522783606.780829;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783606.782180;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783606.783975;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.046612>
+1522783606.832019;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783606.833848;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783606.835165;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783606.836953;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.018406>
+1522783606.857315;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000077>
+1522783606.859242;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000167>
+1522783606.860619;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000036>
+1522783606.861554;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.006375>
+1522783606.868619;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000037>
+1522783606.869635;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000065>
+1522783606.870357;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000034>
+1522783606.871248;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.044999>
+1522783606.917684;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783606.919650;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783606.920976;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783606.932324;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.024266>
+1522783606.957566;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000038>
+1522783606.958606;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000064>
+1522783606.959341;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000038>
+1522783606.960324;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.188020>
+1522783607.149577;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783607.151077;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000125>
+1522783607.152987;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000164>
+1522783607.156910;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.034655>
+1522783607.192711;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000077>
+1522783607.194376;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000086>
+1522783607.195237;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000051>
+1522783607.196290;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001944>
+1522783607.198978;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000052>
+1522783607.199983;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000898>
+1522783607.201354;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000020>
+1522783607.201886;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.811066>
+1522783608.013386;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000023>
+1522783608.013950;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000033>
+1522783608.014382;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000018>
+1522783608.014964;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.086956>
+1522783608.103089;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783608.104997;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783608.106313;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000205>
+1522783608.108230;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.034908>
+1522783608.144765;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783608.146766;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000121>
+1522783608.148270;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783608.149905;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.047668>
+1522783608.198817;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783608.200197;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000066>
+1522783608.200927;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000036>
+1522783608.201913;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.043292>
+1522783608.246161;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000049>
+1522783608.247659;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000086>
+1522783608.248637;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000044>
+1522783608.249966;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.011631>
+1522783608.262675;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000050>
+1522783608.264065;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000084>
+1522783608.265022;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000045>
+1522783608.266218;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.081478>
+1522783608.348931;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783608.350757;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783608.352253;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000073>
+1522783608.354560;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.173646>
+1522783608.529518;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783608.531022;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000126>
+1522783608.532948;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000126>
+1522783608.535722;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.037312>
+1522783608.573594;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000029>
+1522783608.574435;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000047>
+1522783608.574951;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000031>
+1522783608.575796;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783608.576590;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000029>
+1522783608.577156;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000027>
+1522783608.577650;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000917>
+1522783608.578945;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000026>
+1522783608.579486;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000492>
+1522783608.580222;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000011>
+1522783608.580532;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);2.077894>
+1522783610.659812;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783610.661292;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000126>
+1522783610.663349;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000165>
+1522783610.666508;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001758>
+1522783610.670130;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000132>
+1522783610.672785;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002722>
+1522783610.677360;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000093>
+1522783610.680005;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.142046>
+1522783610.823478;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783610.824942;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000125>
+1522783610.826883;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000130>
+1522783610.829663;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001860>
+1522783610.833385;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000132>
+1522783610.836077;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002860>
+1522783610.840539;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000088>
+1522783610.843465;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);5.453085>
+1522783616.297905;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783616.299829;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783616.301733;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783616.303796;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.106482>
+1522783616.411595;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783616.413836;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000179>
+1522783616.415660;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000092>
+1522783616.418390;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.127261>
+1522783616.547052;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000073>
+1522783616.548994;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783616.550306;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783616.552061;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.078557>
+1522783616.631979;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783616.633814;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783616.635170;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783616.636987;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.104152>
+1522783616.742567;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783616.744510;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783616.745859;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783616.747919;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.057693>
+1522783616.807020;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000073>
+1522783616.808955;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783616.810271;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783616.812062;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.077431>
+1522783616.890764;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783616.892698;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783616.894081;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783616.895890;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.743686>
+1522783617.650928;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000119>
+1522783617.652842;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000122>
+1522783617.654184;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783617.656494;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.059027>
+1522783617.717069;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783617.718942;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000188>
+1522783617.720340;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783617.722100;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.440481>
+1522783618.163135;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000022>
+1522783618.163769;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000039>
+1522783618.164209;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000021>
+1522783618.164815;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.479608>
+1522783618.645893;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000086>
+1522783618.648480;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783618.649827;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783618.651898;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.111486>
+1522783618.764856;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000074>
+1522783618.766941;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000126>
+1522783618.768318;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000064>
+1522783618.770682;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.071515>
+1522783618.843605;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783618.845450;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783618.846999;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000067>
+1522783618.848755;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.088950>
+1522783618.938952;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000074>
+1522783618.940927;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783618.942246;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783618.944000;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.637946>
+1522783619.583482;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783619.585212;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000130>
+1522783619.588007;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000165>
+1522783619.590840;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.022730>
+1522783619.614544;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000046>
+1522783619.615757;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001035>
+1522783619.617536;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000051>
+1522783619.618724;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001165>
+1522783619.620382;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000019>
+1522783619.620985;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);4.105193>
+1522783623.727461;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783623.729306;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000115>
+1522783623.730613;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783623.732538;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.077798>
+1522783623.811680;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783623.813500;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000123>
+1522783623.814855;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000067>
+1522783623.816692;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.114791>
+1522783623.932795;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783623.934620;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783623.936147;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000072>
+1522783623.938065;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.841984>
+1522783624.781407;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783624.783350;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000122>
+1522783624.784648;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000022>
+1522783624.785327;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.057160>
+1522783624.843815;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783624.845645;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783624.847223;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783624.848925;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.122743>
+1522783624.972929;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783624.974758;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000184>
+1522783624.976395;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783624.978140;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.115780>
+1522783625.095039;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000054>
+1522783625.096516;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000068>
+1522783625.097126;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000024>
+1522783625.097866;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.028597>
+1522783625.127023;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000029>
+1522783625.127859;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000051>
+1522783625.128460;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000024>
+1522783625.129149;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);1.820523>
+1522783626.950883;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783626.952746;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000147>
+1522783626.954271;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000326>
+1522783626.958863;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.185898>
+1522783627.146472;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783627.148379;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783627.149691;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783627.152614;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.227618>
+1522783627.381746;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000085>
+1522783627.385184;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783627.386728;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000069>
+1522783627.388588;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.062417>
+1522783627.452302;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783627.454158;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783627.455511;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000087>
+1522783627.458022;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.075858>
+1522783627.535203;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783627.537650;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000156>
+1522783627.539457;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000075>
+1522783627.541833;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.001680>
+1522783627.545014;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783627.547113;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783627.548486;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783627.550052;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.084090>
+1522783627.635496;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783627.637552;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783627.638920;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000085>
+1522783627.641176;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.160724>
+1522783627.803245;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783627.805083;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783627.806617;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000099>
+1522783627.808544;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.116585>
+1522783627.926679;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000075>
+1522783627.928650;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783627.929965;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783627.931735;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.093563>
+1522783628.026844;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000077>
+1522783628.028728;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783628.030083;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783628.031893;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.119198>
+1522783628.152346;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783628.154185;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783628.155729;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000099>
+1522783628.158040;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.479663>
+1522783628.639511;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000084>
+1522783628.641416;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000157>
+1522783628.643784;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000131>
+1522783628.646592;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.068859>
+1522783628.715766;read;12</dev/ptmx, lsof: no select options to AND v..., 16384;285;0.000077>
+1522783628.716005;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000028>
+1522783628.716663;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000025>
+1522783628.718024;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000032>
+1522783628.718505;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000383>
+1522783628.719239;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000024>
+1522783628.719964;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000520>
+1522783628.720719;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000011>
+1522783628.720981;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);2.050018>
+1522783630.772277;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783630.774591;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000663>
+1522783630.777110;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000070>
+1522783630.779100;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);1.989278>
+1522783632.769841;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783632.771926;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000425>
+1522783632.774000;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000074>
+1522783632.776184;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.168222>
+1522783632.945667;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000076>
+1522783632.947722;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000392>
+1522783632.949460;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783632.951355;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.142257>
+1522783633.094985;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783633.097029;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000393>
+1522783633.099187;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000065>
+1522783633.100991;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.493460>
+1522783633.596169;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000075>
+1522783633.598086;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000391>
+1522783633.599880;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000063>
+1522783633.601772;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.022681>
+1522783633.625867;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000074>
+1522783633.627781;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000394>
+1522783633.629749;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000067>
+1522783633.631650;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.024403>
+1522783633.658888;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000079>
+1522783633.661120;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000709>
+1522783633.663724;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000067>
+1522783633.665441;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.020701>
+1522783633.687892;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000095>
+1522783633.689814;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000392>
+1522783633.691619;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783633.693310;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.024754>
+1522783633.719630;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783633.721407;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000389>
+1522783633.723133;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783633.724740;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.024810>
+1522783633.750864;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783633.752693;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000390>
+1522783633.754364;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000060>
+1522783633.756176;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.024963>
+1522783633.782383;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783633.784268;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000388>
+1522783633.786154;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000065>
+1522783633.787830;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.025289>
+1522783633.814422;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000132>
+1522783633.816539;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000394>
+1522783633.818234;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783633.820029;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.759708>
+1522783634.581211;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783634.583320;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000399>
+1522783634.585857;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000070>
+1522783634.587832;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.672480>
+1522783635.261721;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783635.264094;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000744>
+1522783635.266770;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000066>
+1522783635.268646;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.371356>
+1522783635.641264;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783635.643466;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783635.644792;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783635.646710;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.134199>
+1522783635.783216;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783635.785946;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000320>
+1522783635.787552;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000062>
+1522783635.789377;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.143174>
+1522783635.933955;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783635.936550;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783635.944223;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000034>
+1522783635.945098;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.372750>
+1522783636.319552;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783636.321105;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000128>
+1522783636.322949;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000129>
+1522783636.326060;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);1.816933>
+1522783638.143669;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000030>
+1522783638.144975;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000028>
+1522783638.146215;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.147065;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000029>
+1522783638.147986;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000029>
+1522783638.148797;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000030>
+1522783638.149567;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000029>
+1522783638.150375;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000030>
+1522783638.151090;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000020>
+1522783638.151629;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.040679>
+1522783638.192665;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.193311;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.193798;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.194298;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000010>
+1522783638.194620;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000010>
+1522783638.194913;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000165>
+1522783638.195416;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.195913;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.196423;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.196931;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.197449;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.212163;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000037>
+1522783638.213029;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.034187>
+1522783638.247844;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000045>
+1522783638.249247;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000034>
+1522783638.250094;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.250968;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000043>
+1522783638.251827;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.252678;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.253545;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000036>
+1522783638.254411;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.255273;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.256165;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.257049;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000037>
+1522783638.257808;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000024>
+1522783638.258357;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.406726>
+1522783638.665879;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000034>
+1522783638.668823;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000026>
+1522783638.669410;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.669968;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.672399;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000024>
+1522783638.672959;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.673507;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.674048;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.674581;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.675113;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000022>
+1522783638.675633;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.676157;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000023>
+1522783638.676676;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;2 (in [12], out [3]);0.000021>
+1522783638.677313;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000021>
+1522783638.677740;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000292>
+1522783638.678397;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000021>
+1522783638.678788;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000557>
+1522783638.679616;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000013>
+1522783638.679981;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);76.485524>
+1522783715.166909;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783715.168495;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000133>
+1522783715.170348;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000130>
+1522783715.173643;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002062>
+1522783715.179203;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000127>
+1522783715.182134;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.003991>
+1522783715.189202;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000038>
+1522783715.190388;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.128099>
+1522783715.319779;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783715.321376;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000126>
+1522783715.323360;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000142>
+1522783715.326341;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001619>
+1522783715.329850;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000132>
+1522783715.332582;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002897>
+1522783715.337184;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000077>
+1522783715.341012;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.133723>
+1522783715.476929;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783715.478756;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783715.480106;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000065>
+1522783715.481991;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.172623>
+1522783715.655862;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783715.657928;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000152>
+1522783715.659456;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000066>
+1522783715.661727;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.108710>
+1522783715.771706;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783715.773852;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783715.775167;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000061>
+1522783715.777791;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.085244>
+1522783715.864738;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783715.866600;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000115>
+1522783715.867964;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000101>
+1522783715.869756;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.208851>
+1522783716.080269;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000079>
+1522783716.082182;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000190>
+1522783716.084822;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000188>
+1522783716.089080;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001153>
+1522783716.092862;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [3<socket:[27928]>], NULL, NULL;1 (out [3]);0.000172>
+1522783716.096187;select;13, [3<socket:[27928] 5<pipe:[36219]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002340>
+1522783716.105658;select;13, [3<socket:[27928] 5<pipe:[36219]>], [3<socket:[27928]>], NULL, NULL;2 (in [5], out [3]);0.000024>
+1522783716.106846;select;13, [3<socket:[27928] 5<pipe:[36219]>], [], NULL, NULL;1 (in [3]);0.000041>
+1522783603.864062;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000011>
+1522783603.865941;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000221>
+1522783603.871508;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.002667>
+1522783603.874279;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.041141>
+1522783603.916027;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000017>
+1522783603.934194;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);1.128848>
+1522783628.715468;write;2</dev/pts/1, lsof: no select options to AND v..., 38;38;0.000047>
+1522783636.703292;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000011
+1522783636.710888;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000010
+1522783636.775231;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000009
+1522783636.784585;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000010
+1522783636.792409;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000010
+1522783636.800049;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000008
+1522783636.807266;stat;/usr/lib64/python2.7/lib-dynload/selectmodule.so, {st_mode=S_IFREG|0755, st_size=29176, ...};0;0.000009
+1522783653.344605;select;6, [3<socket:[49654] 5<pipe:[57942]>], [3<socket:[49654]>], NULL, NULL;2 (in [3], out [3]);0.000012>
+1522783653.345856;select;6, [3<socket:[49654] 5<pipe:[57942]>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000011>
+1522783653.346065;select;6, [3<socket:[49654] 5<pipe:[57942]>], [], NULL, NULL;1 (in [3]);0.036759>
+1522783653.390775;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000016>
+1522783653.391243;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.011808>
+1522783653.403286;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000013>
+1522783653.404081;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.141071>
+1522783653.545496;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000020>
+1522783653.546098;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000372>
+1522783653.546717;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000020>
+1522783653.547256;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000200>
+1522783653.547680;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000010>
+1522783653.548010;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);1.316063>
+1522783654.865612;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783654.867824;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000297>
+1522783654.869723;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000071>
+1522783654.871817;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.098718>
+1522783654.971831;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783654.973725;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783654.975297;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000066>
+1522783654.977090;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.060966>
+1522783655.039315;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783655.041140;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783655.042508;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783655.044274;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.170596>
+1522783655.216411;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783655.217924;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000129>
+1522783655.219773;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000129>
+1522783655.222760;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000891>
+1522783655.226117;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;2 (in [12], out [3]);0.000122>
+1522783655.228091;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000072>
+1522783655.229552;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001310>
+1522783655.231592;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000024>
+1522783655.232356;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);2.931754>
+1522783658.165478;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783658.167394;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783658.168710;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783658.170675;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.103295>
+1522783658.275489;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783658.277320;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783658.278710;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783658.280665;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.068065>
+1522783658.350304;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783658.352128;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783658.353498;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783658.355678;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.153412>
+1522783658.510442;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783658.512277;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783658.513598;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783658.515587;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.063006>
+1522783658.580136;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000078>
+1522783658.582126;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000120>
+1522783658.583474;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783658.585233;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.173706>
+1522783658.759901;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000052>
+1522783658.761145;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000075>
+1522783658.761867;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000026>
+1522783658.763535;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.093659>
+1522783658.858488;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000078>
+1522783658.860741;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783658.862119;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783658.864090;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.090336>
+1522783658.955941;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783658.957801;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000126>
+1522783658.959237;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000075>
+1522783658.961417;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.115344>
+1522783659.079470;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000085>
+1522783659.081503;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000150>
+1522783659.083153;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000085>
+1522783659.084792;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.204687>
+1522783659.290853;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783659.292711;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783659.294079;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000065>
+1522783659.297411;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.350570>
+1522783659.649272;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783659.651178;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783659.652478;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000061>
+1522783659.654358;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.211310>
+1522783659.867237;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783659.869111;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783659.870484;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783659.872254;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.541656>
+1522783660.415359;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783660.417196;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783660.418557;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783660.420333;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.098516>
+1522783660.520131;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783660.522035;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000168>
+1522783660.523411;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783660.525288;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.171561>
+1522783660.698189;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783660.700055;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783660.701368;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783660.703195;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.142843>
+1522783660.847288;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783660.849420;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783660.850795;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783660.852613;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.170421>
+1522783661.024294;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783661.026416;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783661.027779;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783661.029594;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.076622>
+1522783661.106993;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000039>
+1522783661.108038;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000065>
+1522783661.108775;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000034>
+1522783661.109805;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.338285>
+1522783661.449313;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783661.450931;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000127>
+1522783661.452720;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000127>
+1522783661.456164;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.080343>
+1522783661.536945;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000151>
+1522783661.537605;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.002462>
+1522783661.540269;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783661.540639;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000061>
+1522783661.540907;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783661.541215;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000055>
+1522783661.541464;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783661.541791;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000271>
+1522783661.542293;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783661.542579;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001476>
+1522783661.544256;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783661.544597;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.004405>
+1522783661.549364;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000024>
+1522783661.549906;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000481>
+1522783661.550623;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000011>
+1522783661.550947;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);2.621220>
+1522783664.173366;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783664.175487;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000425>
+1522783664.177408;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000064>
+1522783664.179326;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);1.287084>
+1522783665.467687;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783665.469004;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000720>
+1522783665.471035;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783665.472780;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);1.117157>
+1522783666.591461;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000074>
+1522783666.593407;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000170>
+1522783666.594021;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000021>
+1522783666.594919;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.091025>
+1522783666.687126;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783666.689007;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783666.690396;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000064>
+1522783666.692202;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.058097>
+1522783666.751902;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783666.753820;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000170>
+1522783666.755484;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000065>
+1522783666.757317;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.252414>
+1522783667.011145;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783667.013763;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000419>
+1522783667.017297;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783667.019229;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.902600>
+1522783667.923089;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783667.925173;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000121>
+1522783667.926771;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000022>
+1522783667.927490;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.166339>
+1522783668.095168;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783668.097022;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000122>
+1522783668.098465;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783668.100256;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.393535>
+1522783668.496095;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783668.498050;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783668.499376;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783668.501300;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.034920>
+1522783668.537580;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783668.539701;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000121>
+1522783668.541036;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783668.542688;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.413385>
+1522783668.956498;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000017>
+1522783668.956987;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000029>
+1522783668.957318;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000015>
+1522783668.957953;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.124178>
+1522783669.083313;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783669.085683;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000123>
+1522783669.087126;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000068>
+1522783669.089157;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.132359>
+1522783669.223771;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783669.226386;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000161>
+1522783669.228172;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000064>
+1522783669.230017;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.145857>
+1522783669.377121;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783669.379074;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783669.380390;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783669.382226;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.171508>
+1522783669.555318;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783669.557572;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000169>
+1522783669.559514;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000071>
+1522783669.561990;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.855858>
+1522783670.419519;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000087>
+1522783670.421699;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783670.423024;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783670.425279;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.821455>
+1522783671.248150;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783671.250068;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000120>
+1522783671.251517;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000064>
+1522783671.253567;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.206613>
+1522783671.460942;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000044>
+1522783671.462018;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000067>
+1522783671.462758;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000035>
+1522783671.463839;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.101591>
+1522783671.566666;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000076>
+1522783671.568591;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783671.569969;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783671.571721;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.053006>
+1522783671.626055;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783671.627915;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783671.629278;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000069>
+1522783671.631120;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.225059>
+1522783671.857767;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783671.859622;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783671.860944;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783671.862870;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.156573>
+1522783672.020800;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783672.022754;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783672.024087;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783672.026156;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.146810>
+1522783672.174326;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000203>
+1522783672.176359;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783672.177727;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000064>
+1522783672.179634;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.079505>
+1522783672.260874;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000076>
+1522783672.262872;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783672.264198;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000174>
+1522783672.266554;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.124261>
+1522783672.392084;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783672.394009;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783672.395536;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000066>
+1522783672.397351;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.514200>
+1522783672.912849;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783672.915015;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000122>
+1522783672.916359;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783672.918204;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.375660>
+1522783673.295459;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783673.297062;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000130>
+1522783673.299745;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000129>
+1522783673.302523;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.069547>
+1522783673.372344;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783673.372755;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000060>
+1522783673.373007;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783673.373324;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000053>
+1522783673.373577;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000011>
+1522783673.373860;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000271>
+1522783673.374322;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783673.374682;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001395>
+1522783673.376271;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783673.376581;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.004288>
+1522783673.381221;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000023>
+1522783673.381746;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000529>
+1522783673.382522;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000012>
+1522783673.382787;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);6.161522>
+1522783679.545584;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783679.547285;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000145>
+1522783679.548728;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783679.550637;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.098211>
+1522783679.650237;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783679.652093;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783679.653462;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783679.655821;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.105924>
+1522783679.762995;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783679.764974;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000195>
+1522783679.766383;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783679.768243;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.111023>
+1522783679.880517;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783679.882416;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783679.883737;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783679.885689;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.007069>
+1522783679.894076;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000081>
+1522783679.896166;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783679.897673;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000090>
+1522783679.899771;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.089046>
+1522783679.990182;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000074>
+1522783679.992020;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000116>
+1522783679.993687;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000065>
+1522783679.995720;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.356285>
+1522783680.353370;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783680.356595;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.045431>
+1522783680.402400;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000013>
+1522783680.402836;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.301648>
+1522783680.705748;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783680.707582;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783680.708946;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000102>
+1522783680.710695;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.088058>
+1522783680.800045;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783680.801945;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783680.803492;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000065>
+1522783680.805409;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.140268>
+1522783680.946919;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783680.948747;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783680.950144;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000061>
+1522783680.951924;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.246655>
+1522783681.199826;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000067>
+1522783681.201742;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783681.203059;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783681.204840;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.078892>
+1522783681.285270;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000071>
+1522783681.287269;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000183>
+1522783681.288983;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000073>
+1522783681.290829;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.328130>
+1522783681.620226;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783681.622142;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783681.623519;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783681.625627;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.273565>
+1522783681.900437;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783681.903297;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.042526>
+1522783681.946277;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000015>
+1522783681.946754;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.295574>
+1522783682.243484;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783682.245782;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783682.247103;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783682.248788;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.117917>
+1522783682.368096;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783682.370034;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000118>
+1522783682.371367;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783682.373228;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.220641>
+1522783682.595341;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000070>
+1522783682.597308;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000119>
+1522783682.598634;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000065>
+1522783682.600643;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.184480>
+1522783682.786366;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783682.788453;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000117>
+1522783682.789863;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000062>
+1522783682.791851;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.167185>
+1522783682.960586;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000103>
+1522783682.963501;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.038477>
+1522783683.002391;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000013>
+1522783683.002892;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.398066>
+1522783683.401524;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000021>
+1522783683.401986;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000038>
+1522783683.402518;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000037>
+1522783683.403524;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.010049>
+1522783683.414693;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000033>
+1522783683.415665;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001952>
+1522783683.418477;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000059>
+1522783683.419629;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001224>
+1522783683.421476;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000029>
+1522783683.422250;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);27.354558>
+1522783710.777308;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000024>
+1522783710.777805;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000239>
+1522783710.778523;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000023>
+1522783710.779165;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.198101>
+1522783710.978452;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000069>
+1522783710.980367;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000120>
+1522783710.981695;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000061>
+1522783710.983503;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.090999>
+1522783711.076098;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000087>
+1522783711.078208;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000147>
+1522783711.079815;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000063>
+1522783711.081819;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.076532>
+1522783711.159628;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000072>
+1522783711.161554;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000121>
+1522783711.162881;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000096>
+1522783711.164884;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.178523>
+1522783711.344755;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783711.346592;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000120>
+1522783711.347965;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000070>
+1522783711.349940;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.582761>
+1522783711.934158;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000068>
+1522783711.936081;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000124>
+1522783711.937036;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000016>
+1522783711.937523;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [3]);0.245199>
+1522783712.183036;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [8</dev/ptmx>], NULL, NULL;1 (out [8]);0.000015>
+1522783712.183461;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000028>
+1522783712.183856;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000027>
+1522783712.184511;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.000224>
+1522783712.185197;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [3<socket:[49654]>], NULL, NULL;1 (out [3]);0.000014>
+1522783712.185743;select;13, [3<socket:[49654] 5<pipe:[57942]> 12</dev/ptmx>], [], NULL, NULL;1 (in [12]);0.001225>
+1522783712.190076;select;13, [3<socket:[49654] 5<pipe:[57942]>], [3<socket:[49654]>], NULL, NULL;2 (in [5], out [3]);0.000013>
+1522783712.190671;select;13, [3<socket:[49654] 5<pipe:[57942]>], [], NULL, NULL;1 (in [3]);0.000016>
+1522783651.301008;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);0.000012>
+1522783651.303273;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);0.000619>
+1522783651.309151;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);0.002805>
+1522783651.312086;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);0.039603>
+1522783651.352295;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);0.000018>
+1522783651.367590;select;4, [3<socket:[49654]], NULL, NULL, NULL;1 (in [3]);1.488912>

@@ -1,0 +1,181 @@
+
+# Please custumozi path to the source file
+
+input {
+      file {
+          path => "/data/tests/source/getsockname/getsockname.example"
+          type => "strace"
+          start_position => "beginning"
+	  ignore_older => "864000"
+      }
+}
+
+
+filter {
+
+
+# Basic configuration, hearth of the engine is grok and it's definition ../patern/strace and line bagins %{STRACEBASE}
+
+  grok {
+    break_on_match => true
+    keep_empty_captures => true
+    patterns_dir => "/etc/logstash/conf.d/paterns"
+    match => [ "message", "%{STRACEBASE}" ]
+        }
+
+
+# time field definition
+
+  mutate {
+        add_field => { "syscall_start" => "%{unixtime}" }
+	}
+
+
+# this section destinguish between syscall and add, parser or change some specific parameters for specifics syscalls 
+
+  if ([syscall] in [ "recv", "recvfrom", "send", "sendto" ]) {
+
+        mutate {
+                add_field => { "retval" => "%{return}" }
+                }
+	}
+
+
+
+
+  if ([syscall] in [ "read", "write"]) {
+
+	grok {
+	  break_on_match => true
+    	  keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACERW}" ]
+	     }	
+
+        mutate {
+                add_field => { "retval" => "%{return}" }
+                }
+
+        }
+
+
+
+  if ([syscall] == "open" ) {
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACEOPEN}" ]
+             }
+
+        mutate {
+                add_field => { "fd" => "%{return}" }
+                }
+
+        }
+
+  if ([syscall] == "close" ) {
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACECLOSE}" ]
+             }
+
+        }
+
+  if ([syscall] == "socket" ) {
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACESOCKET}" ]
+             }
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "return", "%{SOCKETCUS}" ]
+             }
+
+        }
+
+
+
+
+  if ([syscall] == "fcntl" ) {
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACEFCNTL}" ]
+             }
+        }
+
+
+if ([syscall] in [ "accept", "bind", "listen", "connect", "getpeername", "getsockname" ])  {
+
+        grok {
+          break_on_match => true
+          keep_empty_captures => true
+          patterns_dir => "/etc/logstash/conf.d/paterns"
+          match => [ "arguments", "%{STRACEACCEPT}" ]
+             }
+        }
+
+
+
+
+
+### We need some fields in numeric type
+
+
+
+  mutate {
+
+	convert => { "syscall_start" => "integer" }
+	convert => { "unixtime" => "float" }
+	convert => { "run_time" => "float" }
+	convert => { "retval" => "integer" }
+	}
+	
+### Because the amount of the time of running syscalls is in the microseconds and elk uses by default seconds, conversion is really usefull
+
+#  ruby {
+#        code => "event['run_uS'] = event['run_time']*1000000"
+#    }
+
+
+### Convert syscall_start to @timestamp - elk mandatory
+
+  date {
+
+        match => [ "syscall_start", "UNIX" ]
+        target => "@timestamp"
+        }
+
+}
+
+
+
+
+
+output {
+
+           stdout {
+               codec => "rubydebug"
+    }
+
+#    elasticsearch { 
+#      hosts => ["localhost"]
+#      index => "strace.output.temp" 
+#      document_type => "strace" 
+#    }
+
+}
+

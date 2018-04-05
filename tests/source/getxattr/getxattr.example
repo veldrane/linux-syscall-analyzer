@@ -1,0 +1,48 @@
+1522783605.617267;getxattr;/dev/pts/1, security.selinux, unconfined_u:object_r:user_devpts_t:s0, 255;39;0.000409
+1522783608.565951;getxattr;.lesshst, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000020
+1522783608.566037;lgetxattr;.lesshst, security.selinux, unconfined_u:object_r:admin_home_t:s0, 255;38;0.000025
+1522783608.566817;getxattr;.lesshst, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000021
+1522783608.566882;getxattr;.lesshst, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000018
+1522783608.569860;getxattr;.tcshrc, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000016
+1522783608.569907;lgetxattr;.tcshrc, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000017
+1522783608.569957;getxattr;.tcshrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570000;getxattr;.tcshrc, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570125;getxattr;.bash_profile, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000015
+1522783608.570168;lgetxattr;.bash_profile, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000015
+1522783608.570215;getxattr;.bash_profile, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570257;getxattr;.bash_profile, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570380;getxattr;.bashrc, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000015
+1522783608.570423;lgetxattr;.bashrc, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000015
+1522783608.570469;getxattr;.bashrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570511;getxattr;.bashrc, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570646;getxattr;anaconda-ks.cfg, security.capability, 0x7fff5659aad0, 20;-1 ENODATA (No data available);0.000015
+1522783608.570695;lgetxattr;anaconda-ks.cfg, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000016
+1522783608.570742;getxattr;anaconda-ks.cfg, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570784;getxattr;anaconda-ks.cfg, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000013
+1522783608.570907;getxattr;.bash_history, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000015
+1522783608.570949;lgetxattr;.bash_history, security.selinux, unconfined_u:object_r:admin_home_t:s0, 255;38;0.000017
+1522783608.570997;getxattr;.bash_history, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571039;getxattr;.bash_history, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571172;getxattr;.cshrc, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000014
+1522783608.571214;lgetxattr;.cshrc, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000016
+1522783608.571261;getxattr;.cshrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571302;getxattr;.cshrc, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000026
+1522783608.571402;lgetxattr;.., security.selinux, system_u:object_r:root_t:s0, 255;28;0.000015
+1522783608.571450;getxattr;.., system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000013
+1522783608.571490;getxattr;.., system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000012
+1522783608.571823;lgetxattr;.oracle_jre_usage, security.selinux, unconfined_u:object_r:admin_home_t:s0, 255;38;0.000017
+1522783608.571873;getxattr;.oracle_jre_usage, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571915;getxattr;.oracle_jre_usage, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572012;lgetxattr;.pki, security.selinux, unconfined_u:object_r:admin_home_t:s0, 255;38;0.000017
+1522783608.572061;getxattr;.pki, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572102;getxattr;.pki, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572187;lgetxattr;., security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000015
+1522783608.572234;getxattr;., system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572275;getxattr;., system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572410;getxattr;.bash_logout, security.capability, 0x7fff5659aae0, 20;-1 ENODATA (No data available);0.000014
+1522783608.572452;lgetxattr;.bash_logout, security.selinux, system_u:object_r:admin_home_t:s0, 255;34;0.000016
+1522783608.572500;getxattr;.bash_logout, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572541;getxattr;.bash_logout, system.posix_acl_default, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783636.658130;getxattr;/proc/761/task/774/fd/7, system.sockprotoname, NETLINK, 4086;8;0.000014
+1522783636.663841;getxattr;/proc/761/fd/7, system.sockprotoname, NETLINK, 4086;8;0.000012
+1522783653.387679;getxattr;/dev/pts/2, security.selinux, unconfined_u:object_r:user_devpts_t:s0, 255;39;0.000416

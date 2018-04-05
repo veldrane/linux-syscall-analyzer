@@ -1,0 +1,1013 @@
+1522783673.307487 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000058>
+1522783673.307764 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {SIG_IGN, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000051>
+1522783673.307941 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {SIG_IGN, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000050>
+1522783673.308108 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {SIG_IGN, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000048>
+1522783673.308273 setpgid(13515, 13515) = 0 <0.000047>
+1522783673.308416 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0 <0.000048>
+1522783673.308593 ioctl(255</dev/pts/2>, TIOCSPGRP, [13515]) = 0 <0.000057>
+1522783673.308828 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000048>
+1522783673.308991 close(4<pipe:[58133]>) = 0 <0.000059>
+1522783673.309188 read(3<pipe:[58133]>, "", 1) = 0 <0.000054>
+1522783673.309439 close(3<pipe:[58133]>) = 0 <0.000067>
+1522783673.309669 rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000050>
+1522783673.309835 rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000050>
+1522783673.309989 rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000049>
+1522783673.310141 rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000049>
+1522783673.310293 rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.310444 rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.310596 rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.310747 rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000049>
+1522783673.310899 rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000049>
+1522783673.311050 rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.311201 rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.311353 rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.311504 rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000049>
+1522783673.311655 rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.311806 rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, NULL, 8) = 0 <0.000048>
+1522783673.311969 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {0x456a20, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000049>
+1522783673.312150 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {SIG_IGN, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000049>
+1522783673.312316 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f29b4081270}, {SIG_IGN, [], SA_RESTORER, 0x7f29b4081270}, 8) = 0 <0.000049>
+1522783673.312489 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f29b4081270}, {0x441310, [], SA_RESTORER|SA_RESTART, 0x7f29b4081270}, 8) = 0 <0.000072>
+1522783673.312961 execve("/usr/bin/su", ["su", "-", "elasticsearch", "-c", "/bin/bash"], [/* 33 vars */]) = 0 <0.000824>
+1522783673.314244 brk(NULL)             = 0x5615880de000 <0.000067>
+1522783673.314874 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942cea000 <0.000066>
+1522783673.315118 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000067>
+1522783673.315359 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache> <0.000068>
+1522783673.315588 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000054>
+1522783673.315785 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f1942ce5000 <0.000063>
+1522783673.315975 close(3</etc/ld.so.cache>) = 0 <0.000050>
+1522783673.316182 open("/lib64/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libpam.so.0.83.1> <0.000078>
+1522783673.316428 read(3</usr/lib64/libpam.so.0.83.1>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x70\x26\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000056>
+1522783673.316637 fstat(3</usr/lib64/libpam.so.0.83.1>, {st_mode=S_IFREG|0755, st_size=61672, ...}) = 0 <0.000053>
+1522783673.316834 mmap(NULL, 2155088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libpam.so.0.83.1>, 0) = 0x7f19428bb000 <0.000068>
+1522783673.317031 mprotect(0x7f19428c8000, 2097152, PROT_NONE) = 0 <0.000071>
+1522783673.317197 mmap(0x7f1942ac8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpam.so.0.83.1>, 0xd000) = 0x7f1942ac8000 <0.000080>
+1522783673.317499 close(3</usr/lib64/libpam.so.0.83.1>) = 0 <0.000050>
+1522783673.317711 open("/lib64/libpam_misc.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libpam_misc.so.0.82.0> <0.000076>
+1522783673.317932 read(3</usr/lib64/libpam_misc.so.0.82.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x00\x11\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000055>
+1522783673.318119 fstat(3</usr/lib64/libpam_misc.so.0.82.0>, {st_mode=S_IFREG|0755, st_size=15624, ...}) = 0 <0.000053>
+1522783673.318313 mmap(NULL, 2109752, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libpam_misc.so.0.82.0>, 0) = 0x7f19426b7000 <0.000065>
+1522783673.318506 mprotect(0x7f19426ba000, 2093056, PROT_NONE) = 0 <0.000065>
+1522783673.318664 mmap(0x7f19428b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpam_misc.so.0.82.0>, 0x2000) = 0x7f19428b9000 <0.000072>
+1522783673.318912 close(3</usr/lib64/libpam_misc.so.0.82.0>) = 0 <0.000051>
+1522783673.319118 open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc-2.17.so> <0.000072>
+1522783673.319329 read(3</usr/lib64/libc-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x10\x1d\x02\x00\x00\x00\x00\x00"..., 832) = 832 <0.000055>
+1522783673.319516 fstat(3</usr/lib64/libc-2.17.so>, {st_mode=S_IFREG|0755, st_size=2127336, ...}) = 0 <0.000052>
+1522783673.319704 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce4000 <0.000058>
+1522783673.319883 mmap(NULL, 3940800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc-2.17.so>, 0) = 0x7f19422f4000 <0.000064>
+1522783673.320073 mprotect(0x7f19424ac000, 2097152, PROT_NONE) = 0 <0.000072>
+1522783673.320239 mmap(0x7f19426ac000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc-2.17.so>, 0x1b8000) = 0x7f19426ac000 <0.000081>
+1522783673.320468 mmap(0x7f19426b2000, 16832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f19426b2000 <0.000066>
+1522783673.320671 close(3</usr/lib64/libc-2.17.so>) = 0 <0.000050>
+1522783673.320875 open("/lib64/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libaudit.so.1.0.0> <0.000072>
+1522783673.321087 read(3</usr/lib64/libaudit.so.1.0.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x00\x31\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000053>
+1522783673.321271 fstat(3</usr/lib64/libaudit.so.1.0.0>, {st_mode=S_IFREG|0755, st_size=122984, ...}) = 0 <0.000093>
+1522783673.321510 mmap(NULL, 2257800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libaudit.so.1.0.0>, 0) = 0x7f19420cc000 <0.000065>
+1522783673.321701 mprotect(0x7f19420e9000, 2093056, PROT_NONE) = 0 <0.000066>
+1522783673.321861 mmap(0x7f19422e8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libaudit.so.1.0.0>, 0x1c000) = 0x7f19422e8000 <0.000075>
+1522783673.322083 mmap(0x7f19422ea000, 37768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f19422ea000 <0.000066>
+1522783673.322281 close(3</usr/lib64/libaudit.so.1.0.0>) = 0 <0.000050>
+1522783673.322485 open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libdl-2.17.so> <0.000072>
+1522783673.322698 read(3</usr/lib64/libdl-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x60\x0e\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000055>
+1522783673.322905 fstat(3</usr/lib64/libdl-2.17.so>, {st_mode=S_IFREG|0755, st_size=19776, ...}) = 0 <0.000054>
+1522783673.323102 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libdl-2.17.so>, 0) = 0x7f1941ec8000 <0.000066>
+1522783673.323292 mprotect(0x7f1941eca000, 2097152, PROT_NONE) = 0 <0.000070>
+1522783673.323456 mmap(0x7f19420ca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libdl-2.17.so>, 0x2000) = 0x7f19420ca000 <0.000073>
+1522783673.323701 close(3</usr/lib64/libdl-2.17.so>) = 0 <0.000027>
+1522783673.323816 open("/lib64/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libcap-ng.so.0.0.0> <0.000041>
+1522783673.323934 read(3</usr/lib64/libcap-ng.so.0.0.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x80\x15\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000031>
+1522783673.324037 fstat(3</usr/lib64/libcap-ng.so.0.0.0>, {st_mode=S_IFREG|0755, st_size=23968, ...}) = 0 <0.000029>
+1522783673.324142 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce3000 <0.000033>
+1522783673.324240 mmap(NULL, 2118016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libcap-ng.so.0.0.0>, 0) = 0x7f1941cc2000 <0.000036>
+1522783673.324344 mprotect(0x7f1941cc6000, 2097152, PROT_NONE) = 0 <0.000037>
+1522783673.324548 mmap(0x7f1941ec6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libcap-ng.so.0.0.0>, 0x4000) = 0x7f1941ec6000 <0.000044>
+1522783673.324702 close(3</usr/lib64/libcap-ng.so.0.0.0>) = 0 <0.000027>
+1522783673.324845 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce2000 <0.000032>
+1522783673.324943 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce0000 <0.000030>
+1522783673.325039 arch_prctl(ARCH_SET_FS, 0x7f1942ce0740) = 0 <0.000026>
+1522783673.325316 mprotect(0x7f19426ac000, 16384, PROT_READ) = 0 <0.000060>
+1522783673.325453 mprotect(0x7f1941ec6000, 4096, PROT_READ) = 0 <0.000037>
+1522783673.325557 mprotect(0x7f19420ca000, 4096, PROT_READ) = 0 <0.000037>
+1522783673.325664 mprotect(0x7f19422e8000, 4096, PROT_READ) = 0 <0.000037>
+1522783673.325767 mprotect(0x7f1942ac8000, 4096, PROT_READ) = 0 <0.000037>
+1522783673.325868 mprotect(0x7f19428b9000, 4096, PROT_READ) = 0 <0.000035>
+1522783673.326051 mprotect(0x5615868ee000, 4096, PROT_READ) = 0 <0.000036>
+1522783673.326150 mprotect(0x7f1942ceb000, 4096, PROT_READ) = 0 <0.000040>
+1522783673.326244 munmap(0x7f1942ce5000, 18407) = 0 <0.000048>
+1522783673.326614 brk(NULL)             = 0x5615880de000 <0.000028>
+1522783673.326697 brk(0x5615880ff000)   = 0x5615880ff000 <0.000032>
+1522783673.326782 brk(NULL)             = 0x5615880ff000 <0.000026>
+1522783673.326884 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive> <0.000043>
+1522783673.327015 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=106070960, ...}) = 0 <0.000030>
+1522783673.327129 mmap(NULL, 106070960, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7f193b799000 <0.000036>
+1522783673.327244 close(3</usr/lib/locale/locale-archive>) = 0 <0.000027>
+1522783673.327448 getuid()              = 0 <0.000027>
+1522783673.327530 geteuid()             = 0 <0.000026>
+1522783673.327643 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3<socket:[58139]> <0.000090>
+1522783673.327814 connect(3<socket:[58139]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000061>
+1522783673.327959 close(3<socket:[58139]>) = 0 <0.000044>
+1522783673.328073 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3<socket:[58140]> <0.000069>
+1522783673.328216 connect(3<socket:[58140]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000048>
+1522783673.328358 close(3<socket:[58140]>) = 0 <0.000036>
+1522783673.328510 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3</etc/nsswitch.conf> <0.000038>
+1522783673.328650 fstat(3</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=1746, ...}) = 0 <0.000030>
+1522783673.328766 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000032>
+1522783673.328851 read(3</etc/nsswitch.conf>, "#\n# /etc/nsswitch.conf\n#\n# An ex"..., 4096) = 1746 <0.000042>
+1522783673.329002 read(3</etc/nsswitch.conf>, "", 4096) = 0 <0.000021>
+1522783673.329080 close(3</etc/nsswitch.conf>) = 0 <0.000022>
+1522783673.329147 munmap(0x7f1942ce9000, 4096) = 0 <0.000035>
+1522783673.329242 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache> <0.000026>
+1522783673.329324 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000022>
+1522783673.329415 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f1942ce5000 <0.000025>
+1522783673.329488 close(3</etc/ld.so.cache>) = 0 <0.000019>
+1522783673.329567 open("/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libnss_files-2.17.so> <0.000030>
+1522783673.329652 read(3</usr/lib64/libnss_files-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xd0\x21\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000022>
+1522783673.329725 fstat(3</usr/lib64/libnss_files-2.17.so>, {st_mode=S_IFREG|0755, st_size=62184, ...}) = 0 <0.000021>
+1522783673.329810 mmap(NULL, 2173048, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libnss_files-2.17.so>, 0) = 0x7f193b586000 <0.000027>
+1522783673.329889 mprotect(0x7f193b592000, 2093056, PROT_NONE) = 0 <0.000030>
+1522783673.329956 mmap(0x7f193b791000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libnss_files-2.17.so>, 0xb000) = 0x7f193b791000 <0.000037>
+1522783673.330065 mmap(0x7f193b793000, 22648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193b793000 <0.000037>
+1522783673.330165 close(3</usr/lib64/libnss_files-2.17.so>) = 0 <0.000021>
+1522783673.330279 mprotect(0x7f193b791000, 4096, PROT_READ) = 0 <0.000036>
+1522783673.330377 munmap(0x7f1942ce5000, 18407) = 0 <0.000039>
+1522783673.330491 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3</etc/passwd> <0.000031>
+1522783673.330602 fstat(3</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000028>
+1522783673.330704 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000031>
+1522783673.330793 read(3</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000038>
+1522783673.330957 close(3</etc/passwd>) = 0 <0.000027>
+1522783673.331054 munmap(0x7f1942ce9000, 4096) = 0 <0.000050>
+1522783673.331240 stat("/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000025>
+1522783673.331354 open("/etc/pam.d/su-l", O_RDONLY) = 3</etc/pam.d/su-l> <0.000040>
+1522783673.331481 fstat(3</etc/pam.d/su-l>, {st_mode=S_IFREG|0644, st_size=137, ...}) = 0 <0.000021>
+1522783673.331572 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000024>
+1522783673.331638 read(3</etc/pam.d/su-l>, "#%PAM-1.0\nauth\t\tinclude\t\tsu\nacco"..., 4096) = 137 <0.000029>
+1522783673.331742 open("/etc/pam.d/su", O_RDONLY) = 4</etc/pam.d/su> <0.000031>
+1522783673.331837 fstat(4</etc/pam.d/su>, {st_mode=S_IFREG|0644, st_size=540, ...}) = 0 <0.000023>
+1522783673.331914 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce8000 <0.000023>
+1522783673.331981 read(4</etc/pam.d/su>, "#%PAM-1.0\nauth\t\tsufficient\tpam_r"..., 4096) = 540 <0.000029>
+1522783673.332100 open("/usr/lib64/security/pam_rootok.so", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/security/pam_rootok.so> <0.000033>
+1522783673.332205 read(5</usr/lib64/security/pam_rootok.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x40\x0b\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000024>
+1522783673.332285 fstat(5</usr/lib64/security/pam_rootok.so>, {st_mode=S_IFREG|0755, st_size=11240, ...}) = 0 <0.000023>
+1522783673.332396 mmap(NULL, 2105520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/security/pam_rootok.so>, 0) = 0x7f193b383000 <0.000028>
+1522783673.332500 mprotect(0x7f193b385000, 2093056, PROT_NONE) = 0 <0.000029>
+1522783673.332568 mmap(0x7f193b584000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/security/pam_rootok.so>, 0x1000) = 0x7f193b584000 <0.000034>
+1522783673.332679 close(5</usr/lib64/security/pam_rootok.so>) = 0 <0.000020>
+1522783673.332764 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5</etc/ld.so.cache> <0.000027>
+1522783673.332847 fstat(5</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000020>
+1522783673.332919 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 5</etc/ld.so.cache>, 0) = 0x7f1942cdb000 <0.000024>
+1522783673.332989 close(5</etc/ld.so.cache>) = 0 <0.000019>
+1522783673.333069 open("/lib64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/libselinux.so.1> <0.000028>
+1522783673.333154 read(5</usr/lib64/libselinux.so.1>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xc0\x6a\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000022>
+1522783673.333229 fstat(5</usr/lib64/libselinux.so.1>, {st_mode=S_IFREG|0755, st_size=155744, ...}) = 0 <0.000020>
+1522783673.333314 mmap(NULL, 2255216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/libselinux.so.1>, 0) = 0x7f193b15c000 <0.000029>
+1522783673.333418 mprotect(0x7f193b180000, 2093056, PROT_NONE) = 0 <0.000028>
+1522783673.333482 mmap(0x7f193b37f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/libselinux.so.1>, 0x23000) = 0x7f193b37f000 <0.000031>
+1522783673.333573 mmap(0x7f193b381000, 6512, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193b381000 <0.000025>
+1522783673.333652 close(5</usr/lib64/libselinux.so.1>) = 0 <0.000015>
+1522783673.333736 open("/lib64/libpcre.so.1", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/libpcre.so.1.2.0> <0.000024>
+1522783673.333804 read(5</usr/lib64/libpcre.so.1.2.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xf0\x15\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000017>
+1522783673.333859 fstat(5</usr/lib64/libpcre.so.1.2.0>, {st_mode=S_IFREG|0755, st_size=402384, ...}) = 0 <0.000016>
+1522783673.333919 mmap(NULL, 2494984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/libpcre.so.1.2.0>, 0) = 0x7f193aefa000 <0.000021>
+1522783673.333977 mprotect(0x7f193af5a000, 2097152, PROT_NONE) = 0 <0.000023>
+1522783673.334028 mmap(0x7f193b15a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/libpcre.so.1.2.0>, 0x60000) = 0x7f193b15a000 <0.000021>
+1522783673.334107 close(5</usr/lib64/libpcre.so.1.2.0>) = 0 <0.000015>
+1522783673.334170 open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/libpthread-2.17.so> <0.000022>
+1522783673.334235 read(5</usr/lib64/libpthread-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x00\x6d\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000016>
+1522783673.334290 fstat(5</usr/lib64/libpthread-2.17.so>, {st_mode=S_IFREG|0755, st_size=144792, ...}) = 0 <0.000015>
+1522783673.334350 mmap(NULL, 2208904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/libpthread-2.17.so>, 0) = 0x7f193acde000 <0.000021>
+1522783673.334493 mprotect(0x7f193acf5000, 2093056, PROT_NONE) = 0 <0.000024>
+1522783673.334551 mmap(0x7f193aef4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/libpthread-2.17.so>, 0x16000) = 0x7f193aef4000 <0.000025>
+1522783673.334625 mmap(0x7f193aef6000, 13448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193aef6000 <0.000020>
+1522783673.334685 close(5</usr/lib64/libpthread-2.17.so>) = 0 <0.000016>
+1522783673.334815 mprotect(0x7f193aef4000, 4096, PROT_READ) = 0 <0.000023>
+1522783673.334892 mprotect(0x7f193b15a000, 4096, PROT_READ) = 0 <0.000021>
+1522783673.335032 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffcaa22ae00) = -1 ENOENT (No such file or directory) <0.000021>
+1522783673.335098 mprotect(0x7f193b37f000, 4096, PROT_READ) = 0 <0.000020>
+1522783673.335157 mprotect(0x7f193b584000, 4096, PROT_READ) = 0 <0.000019>
+1522783673.335212 set_tid_address(0x7f1942ce0a10) = 13515 <0.000014>
+1522783673.335254 set_robust_list(0x7f1942ce0a20, 24) = 0 <0.000014>
+1522783673.335302 rt_sigaction(SIGRTMIN, {0x7f193ace47e0, [], SA_RESTORER|SA_SIGINFO, 0x7f193aced5e0}, NULL, 8) = 0 <0.000015>
+1522783673.335351 rt_sigaction(SIGRT_1, {0x7f193ace4870, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f193aced5e0}, NULL, 8) = 0 <0.000014>
+1522783673.335398 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0 <0.000014>
+1522783673.335451 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000014>
+1522783673.335514 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={0, 0}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000036>
+1522783673.335594 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={0, 0}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000024>
+1522783673.335656 stat("/sys/fs/selinux", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000024>
+1522783673.335721 access("/etc/selinux/config", F_OK) = 0 <0.000021>
+1522783673.335774 munmap(0x7f1942cdb000, 18407) = 0 <0.000025>
+1522783673.335858 open("/etc/pam.d/system-auth", O_RDONLY) = 5</etc/pam.d/system-auth-ac> <0.000024>
+1522783673.335928 fstat(5</etc/pam.d/system-auth-ac>, {st_mode=S_IFREG|0644, st_size=1031, ...}) = 0 <0.000015>
+1522783673.335985 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000018>
+1522783673.336034 read(5</etc/pam.d/system-auth-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 1031 <0.000021>
+1522783673.336109 open("/usr/lib64/security/pam_env.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_env.so> <0.000021>
+1522783673.336178 read(6</usr/lib64/security/pam_env.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xc0\x0d\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000017>
+1522783673.336235 fstat(6</usr/lib64/security/pam_env.so>, {st_mode=S_IFREG|0755, st_size=15552, ...}) = 0 <0.000016>
+1522783673.336299 mmap(NULL, 2109664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_env.so>, 0) = 0x7f193aada000 <0.000020>
+1522783673.336359 mprotect(0x7f193aadd000, 2093056, PROT_NONE) = 0 <0.000022>
+1522783673.336415 mmap(0x7f193acdc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_env.so>, 0x2000) = 0x7f193acdc000 <0.000022>
+1522783673.336503 close(6</usr/lib64/security/pam_env.so>) = 0 <0.000018>
+1522783673.336597 mprotect(0x7f193acdc000, 4096, PROT_READ) = 0 <0.000020>
+1522783673.336669 open("/usr/lib64/security/pam_faildelay.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_faildelay.so> <0.000022>
+1522783673.336735 read(6</usr/lib64/security/pam_faildelay.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x80\x0a\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000017>
+1522783673.336791 fstat(6</usr/lib64/security/pam_faildelay.so>, {st_mode=S_IFREG|0755, st_size=11168, ...}) = 0 <0.000016>
+1522783673.336852 mmap(NULL, 2105520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_faildelay.so>, 0) = 0x7f193a8d7000 <0.000020>
+1522783673.336909 mprotect(0x7f193a8d9000, 2093056, PROT_NONE) = 0 <0.000020>
+1522783673.336957 mmap(0x7f193aad8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_faildelay.so>, 0x1000) = 0x7f193aad8000 <0.000021>
+1522783673.337030 close(6</usr/lib64/security/pam_faildelay.so>) = 0 <0.000015>
+1522783673.337106 mprotect(0x7f193aad8000, 4096, PROT_READ) = 0 <0.000019>
+1522783673.337177 open("/usr/lib64/security/pam_unix.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_unix.so> <0.000021>
+1522783673.337242 read(6</usr/lib64/security/pam_unix.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xf0\x28\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000017>
+1522783673.337297 fstat(6</usr/lib64/security/pam_unix.so>, {st_mode=S_IFREG|0755, st_size=57728, ...}) = 0 <0.000016>
+1522783673.337374 mmap(NULL, 2200544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_unix.so>, 0) = 0x7f193a6bd000 <0.000020>
+1522783673.337434 mprotect(0x7f193a6ca000, 2093056, PROT_NONE) = 0 <0.000019>
+1522783673.337481 mmap(0x7f193a8c9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_unix.so>, 0xc000) = 0x7f193a8c9000 <0.000023>
+1522783673.337547 mmap(0x7f193a8cb000, 46048, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193a8cb000 <0.000020>
+1522783673.337607 close(6</usr/lib64/security/pam_unix.so>) = 0 <0.000015>
+1522783673.337670 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6</etc/ld.so.cache> <0.000020>
+1522783673.337731 fstat(6</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000016>
+1522783673.337786 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 6</etc/ld.so.cache>, 0) = 0x7f1942cdb000 <0.000018>
+1522783673.337840 close(6</etc/ld.so.cache>) = 0 <0.000014>
+1522783673.337902 open("/lib64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libcrypt-2.17.so> <0.000023>
+1522783673.337964 read(6</usr/lib64/libcrypt-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x50\x0e\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000016>
+1522783673.338019 fstat(6</usr/lib64/libcrypt-2.17.so>, {st_mode=S_IFREG|0755, st_size=41080, ...}) = 0 <0.000016>
+1522783673.338079 mmap(NULL, 2318912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libcrypt-2.17.so>, 0) = 0x7f193a486000 <0.000020>
+1522783673.338136 mprotect(0x7f193a48e000, 2093056, PROT_NONE) = 0 <0.000021>
+1522783673.338185 mmap(0x7f193a68d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libcrypt-2.17.so>, 0x7000) = 0x7f193a68d000 <0.000021>
+1522783673.338250 mmap(0x7f193a68f000, 184896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193a68f000 <0.000019>
+1522783673.338309 close(6</usr/lib64/libcrypt-2.17.so>) = 0 <0.000015>
+1522783673.338371 open("/lib64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libnsl-2.17.so> <0.000023>
+1522783673.338436 read(6</usr/lib64/libnsl-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xa0\x40\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000016>
+1522783673.338491 fstat(6</usr/lib64/libnsl-2.17.so>, {st_mode=S_IFREG|0755, st_size=113584, ...}) = 0 <0.000016>
+1522783673.338552 mmap(NULL, 2198200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libnsl-2.17.so>, 0) = 0x7f193a26d000 <0.000020>
+1522783673.338609 mprotect(0x7f193a283000, 2093056, PROT_NONE) = 0 <0.000020>
+1522783673.338657 mmap(0x7f193a482000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libnsl-2.17.so>, 0x15000) = 0x7f193a482000 <0.000033>
+1522783673.338728 mmap(0x7f193a484000, 6840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f193a484000 <0.000015>
+1522783673.338775 close(6</usr/lib64/libnsl-2.17.so>) = 0 <0.000012>
+1522783673.338830 open("/lib64/libfreebl3.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libfreebl3.so> <0.000017>
+1522783673.338882 read(6</usr/lib64/libfreebl3.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xa0\x0b\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000014>
+1522783673.338926 fstat(6</usr/lib64/libfreebl3.so>, {st_mode=S_IFREG|0755, st_size=11384, ...}) = 0 <0.000013>
+1522783673.338977 mmap(NULL, 2105536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libfreebl3.so>, 0) = 0x7f193a06a000 <0.000016>
+1522783673.339029 mprotect(0x7f193a06c000, 2093056, PROT_NONE) = 0 <0.000016>
+1522783673.339068 mmap(0x7f193a26b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libfreebl3.so>, 0x1000) = 0x7f193a26b000 <0.000017>
+1522783673.339126 close(6</usr/lib64/libfreebl3.so>) = 0 <0.000012>
+1522783673.339198 mprotect(0x7f193a26b000, 4096, PROT_READ) = 0 <0.000017>
+1522783673.339282 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffcaa22a8a0) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.339329 mprotect(0x7f193a482000, 4096, PROT_READ) = 0 <0.000017>
+1522783673.339384 mprotect(0x7f193a68d000, 4096, PROT_READ) = 0 <0.000016>
+1522783673.339470 mprotect(0x7f193a8c9000, 4096, PROT_READ) = 0 <0.000015>
+1522783673.339515 munmap(0x7f1942cdb000, 18407) = 0 <0.000019>
+1522783673.339576 open("/usr/lib64/security/pam_succeed_if.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_succeed_if.so> <0.000018>
+1522783673.339629 read(6</usr/lib64/security/pam_succeed_if.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xd0\x0c\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000014>
+1522783673.339674 fstat(6</usr/lib64/security/pam_succeed_if.so>, {st_mode=S_IFREG|0755, st_size=15408, ...}) = 0 <0.000013>
+1522783673.339727 mmap(NULL, 2109648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_succeed_if.so>, 0) = 0x7f1939e66000 <0.000016>
+1522783673.339775 mprotect(0x7f1939e69000, 2093056, PROT_NONE) = 0 <0.000015>
+1522783673.339812 mmap(0x7f193a068000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_succeed_if.so>, 0x2000) = 0x7f193a068000 <0.000017>
+1522783673.339871 close(6</usr/lib64/security/pam_succeed_if.so>) = 0 <0.000012>
+1522783673.339940 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffcaa22a8c0) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.339987 mprotect(0x7f193a068000, 4096, PROT_READ) = 0 <0.000016>
+1522783673.340041 open("/usr/lib64/security/pam_deny.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_deny.so> <0.000017>
+1522783673.340092 read(6</usr/lib64/security/pam_deny.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x10\x06\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000014>
+1522783673.340137 fstat(6</usr/lib64/security/pam_deny.so>, {st_mode=S_IFREG|0755, st_size=6872, ...}) = 0 <0.000013>
+1522783673.340186 mmap(NULL, 2101296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_deny.so>, 0) = 0x7f1939c64000 <0.000016>
+1522783673.340232 mprotect(0x7f1939c65000, 2093056, PROT_NONE) = 0 <0.000015>
+1522783673.340270 mmap(0x7f1939e64000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_deny.so>, 0) = 0x7f1939e64000 <0.000017>
+1522783673.340336 close(6</usr/lib64/security/pam_deny.so>) = 0 <0.000012>
+1522783673.340390 mprotect(0x7f1939e64000, 4096, PROT_READ) = 0 <0.000017>
+1522783673.340442 read(5</etc/pam.d/system-auth-ac>, "", 4096) = 0 <0.000013>
+1522783673.340491 close(5</etc/pam.d/system-auth-ac>) = 0 <0.000014>
+1522783673.340533 munmap(0x7f1942ce7000, 4096) = 0 <0.000018>
+1522783673.340581 open("/etc/pam.d/postlogin", O_RDONLY) = 5</etc/pam.d/postlogin-ac> <0.000019>
+1522783673.340647 fstat(5</etc/pam.d/postlogin-ac>, {st_mode=S_IFREG|0644, st_size=330, ...}) = 0 <0.000014>
+1522783673.340699 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000016>
+1522783673.340740 read(5</etc/pam.d/postlogin-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 330 <0.000021>
+1522783673.340804 read(5</etc/pam.d/postlogin-ac>, "", 4096) = 0 <0.000013>
+1522783673.340849 close(5</etc/pam.d/postlogin-ac>) = 0 <0.000013>
+1522783673.340890 munmap(0x7f1942ce7000, 4096) = 0 <0.000021>
+1522783673.340949 read(4</etc/pam.d/su>, "", 4096) = 0 <0.000015>
+1522783673.341004 close(4</etc/pam.d/su>) = 0 <0.000013>
+1522783673.341046 munmap(0x7f1942ce8000, 4096) = 0 <0.000018>
+1522783673.341100 open("/etc/pam.d/su", O_RDONLY) = 4</etc/pam.d/su> <0.000017>
+1522783673.341153 fstat(4</etc/pam.d/su>, {st_mode=S_IFREG|0644, st_size=540, ...}) = 0 <0.000013>
+1522783673.341203 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce8000 <0.000014>
+1522783673.341242 read(4</etc/pam.d/su>, "#%PAM-1.0\nauth\t\tsufficient\tpam_r"..., 4096) = 540 <0.000016>
+1522783673.341304 open("/etc/pam.d/system-auth", O_RDONLY) = 5</etc/pam.d/system-auth-ac> <0.000018>
+1522783673.341368 fstat(5</etc/pam.d/system-auth-ac>, {st_mode=S_IFREG|0644, st_size=1031, ...}) = 0 <0.000012>
+1522783673.341414 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000013>
+1522783673.341452 read(5</etc/pam.d/system-auth-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 1031 <0.000016>
+1522783673.341520 open("/usr/lib64/security/pam_localuser.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_localuser.so> <0.000017>
+1522783673.341573 read(6</usr/lib64/security/pam_localuser.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x30\x09\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000014>
+1522783673.341627 fstat(6</usr/lib64/security/pam_localuser.so>, {st_mode=S_IFREG|0755, st_size=11144, ...}) = 0 <0.000018>
+1522783673.341702 mmap(NULL, 2105464, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_localuser.so>, 0) = 0x7f1939a61000 <0.000019>
+1522783673.341760 mprotect(0x7f1939a62000, 2097152, PROT_NONE) = 0 <0.000017>
+1522783673.341801 mmap(0x7f1939c62000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_localuser.so>, 0x1000) = 0x7f1939c62000 <0.000019>
+1522783673.341865 close(6</usr/lib64/security/pam_localuser.so>) = 0 <0.000012>
+1522783673.341928 mprotect(0x7f1939c62000, 4096, PROT_READ) = 0 <0.000016>
+1522783673.341986 open("/usr/lib64/security/pam_permit.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_permit.so> <0.000018>
+1522783673.342040 read(6</usr/lib64/security/pam_permit.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x50\x07\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000015>
+1522783673.342088 fstat(6</usr/lib64/security/pam_permit.so>, {st_mode=S_IFREG|0755, st_size=6984, ...}) = 0 <0.000012>
+1522783673.342137 mmap(NULL, 2101320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_permit.so>, 0) = 0x7f193985f000 <0.000016>
+1522783673.342184 mprotect(0x7f1939860000, 2093056, PROT_NONE) = 0 <0.000016>
+1522783673.342222 mmap(0x7f1939a5f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_permit.so>, 0) = 0x7f1939a5f000 <0.000018>
+1522783673.342282 close(6</usr/lib64/security/pam_permit.so>) = 0 <0.000012>
+1522783673.342340 mprotect(0x7f1939a5f000, 4096, PROT_READ) = 0 <0.000016>
+1522783673.342393 read(5</etc/pam.d/system-auth-ac>, "", 4096) = 0 <0.000013>
+1522783673.342438 close(5</etc/pam.d/system-auth-ac>) = 0 <0.000014>
+1522783673.342480 munmap(0x7f1942ce7000, 4096) = 0 <0.000018>
+1522783673.342526 read(4</etc/pam.d/su>, "", 4096) = 0 <0.000012>
+1522783673.342569 close(4</etc/pam.d/su>) = 0 <0.000013>
+1522783673.342610 munmap(0x7f1942ce8000, 4096) = 0 <0.000016>
+1522783673.342655 open("/etc/pam.d/su", O_RDONLY) = 4</etc/pam.d/su> <0.000016>
+1522783673.342705 fstat(4</etc/pam.d/su>, {st_mode=S_IFREG|0644, st_size=540, ...}) = 0 <0.000013>
+1522783673.342750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce8000 <0.000015>
+1522783673.342789 read(4</etc/pam.d/su>, "#%PAM-1.0\nauth\t\tsufficient\tpam_r"..., 4096) = 540 <0.000016>
+1522783673.342844 open("/etc/pam.d/system-auth", O_RDONLY) = 5</etc/pam.d/system-auth-ac> <0.000018>
+1522783673.342896 fstat(5</etc/pam.d/system-auth-ac>, {st_mode=S_IFREG|0644, st_size=1031, ...}) = 0 <0.000013>
+1522783673.342940 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000014>
+1522783673.342984 read(5</etc/pam.d/system-auth-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 1031 <0.000016>
+1522783673.343049 open("/usr/lib64/security/pam_pwquality.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_pwquality.so> <0.000017>
+1522783673.343100 read(6</usr/lib64/security/pam_pwquality.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xe0\x0d\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000013>
+1522783673.343144 fstat(6</usr/lib64/security/pam_pwquality.so>, {st_mode=S_IFREG|0755, st_size=11224, ...}) = 0 <0.000013>
+1522783673.343193 mmap(NULL, 2105576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_pwquality.so>, 0) = 0x7f193965c000 <0.000016>
+1522783673.343241 mprotect(0x7f193965e000, 2093056, PROT_NONE) = 0 <0.000015>
+1522783673.343278 mmap(0x7f193985d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_pwquality.so>, 0x1000) = 0x7f193985d000 <0.000017>
+1522783673.343338 close(6</usr/lib64/security/pam_pwquality.so>) = 0 <0.000012>
+1522783673.343388 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6</etc/ld.so.cache> <0.000015>
+1522783673.343437 fstat(6</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000012>
+1522783673.343481 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 6</etc/ld.so.cache>, 0) = 0x7f1942cdb000 <0.000015>
+1522783673.343525 close(6</etc/ld.so.cache>) = 0 <0.000012>
+1522783673.343574 open("/lib64/libpwquality.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libpwquality.so.1.0.2> <0.000019>
+1522783673.343627 read(6</usr/lib64/libpwquality.so.1.0.2>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x10\x12\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000013>
+1522783673.343671 fstat(6</usr/lib64/libpwquality.so.1.0.2>, {st_mode=S_IFREG|0755, st_size=23824, ...}) = 0 <0.000024>
+1522783673.343727 mmap(NULL, 2118240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libpwquality.so.1.0.2>, 0) = 0x7f1939456000 <0.000013>
+1522783673.343767 mprotect(0x7f193945b000, 2093056, PROT_NONE) = 0 <0.000013>
+1522783673.343798 mmap(0x7f193965a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libpwquality.so.1.0.2>, 0x4000) = 0x7f193965a000 <0.000014>
+1522783673.343849 close(6</usr/lib64/libpwquality.so.1.0.2>) = 0 <0.000010>
+1522783673.343894 open("/lib64/libcrack.so.2", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libcrack.so.2.9.0> <0.000015>
+1522783673.343937 read(6</usr/lib64/libcrack.so.2.9.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xa0\x3b\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.343975 fstat(6</usr/lib64/libcrack.so.2.9.0>, {st_mode=S_IFREG|0755, st_size=44600, ...}) = 0 <0.000011>
+1522783673.344018 mmap(NULL, 2138640, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libcrack.so.2.9.0>, 0) = 0x7f193924b000 <0.000013>
+1522783673.344057 mprotect(0x7f1939254000, 2097152, PROT_NONE) = 0 <0.000013>
+1522783673.344088 mmap(0x7f1939454000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libcrack.so.2.9.0>, 0x9000) = 0x7f1939454000 <0.000014>
+1522783673.344136 close(6</usr/lib64/libcrack.so.2.9.0>) = 0 <0.000011>
+1522783673.344180 open("/lib64/libz.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libz.so.1.2.7> <0.000016>
+1522783673.344224 read(6</usr/lib64/libz.so.1.2.7>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x70\x21\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.344261 fstat(6</usr/lib64/libz.so.1.2.7>, {st_mode=S_IFREG|0755, st_size=90664, ...}) = 0 <0.000010>
+1522783673.344302 mmap(NULL, 2183688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libz.so.1.2.7>, 0) = 0x7f1939035000 <0.000014>
+1522783673.344342 mprotect(0x7f193904a000, 2093056, PROT_NONE) = 0 <0.000057>
+1522783673.344425 mmap(0x7f1939249000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libz.so.1.2.7>, 0x14000) = 0x7f1939249000 <0.000017>
+1522783673.344484 close(6</usr/lib64/libz.so.1.2.7>) = 0 <0.000010>
+1522783673.344555 mprotect(0x7f1939249000, 4096, PROT_READ) = 0 <0.000015>
+1522783673.344614 mprotect(0x7f1939454000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.344658 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffcaa22a8a0) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.344698 mprotect(0x7f193965a000, 4096, PROT_READ) = 0 <0.000015>
+1522783673.344742 mprotect(0x7f193985d000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.344781 munmap(0x7f1942cdb000, 18407) = 0 <0.000017>
+1522783673.344834 read(5</etc/pam.d/system-auth-ac>, "", 4096) = 0 <0.000011>
+1522783673.344874 close(5</etc/pam.d/system-auth-ac>) = 0 <0.000011>
+1522783673.344908 munmap(0x7f1942ce7000, 4096) = 0 <0.000015>
+1522783673.344946 read(4</etc/pam.d/su>, "", 4096) = 0 <0.000011>
+1522783673.344983 close(4</etc/pam.d/su>) = 0 <0.000011>
+1522783673.345017 munmap(0x7f1942ce8000, 4096) = 0 <0.000014>
+1522783673.345060 open("/usr/lib64/security/pam_keyinit.so", O_RDONLY|O_CLOEXEC) = 4</usr/lib64/security/pam_keyinit.so> <0.000015>
+1522783673.345105 read(4</usr/lib64/security/pam_keyinit.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xc0\x09\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.345143 fstat(4</usr/lib64/security/pam_keyinit.so>, {st_mode=S_IFREG|0755, st_size=11152, ...}) = 0 <0.000011>
+1522783673.345185 mmap(NULL, 2105520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4</usr/lib64/security/pam_keyinit.so>, 0) = 0x7f1938e32000 <0.000014>
+1522783673.345224 mprotect(0x7f1938e34000, 2093056, PROT_NONE) = 0 <0.000013>
+1522783673.345257 mmap(0x7f1939033000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4</usr/lib64/security/pam_keyinit.so>, 0x1000) = 0x7f1939033000 <0.000013>
+1522783673.345305 close(4</usr/lib64/security/pam_keyinit.so>) = 0 <0.000010>
+1522783673.345368 mprotect(0x7f1939033000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.345411 open("/etc/pam.d/su", O_RDONLY) = 4</etc/pam.d/su> <0.000015>
+1522783673.345456 fstat(4</etc/pam.d/su>, {st_mode=S_IFREG|0644, st_size=540, ...}) = 0 <0.000011>
+1522783673.345494 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce8000 <0.000011>
+1522783673.345526 read(4</etc/pam.d/su>, "#%PAM-1.0\nauth\t\tsufficient\tpam_r"..., 4096) = 540 <0.000014>
+1522783673.345574 open("/etc/pam.d/system-auth", O_RDONLY) = 5</etc/pam.d/system-auth-ac> <0.000016>
+1522783673.345619 fstat(5</etc/pam.d/system-auth-ac>, {st_mode=S_IFREG|0644, st_size=1031, ...}) = 0 <0.000011>
+1522783673.345657 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000011>
+1522783673.345689 read(5</etc/pam.d/system-auth-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 1031 <0.000013>
+1522783673.345746 open("/usr/lib64/security/pam_limits.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_limits.so> <0.000014>
+1522783673.345789 read(6</usr/lib64/security/pam_limits.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xa0\x13\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.345827 fstat(6</usr/lib64/security/pam_limits.so>, {st_mode=S_IFREG|0755, st_size=19600, ...}) = 0 <0.000011>
+1522783673.345871 mmap(NULL, 2113880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_limits.so>, 0) = 0x7f1938c2d000 <0.000014>
+1522783673.345910 mprotect(0x7f1938c31000, 2093056, PROT_NONE) = 0 <0.000013>
+1522783673.345942 mmap(0x7f1938e30000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_limits.so>, 0x3000) = 0x7f1938e30000 <0.000015>
+1522783673.345992 close(6</usr/lib64/security/pam_limits.so>) = 0 <0.000010>
+1522783673.346053 mprotect(0x7f1938e30000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.346099 open("/usr/lib64/security/pam_systemd.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_systemd.so> <0.000014>
+1522783673.346145 read(6</usr/lib64/security/pam_systemd.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000012>
+1522783673.346188 fstat(6</usr/lib64/security/pam_systemd.so>, {st_mode=S_IFREG|0755, st_size=263800, ...}) = 0 <0.000011>
+1522783673.346230 mmap(NULL, 261585, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_systemd.so>, 0) = 0x7f1942ca0000 <0.000013>
+1522783673.346269 mmap(0x7f1942cdc000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_systemd.so>, 0x3b000) = 0x7f1942cdc000 <0.000016>
+1522783673.346320 close(6</usr/lib64/security/pam_systemd.so>) = 0 <0.000010>
+1522783673.346362 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6</etc/ld.so.cache> <0.000013>
+1522783673.346404 fstat(6</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000011>
+1522783673.346441 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 6</etc/ld.so.cache>, 0) = 0x7f1942c9b000 <0.000016>
+1522783673.346481 close(6</etc/ld.so.cache>) = 0 <0.000010>
+1522783673.346522 open("/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/librt-2.17.so> <0.000015>
+1522783673.346565 read(6</usr/lib64/librt-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x50\x22\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.346603 fstat(6</usr/lib64/librt-2.17.so>, {st_mode=S_IFREG|0755, st_size=44448, ...}) = 0 <0.000010>
+1522783673.346644 mmap(NULL, 2128952, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/librt-2.17.so>, 0) = 0x7f1938a25000 <0.000014>
+1522783673.346684 mprotect(0x7f1938a2c000, 2093056, PROT_NONE) = 0 <0.000015>
+1522783673.346717 mmap(0x7f1938c2b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/librt-2.17.so>, 0x6000) = 0x7f1938c2b000 <0.000015>
+1522783673.346768 close(6</usr/lib64/librt-2.17.so>) = 0 <0.000010>
+1522783673.346816 open("/lib64/libcap.so.2", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libcap.so.2.22> <0.000015>
+1522783673.346859 read(6</usr/lib64/libcap.so.2.22>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x20\x16\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000012>
+1522783673.346897 fstat(6</usr/lib64/libcap.so.2.22>, {st_mode=S_IFREG|0755, st_size=20032, ...}) = 0 <0.000011>
+1522783673.346938 mmap(NULL, 2114112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libcap.so.2.22>, 0) = 0x7f1938820000 <0.000014>
+1522783673.346978 mprotect(0x7f1938824000, 2093056, PROT_NONE) = 0 <0.000014>
+1522783673.347010 mmap(0x7f1938a23000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libcap.so.2.22>, 0x3000) = 0x7f1938a23000 <0.000015>
+1522783673.347063 close(6</usr/lib64/libcap.so.2.22>) = 0 <0.000010>
+1522783673.347106 open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libm-2.17.so> <0.000017>
+1522783673.347151 read(6</usr/lib64/libm-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x70\x53\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000012>
+1522783673.347189 fstat(6</usr/lib64/libm-2.17.so>, {st_mode=S_IFREG|0755, st_size=1139680, ...}) = 0 <0.000011>
+1522783673.347230 mmap(NULL, 3150136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libm-2.17.so>, 0) = 0x7f193851e000 <0.000014>
+1522783673.347269 mprotect(0x7f193861f000, 2093056, PROT_NONE) = 0 <0.000014>
+1522783673.347302 mmap(0x7f193881e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libm-2.17.so>, 0x100000) = 0x7f193881e000 <0.000014>
+1522783673.347365 close(6</usr/lib64/libm-2.17.so>) = 0 <0.000010>
+1522783673.347410 open("/lib64/libdw.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libdw-0.168.so> <0.000015>
+1522783673.347453 read(6</usr/lib64/libdw-0.168.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x70\x98\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.347490 fstat(6</usr/lib64/libdw-0.168.so>, {st_mode=S_IFREG|0755, st_size=297328, ...}) = 0 <0.000011>
+1522783673.347537 mmap(NULL, 2386096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libdw-0.168.so>, 0) = 0x7f19382d7000 <0.000014>
+1522783673.347576 mprotect(0x7f193831b000, 2097152, PROT_NONE) = 0 <0.000015>
+1522783673.347610 mmap(0x7f193851b000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libdw-0.168.so>, 0x44000) = 0x7f193851b000 <0.000015>
+1522783673.347659 close(6</usr/lib64/libdw-0.168.so>) = 0 <0.000010>
+1522783673.347704 open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libgcc_s-4.8.5-20150702.so.1> <0.000015>
+1522783673.347748 read(6</usr/lib64/libgcc_s-4.8.5-20150702.so.1>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xf0\x2a\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.347785 fstat(6</usr/lib64/libgcc_s-4.8.5-20150702.so.1>, {st_mode=S_IFREG|0755, st_size=88720, ...}) = 0 <0.000010>
+1522783673.347829 mmap(NULL, 2184192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libgcc_s-4.8.5-20150702.so.1>, 0) = 0x7f19380c1000 <0.000013>
+1522783673.347869 mprotect(0x7f19380d6000, 2093056, PROT_NONE) = 0 <0.000014>
+1522783673.347902 mmap(0x7f19382d5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libgcc_s-4.8.5-20150702.so.1>, 0x14000) = 0x7f19382d5000 <0.000014>
+1522783673.347951 close(6</usr/lib64/libgcc_s-4.8.5-20150702.so.1>) = 0 <0.000010>
+1522783673.347997 open("/lib64/libattr.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libattr.so.1.1.0> <0.000016>
+1522783673.348041 read(6</usr/lib64/libattr.so.1.1.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xd0\x13\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.348079 fstat(6</usr/lib64/libattr.so.1.1.0>, {st_mode=S_IFREG|0755, st_size=19888, ...}) = 0 <0.000010>
+1522783673.348119 mmap(NULL, 2113904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libattr.so.1.1.0>, 0) = 0x7f1937ebc000 <0.000014>
+1522783673.348159 mprotect(0x7f1937ec0000, 2093056, PROT_NONE) = 0 <0.000014>
+1522783673.348191 mmap(0x7f19380bf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libattr.so.1.1.0>, 0x3000) = 0x7f19380bf000 <0.000015>
+1522783673.348245 close(6</usr/lib64/libattr.so.1.1.0>) = 0 <0.000010>
+1522783673.348291 open("/usr/lib64/elfutils/tls/x86_64/libelf.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.348330 stat("/usr/lib64/elfutils/tls/x86_64", 0x7ffcaa229e60) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.348364 open("/usr/lib64/elfutils/tls/libelf.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.348398 stat("/usr/lib64/elfutils/tls", 0x7ffcaa229e60) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.348431 open("/usr/lib64/elfutils/x86_64/libelf.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.348465 stat("/usr/lib64/elfutils/x86_64", 0x7ffcaa229e60) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.348498 open("/usr/lib64/elfutils/libelf.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.348533 stat("/usr/lib64/elfutils", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000012>
+1522783673.348570 open("/lib64/libelf.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libelf-0.168.so> <0.000015>
+1522783673.348612 read(6</usr/lib64/libelf-0.168.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x10\x30\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000012>
+1522783673.348650 fstat(6</usr/lib64/libelf-0.168.so>, {st_mode=S_IFREG|0755, st_size=99944, ...}) = 0 <0.000011>
+1522783673.348691 mmap(NULL, 2191824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libelf-0.168.so>, 0) = 0x7f1937ca4000 <0.000014>
+1522783673.348742 mprotect(0x7f1937cbb000, 2093056, PROT_NONE) = 0 <0.000012>
+1522783673.348775 mmap(0x7f1937eba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libelf-0.168.so>, 0x16000) = 0x7f1937eba000 <0.000014>
+1522783673.348819 close(6</usr/lib64/libelf-0.168.so>) = 0 <0.000009>
+1522783673.348859 open("/usr/lib64/elfutils/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.348893 open("/lib64/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/liblzma.so.5.2.2> <0.000014>
+1522783673.348931 read(6</usr/lib64/liblzma.so.5.2.2>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x80\x30\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000010>
+1522783673.348964 fstat(6</usr/lib64/liblzma.so.5.2.2>, {st_mode=S_IFREG|0755, st_size=157424, ...}) = 0 <0.000009>
+1522783673.349004 mmap(NULL, 2249352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/liblzma.so.5.2.2>, 0) = 0x7f1937a7e000 <0.000012>
+1522783673.349039 mprotect(0x7f1937aa3000, 2093056, PROT_NONE) = 0 <0.000013>
+1522783673.349069 mmap(0x7f1937ca2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/liblzma.so.5.2.2>, 0x24000) = 0x7f1937ca2000 <0.000013>
+1522783673.349121 close(6</usr/lib64/liblzma.so.5.2.2>) = 0 <0.000009>
+1522783673.349160 open("/usr/lib64/elfutils/libbz2.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.349194 open("/lib64/libbz2.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libbz2.so.1.0.6> <0.000013>
+1522783673.349232 read(6</usr/lib64/libbz2.so.1.0.6>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x60\x17\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000010>
+1522783673.349266 fstat(6</usr/lib64/libbz2.so.1.0.6>, {st_mode=S_IFREG|0755, st_size=68192, ...}) = 0 <0.000010>
+1522783673.349303 mmap(NULL, 2162024, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libbz2.so.1.0.6>, 0) = 0x7f193786e000 <0.000012>
+1522783673.349345 mprotect(0x7f193787d000, 2093056, PROT_NONE) = 0 <0.000012>
+1522783673.349375 mmap(0x7f1937a7c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libbz2.so.1.0.6>, 0xe000) = 0x7f1937a7c000 <0.000013>
+1522783673.349420 close(6</usr/lib64/libbz2.so.1.0.6>) = 0 <0.000009>
+1522783673.349505 mprotect(0x7f1937a7c000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.349568 mprotect(0x7f1937ca2000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.349617 mprotect(0x7f1937eba000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.349668 mprotect(0x7f19380bf000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.349714 mprotect(0x7f19382d5000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.349816 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffcaa22a870) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.349851 mprotect(0x7f193851b000, 8192, PROT_READ) = 0 <0.000012>
+1522783673.349904 mprotect(0x7f193881e000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.349950 mprotect(0x7f1938a23000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.350007 mprotect(0x7f1938c2b000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.350081 mprotect(0x7f1942cdc000, 12288, PROT_READ) = 0 <0.000012>
+1522783673.350131 munmap(0x7f1942c9b000, 18407) = 0 <0.000014>
+1522783673.350182 read(5</etc/pam.d/system-auth-ac>, "", 4096) = 0 <0.000010>
+1522783673.350218 close(5</etc/pam.d/system-auth-ac>) = 0 <0.000010>
+1522783673.350249 munmap(0x7f1942ce7000, 4096) = 0 <0.000014>
+1522783673.350285 open("/etc/pam.d/postlogin", O_RDONLY) = 5</etc/pam.d/postlogin-ac> <0.000014>
+1522783673.350326 fstat(5</etc/pam.d/postlogin-ac>, {st_mode=S_IFREG|0644, st_size=330, ...}) = 0 <0.000010>
+1522783673.350360 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce7000 <0.000010>
+1522783673.350390 read(5</etc/pam.d/postlogin-ac>, "#%PAM-1.0\n# This file is auto-ge"..., 4096) = 330 <0.000012>
+1522783673.350443 open("/usr/lib64/security/pam_lastlog.so", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/security/pam_lastlog.so> <0.000013>
+1522783673.350483 read(6</usr/lib64/security/pam_lastlog.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x20\x0f\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000011>
+1522783673.350522 fstat(6</usr/lib64/security/pam_lastlog.so>, {st_mode=S_IFREG|0755, st_size=15480, ...}) = 0 <0.000009>
+1522783673.350560 mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/security/pam_lastlog.so>, 0) = 0x7f193766a000 <0.000013>
+1522783673.350596 mprotect(0x7f193766d000, 2093056, PROT_NONE) = 0 <0.000012>
+1522783673.350625 mmap(0x7f193786c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/security/pam_lastlog.so>, 0x2000) = 0x7f193786c000 <0.000013>
+1522783673.350669 close(6</usr/lib64/security/pam_lastlog.so>) = 0 <0.000009>
+1522783673.350709 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6</etc/ld.so.cache> <0.000012>
+1522783673.350746 fstat(6</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000009>
+1522783673.350779 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 6</etc/ld.so.cache>, 0) = 0x7f1942c9b000 <0.000012>
+1522783673.350813 close(6</etc/ld.so.cache>) = 0 <0.000009>
+1522783673.350849 open("/lib64/libutil.so.1", O_RDONLY|O_CLOEXEC) = 6</usr/lib64/libutil-2.17.so> <0.000021>
+1522783673.350895 read(6</usr/lib64/libutil-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xa0\x0e\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000010>
+1522783673.350928 fstat(6</usr/lib64/libutil-2.17.so>, {st_mode=S_IFREG|0755, st_size=14872, ...}) = 0 <0.000009>
+1522783673.350968 mmap(NULL, 2105616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6</usr/lib64/libutil-2.17.so>, 0) = 0x7f1937467000 <0.000012>
+1522783673.351003 mprotect(0x7f1937469000, 2093056, PROT_NONE) = 0 <0.000012>
+1522783673.351032 mmap(0x7f1937668000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6</usr/lib64/libutil-2.17.so>, 0x1000) = 0x7f1937668000 <0.000013>
+1522783673.351075 close(6</usr/lib64/libutil-2.17.so>) = 0 <0.000009>
+1522783673.351127 mprotect(0x7f1937668000, 4096, PROT_READ) = 0 <0.000013>
+1522783673.351167 mprotect(0x7f193786c000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.351200 munmap(0x7f1942c9b000, 18407) = 0 <0.000013>
+1522783673.351239 read(5</etc/pam.d/postlogin-ac>, "", 4096) = 0 <0.000010>
+1522783673.351274 close(5</etc/pam.d/postlogin-ac>) = 0 <0.000010>
+1522783673.351305 munmap(0x7f1942ce7000, 4096) = 0 <0.000013>
+1522783673.351345 open("/usr/lib64/security/pam_xauth.so", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/security/pam_xauth.so> <0.000013>
+1522783673.351386 read(5</usr/lib64/security/pam_xauth.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x70\x18\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000010>
+1522783673.351422 fstat(5</usr/lib64/security/pam_xauth.so>, {st_mode=S_IFREG|0755, st_size=19752, ...}) = 0 <0.000009>
+1522783673.351461 mmap(NULL, 2114064, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/security/pam_xauth.so>, 0) = 0x7f1937262000 <0.000011>
+1522783673.351496 mprotect(0x7f1937266000, 2093056, PROT_NONE) = 0 <0.000011>
+1522783673.351524 mmap(0x7f1937465000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/security/pam_xauth.so>, 0x3000) = 0x7f1937465000 <0.000013>
+1522783673.351571 close(5</usr/lib64/security/pam_xauth.so>) = 0 <0.000009>
+1522783673.351634 mprotect(0x7f1937465000, 4096, PROT_READ) = 0 <0.000012>
+1522783673.351672 read(4</etc/pam.d/su>, "", 4096) = 0 <0.000009>
+1522783673.351706 close(4</etc/pam.d/su>) = 0 <0.000010>
+1522783673.351737 munmap(0x7f1942ce8000, 4096) = 0 <0.000013>
+1522783673.351768 read(3</etc/pam.d/su-l>, "", 4096) = 0 <0.000009>
+1522783673.351800 close(3</etc/pam.d/su-l>) = 0 <0.000010>
+1522783673.351831 munmap(0x7f1942ce9000, 4096) = 0 <0.000012>
+1522783673.351861 open("/etc/pam.d/other", O_RDONLY) = 3</etc/pam.d/other> <0.000013>
+1522783673.351900 fstat(3</etc/pam.d/other>, {st_mode=S_IFREG|0644, st_size=154, ...}) = 0 <0.000009>
+1522783673.351937 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.351967 read(3</etc/pam.d/other>, "#%PAM-1.0\nauth     required     "..., 4096) = 154 <0.000013>
+1522783673.352015 read(3</etc/pam.d/other>, "", 4096) = 0 <0.000009>
+1522783673.352048 close(3</etc/pam.d/other>) = 0 <0.000009>
+1522783673.352078 munmap(0x7f1942ce9000, 4096) = 0 <0.000013>
+1522783673.352112 ioctl(0</dev/pts/2>, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000012>
+1522783673.352155 ioctl(0</dev/pts/2>, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000009>
+1522783673.352189 fstat(0</dev/pts/2>, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0 <0.000010>
+1522783673.352229 readlink("/proc/self/fd/0", "/dev/pts/2", 4095) = 10 <0.000017>
+1522783673.352267 stat("/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0 <0.000013>
+1522783673.352304 getuid()              = 0 <0.000008>
+1522783673.352338 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3</etc/passwd> <0.000012>
+1522783673.352376 fstat(3</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.352410 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.352439 read(3</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000012>
+1522783673.352477 close(3</etc/passwd>) = 0 <0.000010>
+1522783673.352509 munmap(0x7f1942ce9000, 4096) = 0 <0.000013>
+1522783673.352546 getuid()              = 0 <0.000009>
+1522783673.352583 futex(0x7f193b3817dc, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783673.352617 open("/proc/thread-self/attr/prev", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000015>
+1522783673.352654 gettid()              = 13515 <0.000008>
+1522783673.352681 open("/proc/self/task/13515/attr/prev", O_RDONLY|O_CLOEXEC) = 3</proc/13515/task/13515/attr/prev> <0.000021>
+1522783673.352733 read(3</proc/13515/task/13515/attr/prev>, "unconfined_u:unconfined_r:unconf"..., 4095) = 42 <0.000017>
+1522783673.352777 close(3</proc/13515/task/13515/attr/prev>) = 0 <0.000010>
+1522783673.352815 access("/var/run/setrans/.setrans-unix", F_OK) = -1 ENOENT (No such file or directory) <0.000018>
+1522783673.352855 futex(0x7f193b382958, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783673.352919 open("/sys/fs/selinux/enforce", O_RDONLY) = 3</sys/fs/selinux/enforce> <0.000021>
+1522783673.352967 read(3</sys/fs/selinux/enforce>, "1", 19) = 1 <0.000009>
+1522783673.353000 close(3</sys/fs/selinux/enforce>) = 0 <0.000009>
+1522783673.353044 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_SELINUX) = 3<socket:[58148]> <0.000038>
+1522783673.353113 fcntl(3<socket:[58148]>, F_SETFL, O_RDONLY|O_NONBLOCK) = 0 <0.000009>
+1522783673.353145 bind(3<socket:[58148]>, {sa_family=AF_NETLINK, pid=0, groups=00000001}, 12) = 0 <0.000020>
+1522783673.353194 futex(0x7f193b38177c, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783673.353226 poll([{fd=3<socket:[58148]>, events=POLLIN|POLLPRI}], 1, 0) = 0 (Timeout) <0.000011>
+1522783673.353268 open("/sys/fs/selinux/class/passwd/index", O_RDONLY) = 4</sys/fs/selinux/class/passwd/index> <0.000018>
+1522783673.353312 read(4</sys/fs/selinux/class/passwd/index>, "30", 19) = 2 <0.000009>
+1522783673.353355 close(4</sys/fs/selinux/class/passwd/index>) = 0 <0.000010>
+1522783673.353393 openat(AT_FDCWD, "/sys/fs/selinux/class/passwd/perms", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4</sys/fs/selinux/class/passwd/perms> <0.000017>
+1522783673.353438 brk(NULL)             = 0x5615880ff000 <0.000009>
+1522783673.353463 brk(0x561588126000)   = 0x561588126000 <0.000011>
+1522783673.353494 getdents(4</sys/fs/selinux/class/passwd/perms>, /* 7 entries */, 32768) = 192 <0.000011>
+1522783673.353533 open("/sys/fs/selinux/class/passwd/perms/.", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms> <0.000016>
+1522783673.353574 fstat(5</sys/fs/selinux/class/passwd/perms>, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000009>
+1522783673.353608 close(5</sys/fs/selinux/class/passwd/perms>) = 0 <0.000010>
+1522783673.353646 open("/sys/fs/selinux/class/passwd/perms/..", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd> <0.000016>
+1522783673.353687 fstat(5</sys/fs/selinux/class/passwd>, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000009>
+1522783673.353720 close(5</sys/fs/selinux/class/passwd>) = 0 <0.000010>
+1522783673.353753 open("/sys/fs/selinux/class/passwd/perms/crontab", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms/crontab> <0.000016>
+1522783673.353794 fstat(5</sys/fs/selinux/class/passwd/perms/crontab>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000009>
+1522783673.353828 read(5</sys/fs/selinux/class/passwd/perms/crontab>, "5", 19) = 1 <0.000010>
+1522783673.353861 close(5</sys/fs/selinux/class/passwd/perms/crontab>) = 0 <0.000010>
+1522783673.353896 open("/sys/fs/selinux/class/passwd/perms/rootok", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms/rootok> <0.000016>
+1522783673.353938 fstat(5</sys/fs/selinux/class/passwd/perms/rootok>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000009>
+1522783673.353971 read(5</sys/fs/selinux/class/passwd/perms/rootok>, "4", 19) = 1 <0.000009>
+1522783673.354004 close(5</sys/fs/selinux/class/passwd/perms/rootok>) = 0 <0.000010>
+1522783673.354039 open("/sys/fs/selinux/class/passwd/perms/chsh", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms/chsh> <0.000020>
+1522783673.354090 fstat(5</sys/fs/selinux/class/passwd/perms/chsh>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000012>
+1522783673.354135 read(5</sys/fs/selinux/class/passwd/perms/chsh>, "3", 19) = 1 <0.000012>
+1522783673.354175 close(5</sys/fs/selinux/class/passwd/perms/chsh>) = 0 <0.000010>
+1522783673.354210 open("/sys/fs/selinux/class/passwd/perms/chfn", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms/chfn> <0.000017>
+1522783673.354252 fstat(5</sys/fs/selinux/class/passwd/perms/chfn>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000009>
+1522783673.354286 read(5</sys/fs/selinux/class/passwd/perms/chfn>, "2", 19) = 1 <0.000009>
+1522783673.354319 close(5</sys/fs/selinux/class/passwd/perms/chfn>) = 0 <0.000010>
+1522783673.354353 open("/sys/fs/selinux/class/passwd/perms/passwd", O_RDONLY|O_CLOEXEC) = 5</sys/fs/selinux/class/passwd/perms/passwd> <0.000022>
+1522783673.354487 fstat(5</sys/fs/selinux/class/passwd/perms/passwd>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000010>
+1522783673.354525 read(5</sys/fs/selinux/class/passwd/perms/passwd>, "1", 19) = 1 <0.000010>
+1522783673.354558 close(5</sys/fs/selinux/class/passwd/perms/passwd>) = 0 <0.000010>
+1522783673.354593 getdents(4</sys/fs/selinux/class/passwd/perms>, /* 0 entries */, 32768) = 0 <0.000009>
+1522783673.354625 close(4</sys/fs/selinux/class/passwd/perms>) = 0 <0.000010>
+1522783673.354661 poll([{fd=3<socket:[58148]>, events=POLLIN|POLLPRI}], 1, 0) = 0 (Timeout) <0.000011>
+1522783673.354701 open("/sys/fs/selinux/access", O_RDWR) = 4</sys/fs/selinux/access> <0.000017>
+1522783673.354752 write(4</sys/fs/selinux/access>, "unconfined_u:unconfined_r:unconf"..., 88) = 88 <0.001250>
+1522783673.356041 read(4</sys/fs/selinux/access>, "1f ffffffff 0 ffffffff 1 0", 4095) = 26 <0.000010>
+1522783673.356103 close(4</sys/fs/selinux/access>) = 0 <0.000015>
+1522783673.356187 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 4<socket:[58149]> <0.000037>
+1522783673.356257 fcntl(4<socket:[58149]>, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+1522783673.356312 readlink("/proc/self/exe", "/usr/bin/su", 4096) = 11 <0.000022>
+1522783673.356373 uname({sysname="Linux", nodename="elkdev1.vitrace.io", ...}) = 0 <0.000010>
+1522783673.356428 sendto(4<socket:[58149]>, "\xa0\x00\x00\x00\x4c\x04\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x61\x75\x74\x68\x65\x6e\x74\x69\x63"..., 160, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 160 <0.000087>
+1522783673.356550 poll([{fd=4<socket:[58149]>, events=POLLIN}], 1, 500) = 1 ([{fd=4, revents=POLLIN}]) <0.000011>
+1522783673.356597 recvfrom(4<socket:[58149]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xa0\x00\x00\x00\x4c\x04\x05\x00\x01\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.356646 recvfrom(4<socket:[58149]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xa0\x00\x00\x00\x4c\x04\x05\x00\x01\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.356690 close(4<socket:[58149]>) = 0 <0.000016>
+1522783673.356743 getuid()              = 0 <0.000009>
+1522783673.356778 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000016>
+1522783673.356825 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000011>
+1522783673.356864 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000014>
+1522783673.356900 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000014>
+1522783673.356944 close(4</etc/passwd>) = 0 <0.000011>
+1522783673.356978 munmap(0x7f1942ce9000, 4096) = 0 <0.000039>
+1522783673.357054 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 4<socket:[58151]> <0.000034>
+1522783673.357117 fcntl(4<socket:[58151]>, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+1522783673.357158 sendto(4<socket:[58151]>, "\xa0\x00\x00\x00\x4d\x04\x05\x00\x02\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x61\x63\x63\x6f\x75\x6e\x74\x69\x6e"..., 160, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 160 <0.000062>
+1522783673.357251 poll([{fd=4<socket:[58151]>, events=POLLIN}], 1, 500) = 1 ([{fd=4, revents=POLLIN}]) <0.000011>
+1522783673.357292 recvfrom(4<socket:[58151]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xa0\x00\x00\x00\x4d\x04\x05\x00\x02\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.357332 recvfrom(4<socket:[58151]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xa0\x00\x00\x00\x4d\x04\x05\x00\x02\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000011>
+1522783673.357389 close(4<socket:[58151]>) = 0 <0.000014>
+1522783673.357427 open("/proc/self/loginuid", O_RDONLY) = 4</proc/13515/loginuid> <0.000020>
+1522783673.357474 read(4</proc/13515/loginuid>, "0", 12) = 1 <0.000010>
+1522783673.357507 close(4</proc/13515/loginuid>) = 0 <0.000010>
+1522783673.357540 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000012>
+1522783673.357579 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.357614 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000012>
+1522783673.357645 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000013>
+1522783673.357685 close(4</etc/passwd>) = 0 <0.000010>
+1522783673.357716 munmap(0x7f1942ce9000, 4096) = 0 <0.000015>
+1522783673.357751 ioctl(2</dev/pts/2>, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000012>
+1522783673.357793 fstat(2</dev/pts/2>, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0 <0.000010>
+1522783673.357827 readlink("/proc/self/fd/2", "/dev/pts/2", 4095) = 10 <0.000014>
+1522783673.357863 stat("/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0 <0.000026>
+1522783673.357930 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 4</usr/share/zoneinfo/America/New_York> <0.000019>
+1522783673.357977 fstat(4</usr/share/zoneinfo/America/New_York>, {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000010>
+1522783673.358011 fstat(4</usr/share/zoneinfo/America/New_York>, {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000009>
+1522783673.358046 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.358077 read(4</usr/share/zoneinfo/America/New_York>, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00"..., 4096) = 3519 <0.000012>
+1522783673.358116 lseek(4</usr/share/zoneinfo/America/New_York>, -2252, SEEK_CUR) = 1267 <0.000010>
+1522783673.358155 read(4</usr/share/zoneinfo/America/New_York>, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x05\x00\x00\x00\x00"..., 4096) = 2252 <0.000010>
+1522783673.358196 close(4</usr/share/zoneinfo/America/New_York>) = 0 <0.000010>
+1522783673.358228 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.358273 socket(AF_LOCAL, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 4<socket:[58154]> <0.000030>
+1522783673.358330 connect(4<socket:[58154]>, {sa_family=AF_LOCAL, sun_path="/dev/log"}, 110) = 0 <0.000014>
+1522783673.358369 sendto(4<socket:[58154]>, "<37>Apr  3 15:27:53 su: (to elas"..., 56, MSG_NOSIGNAL, NULL, 0) = 56 <0.000537>
+1522783673.358936 close(4<socket:[58154]>) = 0 <0.000013>
+1522783673.358980 open("/proc/sys/kernel/ngroups_max", O_RDONLY) = 4</proc/sys/kernel/ngroups_max> <0.000164>
+1522783673.359172 read(4</proc/sys/kernel/ngroups_max>, "65536\n", 31) = 6 <0.000011>
+1522783673.359207 close(4</proc/sys/kernel/ngroups_max>) = 0 <0.000010>
+1522783673.359243 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[58160]> <0.000028>
+1522783673.359295 connect(4<socket:[58160]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000019>
+1522783673.359342 close(4<socket:[58160]>) = 0 <0.000012>
+1522783673.359378 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[58161]> <0.000020>
+1522783673.359422 connect(4<socket:[58161]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000015>
+1522783673.359463 close(4<socket:[58161]>) = 0 <0.000011>
+1522783673.359506 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4</etc/group> <0.000013>
+1522783673.359548 lseek(4</etc/group>, 0, SEEK_CUR) = 0 <0.000009>
+1522783673.359583 fstat(4</etc/group>, {st_mode=S_IFREG|0644, st_size=500, ...}) = 0 <0.000009>
+1522783673.359618 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000013>
+1522783673.359651 read(4</etc/group>, "root:x:0:\nbin:x:1:\ndaemon:x:2:\ns"..., 4096) = 500 <0.000013>
+1522783673.359693 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359726 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359757 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359788 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359819 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359849 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359880 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359911 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.359942 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000008>
+1522783673.359972 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360003 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360034 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360065 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360096 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360127 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360158 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360189 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360219 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360250 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360281 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000008>
+1522783673.360311 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360342 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360373 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360404 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360435 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360465 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360496 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360527 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360563 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360595 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360626 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000008>
+1522783673.360657 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360688 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360719 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360750 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360781 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000008>
+1522783673.360811 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360842 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000008>
+1522783673.360873 lseek(4</etc/group>, 0, SEEK_CUR) = 500 <0.000009>
+1522783673.360903 read(4</etc/group>, "", 4096) = 0 <0.000010>
+1522783673.360938 close(4</etc/group>)  = 0 <0.000010>
+1522783673.360969 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.361016 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4</etc/ld.so.cache> <0.000013>
+1522783673.361055 fstat(4</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000009>
+1522783673.361088 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 4</etc/ld.so.cache>, 0) = 0x7f1942ce5000 <0.000012>
+1522783673.361122 close(4</etc/ld.so.cache>) = 0 <0.000009>
+1522783673.361161 open("/lib64/tls/x86_64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.361196 stat("/lib64/tls/x86_64", 0x7ffcaa22b6c0) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.361227 open("/lib64/tls/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.361261 stat("/lib64/tls", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000011>
+1522783673.361294 open("/lib64/x86_64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.361325 stat("/lib64/x86_64", 0x7ffcaa22b6c0) = -1 ENOENT (No such file or directory) <0.000023>
+1522783673.361369 open("/lib64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.361400 stat("/lib64", {st_mode=S_IFDIR|0555, st_size=20480, ...}) = 0 <0.000011>
+1522783673.361433 open("/usr/lib64/tls/x86_64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.361464 stat("/usr/lib64/tls/x86_64", 0x7ffcaa22b6c0) = -1 ENOENT (No such file or directory) <0.000010>
+1522783673.361494 open("/usr/lib64/tls/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.361524 stat("/usr/lib64/tls", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000010>
+1522783673.361556 open("/usr/lib64/x86_64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.361586 stat("/usr/lib64/x86_64", 0x7ffcaa22b6c0) = -1 ENOENT (No such file or directory) <0.000010>
+1522783673.361616 open("/usr/lib64/libnss_sss.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+1522783673.361646 stat("/usr/lib64", {st_mode=S_IFDIR|0555, st_size=20480, ...}) = 0 <0.000010>
+1522783673.361680 munmap(0x7f1942ce5000, 18407) = 0 <0.000013>
+1522783673.361718 setgroups(1, [995])   = 0 <0.000010>
+1522783673.361753 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 4<socket:[58162]> <0.000022>
+1522783673.361802 fcntl(4<socket:[58162]>, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+1522783673.361841 sendto(4<socket:[58162]>, "\x98\x00\x00\x00\x4f\x04\x05\x00\x03\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x74\x63\x72\x65\x64\x20\x67"..., 152, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 152 <0.000052>
+1522783673.361922 poll([{fd=4<socket:[58162]>, events=POLLIN}], 1, 500) = 1 ([{fd=4, revents=POLLIN}]) <0.000011>
+1522783673.361962 recvfrom(4<socket:[58162]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\x98\x00\x00\x00\x4f\x04\x05\x00\x03\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000009>
+1522783673.362004 recvfrom(4<socket:[58162]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\x98\x00\x00\x00\x4f\x04\x05\x00\x03\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.362042 close(4<socket:[58162]>) = 0 <0.000012>
+1522783673.362088 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000012>
+1522783673.362127 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000009>
+1522783673.362161 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.362190 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000012>
+1522783673.362233 close(4</etc/passwd>) = 0 <0.000010>
+1522783673.362264 munmap(0x7f1942ce9000, 4096) = 0 <0.000017>
+1522783673.362303 getuid()              = 0 <0.000008>
+1522783673.362328 getgid()              = 0 <0.000008>
+1522783673.362353 setregid(995, -1)     = 0 <0.000010>
+1522783673.362381 setreuid(997, -1)     = 0 <0.000010>
+1522783673.362408 keyctl(KEYCTL_JOIN_SESSION_KEYRING, NULL) = 1053416769 <0.000014>
+1522783673.362439 keyctl(KEYCTL_LINK, KEY_SPEC_USER_KEYRING, KEY_SPEC_SESSION_KEYRING) = 0 <0.000011>
+1522783673.362467 setreuid(0, -1)       = 0 <0.000009>
+1522783673.362493 setregid(0, -1)       = 0 <0.000008>
+1522783673.362525 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000012>
+1522783673.362563 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000009>
+1522783673.362597 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.362625 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000012>
+1522783673.362667 close(4</etc/passwd>) = 0 <0.000010>
+1522783673.362698 munmap(0x7f1942ce9000, 4096) = 0 <0.000013>
+1522783673.362732 getrlimit(RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.362761 getrlimit(RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000008>
+1522783673.362788 getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000008>
+1522783673.362814 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.362842 getrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.362869 getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.362895 getrlimit(RLIMIT_NPROC, {rlim_cur=7274, rlim_max=7274}) = 0 <0.000008>
+1522783673.362922 getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0 <0.000008>
+1522783673.362949 getrlimit(RLIMIT_MEMLOCK, {rlim_cur=64*1024, rlim_max=64*1024}) = 0 <0.000008>
+1522783673.362976 getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.363003 getrlimit(RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+1522783673.363029 getrlimit(RLIMIT_SIGPENDING, {rlim_cur=7274, rlim_max=7274}) = 0 <0.000009>
+1522783673.363056 getrlimit(RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}) = 0 <0.000009>
+1522783673.363085 getrlimit(RLIMIT_NICE, {rlim_cur=0, rlim_max=0}) = 0 <0.000008>
+1522783673.363114 getrlimit(RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}) = 0 <0.000009>
+1522783673.363142 getrlimit(RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000008>
+1522783673.363169 getpriority(PRIO_PROCESS, 0) = 20 <0.000009>
+1522783673.363198 open("/etc/security/limits.conf", O_RDONLY) = 4</etc/security/limits.conf> <0.000014>
+1522783673.363237 fstat(4</etc/security/limits.conf>, {st_mode=S_IFREG|0644, st_size=2422, ...}) = 0 <0.000009>
+1522783673.363271 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.363300 read(4</etc/security/limits.conf>, "# /etc/security/limits.conf\n#\n#T"..., 4096) = 2422 <0.000012>
+1522783673.363342 read(4</etc/security/limits.conf>, "", 4096) = 0 <0.000009>
+1522783673.363379 close(4</etc/security/limits.conf>) = 0 <0.000010>
+1522783673.363410 munmap(0x7f1942ce9000, 4096) = 0 <0.000013>
+1522783673.363451 openat(AT_FDCWD, "/etc/security/limits.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4</etc/security/limits.d> <0.000012>
+1522783673.363493 getdents(4</etc/security/limits.d>, /* 3 entries */, 32768) = 88 <0.000015>
+1522783673.363546 open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = 5</usr/lib64/gconv/gconv-modules.cache> <0.000013>
+1522783673.363584 fstat(5</usr/lib64/gconv/gconv-modules.cache>, {st_mode=S_IFREG|0644, st_size=26254, ...}) = 0 <0.000010>
+1522783673.363618 mmap(NULL, 26254, PROT_READ, MAP_SHARED, 5</usr/lib64/gconv/gconv-modules.cache>, 0) = 0x7f1942c99000 <0.000012>
+1522783673.363652 close(5</usr/lib64/gconv/gconv-modules.cache>) = 0 <0.000009>
+1522783673.363684 futex(0x7f19426b1a80, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000010>
+1522783673.363731 getdents(4</etc/security/limits.d>, /* 0 entries */, 32768) = 0 <0.000010>
+1522783673.363764 close(4</etc/security/limits.d>) = 0 <0.000010>
+1522783673.363800 open("/etc/security/limits.d/20-nproc.conf", O_RDONLY) = 4</etc/security/limits.d/20-nproc.conf> <0.000012>
+1522783673.363838 fstat(4</etc/security/limits.d/20-nproc.conf>, {st_mode=S_IFREG|0644, st_size=191, ...}) = 0 <0.000009>
+1522783673.363872 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.363900 read(4</etc/security/limits.d/20-nproc.conf>, "# Default limit for number of us"..., 4096) = 191 <0.000012>
+1522783673.363944 read(4</etc/security/limits.d/20-nproc.conf>, "", 4096) = 0 <0.000009>
+1522783673.363976 close(4</etc/security/limits.d/20-nproc.conf>) = 0 <0.000010>
+1522783673.364007 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.364039 setrlimit(RLIMIT_NPROC, {rlim_cur=4*1024, rlim_max=7274}) = 0 <0.000009>
+1522783673.364068 setpriority(PRIO_PROCESS, 0, 0) = 0 <0.000009>
+1522783673.364098 access("/run/systemd/seats/", F_OK) = 0 <0.000012>
+1522783673.364135 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000012>
+1522783673.364173 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000009>
+1522783673.364206 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.364234 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000011>
+1522783673.364275 close(4</etc/passwd>) = 0 <0.000009>
+1522783673.364306 munmap(0x7f1942ce9000, 4096) = 0 <0.000013>
+1522783673.364367 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[58163]> <0.000361>
+1522783673.364759 setsockopt(4<socket:[58163]>, SOL_SOCKET, SO_PASSCRED, [0], 4) = 0 <0.000011>
+1522783673.364795 setsockopt(4<socket:[58163]>, SOL_SOCKET, SO_PASSSEC, [0], 4) = 0 <0.000010>
+1522783673.364829 getsockopt(4<socket:[58163]>, SOL_SOCKET, SO_RCVBUF, [212992], [4]) = 0 <0.000010>
+1522783673.364864 setsockopt(4<socket:[58163]>, SOL_SOCKET, SO_RCVBUFFORCE, [8388608], 4) = 0 <0.000010>
+1522783673.364897 getsockopt(4<socket:[58163]>, SOL_SOCKET, SO_SNDBUF, [212992], [4]) = 0 <0.000009>
+1522783673.364931 setsockopt(4<socket:[58163]>, SOL_SOCKET, SO_SNDBUFFORCE, [8388608], 4) = 0 <0.000010>
+1522783673.364964 connect(4<socket:[58163]>, {sa_family=AF_LOCAL, sun_path="/var/run/dbus/system_bus_socket"}, 33) = 0 <0.000102>
+1522783673.365097 getsockopt(4<socket:[58163]>, SOL_SOCKET, SO_PEERCRED, {pid=1, uid=0, gid=0}, [12]) = 0 <0.000010>
+1522783673.365135 getsockopt(4<socket:[58163]>, SOL_SOCKET, SO_PEERSEC, "system_u:system_r:system_dbusd_t"..., [36]) = 0 <0.000012>
+1522783673.365175 fstat(4<socket:[58163]>, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0 <0.000010>
+1522783673.365210 getsockopt(4<socket:[58163]>, SOL_SOCKET, SO_ACCEPTCONN, [0], [4]) = 0 <0.000010>
+1522783673.365244 getsockname(4<socket:[58163]>, {sa_family=AF_LOCAL, NULL}, [2]) = 0 <0.000009>
+1522783673.365279 geteuid()             = 0 <0.000008>
+1522783673.365310 sendmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(3)=[{"\x00\x41\x55\x54\x48\x20\x45\x58\x54\x45\x52\x4e\x41\x4c\x20", 15}, {"30", 2}, {"\r\nNEGOTIATE_UNIX_FD\r\nBEGIN\r\n", 28}], msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 45 <0.000052>
+1522783673.365422 gettid()              = 13515 <0.000008>
+1522783673.365457 getrandom("\x38\x62\x2d\x17\x9f\xa0\xb1\x83\x6a\x17\xc7\x47\xb7\xdc\x68\xf8", 16, GRND_NONBLOCK) = 16 <0.000010>
+1522783673.365517 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"OK 42a73a3b222ab381f978fed15ac3d"..., 256}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 52 <0.000012>
+1522783673.365575 sendmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x6c\x01\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x6d\x00\x00\x00\x01\x01\x6f\x00\x15\x00\x00\x00\x2f\x6f\x72\x67\x2f\x66\x72\x65"..., 128}], msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 128 <0.000523>
+1522783673.366136 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x6c\x02\x01\x01\x0a\x00\x00\x00\x01\x00\x00\x00\x3d\x00\x00\x00\x06\x01\x73\x00\x05\x00\x00\x00", 24}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 24 <0.000011>
+1522783673.366182 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x3a\x31\x2e\x33\x31\x00\x00\x00\x05\x01\x75\x00\x01\x00\x00\x00\x08\x01\x67\x00\x01\x73\x00\x00\x07\x01\x73\x00\x14\x00\x00\x00"..., 66}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 66 <0.000011>
+1522783673.366239 sendmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(2)=[{"\x6c\x01\x00\x01\x70\x00\x00\x00\x02\x00\x00\x00\x98\x00\x00\x00\x01\x01\x6f\x00\x17\x00\x00\x00\x2f\x6f\x72\x67\x2f\x66\x72\x65"..., 168}, {"\xe5\x03\x00\x00\xcb\x34\x00\x00\x04\x00\x00\x00\x73\x75\x2d\x6c\x00\x00\x00\x00\x03\x00\x00\x00\x74\x74\x79\x00\x04\x00\x00\x00"..., 112}], msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 280 <0.000294>
+1522783673.366571 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x6c\x04\x01\x01\x0a\x00\x00\x00\x02\x00\x00\x00\x8d\x00\x00\x00\x01\x01\x6f\x00\x15\x00\x00\x00", 24}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 24 <0.000011>
+1522783673.366615 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x2f\x6f\x72\x67\x2f\x66\x72\x65\x65\x64\x65\x73\x6b\x74\x6f\x70\x2f\x44\x42\x75\x73\x00\x00\x00\x02\x01\x73\x00\x14\x00\x00\x00"..., 146}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 146 <0.000011>
+1522783673.366660 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x6c\x02\x01\x01\x58\x00\x00\x00\x18\x00\x00\x00\x3d\x00\x00\x00\x05\x01\x75\x00\x02\x00\x00\x00", 24}], msg_controllen=24, [{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, [5</run/systemd/sessions/1.ref>]}], msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 24 <0.000012>
+1522783673.366709 recvmsg(4<socket:[58163]>, {msg_name(0)=NULL, msg_iov(1)=[{"\x06\x01\x73\x00\x05\x00\x00\x00\x3a\x31\x2e\x33\x31\x00\x00\x00\x08\x01\x67\x00\x08\x73\x6f\x73\x68\x75\x73\x75\x62\x00\x00\x00"..., 144}], msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_NOSIGNAL|MSG_CMSG_CLOEXEC) = 144 <0.000011>
+1522783673.366765 fcntl(5</run/systemd/sessions/1.ref>, F_DUPFD_CLOEXEC, 3) = 6</run/systemd/sessions/1.ref> <0.000010>
+1522783673.366806 close(4<socket:[58163]>) = 0 <0.000289>
+1522783673.367128 close(5</run/systemd/sessions/1.ref>) = 0 <0.000009>
+1522783673.367167 getuid()              = 0 <0.000008>
+1522783673.367196 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000013>
+1522783673.367238 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000009>
+1522783673.367273 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.367304 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000013>
+1522783673.367345 close(4</etc/passwd>) = 0 <0.000010>
+1522783673.367377 munmap(0x7f1942ce9000, 4096) = 0 <0.000015>
+1522783673.367431 getuid()              = 0 <0.000008>
+1522783673.367459 open("/etc/login.defs", O_RDONLY) = 4</etc/login.defs> <0.000012>
+1522783673.367501 fstat(4</etc/login.defs>, {st_mode=S_IFREG|0644, st_size=2028, ...}) = 0 <0.000010>
+1522783673.367535 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.367564 read(4</etc/login.defs>, "#\n# Please note that the paramet"..., 4096) = 2028 <0.000013>
+1522783673.367609 close(4</etc/login.defs>) = 0 <0.000010>
+1522783673.367640 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.367680 access("/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+1522783673.367719 open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 4</run/utmp> <0.000014>
+1522783673.367758 lseek(4</run/utmp>, 0, SEEK_SET) = 0 <0.000010>
+1522783673.367793 alarm(0)              = 0 <0.000010>
+1522783673.367820 rt_sigaction(SIGALRM, {0x7f19424257f0, [], SA_RESTORER, 0x7f1942329270}, {SIG_DFL, [], 0}, 8) = 0 <0.000009>
+1522783673.367851 alarm(10)             = 0 <0.000009>
+1522783673.367877 fcntl(4</run/utmp>, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000012>
+1522783673.367913 read(4</run/utmp>, "\x02\x00\x00\x00\x00\x00\x00\x00\x7e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000011>
+1522783673.367948 read(4</run/utmp>, "\x06\x00\x00\x00\x21\x03\x00\x00\x74\x74\x79\x31\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.367982 read(4</run/utmp>, "\x01\x00\x00\x00\x33\x00\x00\x00\x7e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.368015 read(4</run/utmp>, "\x07\x00\x00\x00\xab\x07\x00\x00\x70\x74\x73\x2f\x30\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000009>
+1522783673.368048 read(4</run/utmp>, "\x07\x00\x00\x00\x65\x34\x00\x00\x70\x74\x73\x2f\x31\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.368081 read(4</run/utmp>, "\x07\x00\x00\x00\xa8\x34\x00\x00\x70\x74\x73\x2f\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.368114 fcntl(4</run/utmp>, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000010>
+1522783673.368148 alarm(0)              = 10 <0.000008>
+1522783673.368173 rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f1942329270}, NULL, 8) = 0 <0.000009>
+1522783673.368205 close(4</run/utmp>)   = 0 <0.000010>
+1522783673.368237 getuid()              = 0 <0.000008>
+1522783673.368279 socket(AF_LOCAL, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 4<socket:[58165]> <0.000029>
+1522783673.368334 connect(4<socket:[58165]>, {sa_family=AF_LOCAL, sun_path="/dev/log"}, 110) = 0 <0.000013>
+1522783673.368372 sendto(4<socket:[58165]>, "<86>Apr  3 15:27:53 su: pam_unix"..., 100, MSG_NOSIGNAL, NULL, 0) = 100 <0.000354>
+1522783673.368760 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5</etc/passwd> <0.000012>
+1522783673.368803 fstat(5</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.368838 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.368868 read(5</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000013>
+1522783673.368911 close(5</etc/passwd>) = 0 <0.000011>
+1522783673.368944 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.368992 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5</etc/passwd> <0.000012>
+1522783673.369031 fstat(5</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.369065 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.369094 read(5</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000012>
+1522783673.369136 close(5</etc/passwd>) = 0 <0.000010>
+1522783673.369167 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.369207 open("/var/log/lastlog", O_RDWR) = 5</var/log/lastlog> <0.000015>
+1522783673.369249 lseek(5</var/log/lastlog>, 291124, SEEK_SET) = 291124 <0.000009>
+1522783673.369280 fcntl(5</var/log/lastlog>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=291124, l_len=292}) = 0 <0.000011>
+1522783673.369318 read(5</var/log/lastlog>, "\xad\xd5\xc3\x5a\x70\x74\x73\x2f\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 292) = 292 <0.000026>
+1522783673.369369 fcntl(5</var/log/lastlog>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=291124, l_len=292}) = 0 <0.000011>
+1522783673.369414 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 7</usr/share/locale/locale.alias> <0.000014>
+1522783673.369458 fstat(7</usr/share/locale/locale.alias>, {st_mode=S_IFREG|0644, st_size=2502, ...}) = 0 <0.000010>
+1522783673.369492 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.369522 read(7</usr/share/locale/locale.alias>, "# Locale name alias data base.\n#"..., 4096) = 2502 <0.000013>
+1522783673.369570 read(7</usr/share/locale/locale.alias>, "", 4096) = 0 <0.000010>
+1522783673.369603 close(7</usr/share/locale/locale.alias>) = 0 <0.000010>
+1522783673.369635 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.369682 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.369717 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000012>
+1522783673.369750 open("/usr/share/locale/en_US/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.369787 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000013>
+1522783673.369822 open("/usr/share/locale/en.utf8/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000014>
+1522783673.369863 open("/usr/share/locale/en/LC_MESSAGES/Linux-PAM.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000016>
+1522783673.369917 lseek(5</var/log/lastlog>, 291124, SEEK_SET) = 291124 <0.000010>
+1522783673.369952 fcntl(5</var/log/lastlog>, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=291124, l_len=292}) = 0 <0.000011>
+1522783673.369989 write(5</var/log/lastlog>, "\xb9\xd5\xc3\x5a\x70\x74\x73\x2f\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 292) = 292 <0.000015>
+1522783673.370028 fcntl(5</var/log/lastlog>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=291124, l_len=292}) = 0 <0.000011>
+1522783673.370063 close(5</var/log/lastlog>) = 0 <0.000011>
+1522783673.370096 open("/var/log/btmp", O_RDONLY) = 5</var/log/btmp> <0.000013>
+1522783673.370134 read(5</var/log/btmp>, "\x06\x00\x00\x00\x47\x12\x00\x00\x73\x73\x68\x3a\x6e\x6f\x74\x74\x79\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.370167 read(5</var/log/btmp>, "\x06\x00\x00\x00\x47\x12\x00\x00\x73\x73\x68\x3a\x6e\x6f\x74\x74\x79\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.370200 read(5</var/log/btmp>, "\x06\x00\x00\x00\x47\x12\x00\x00\x73\x73\x68\x3a\x6e\x6f\x74\x74\x79\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000009>
+1522783673.370232 read(5</var/log/btmp>, "\x06\x00\x00\x00\x47\x12\x00\x00\x73\x73\x68\x3a\x6e\x6f\x74\x74\x79\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"..., 384) = 384 <0.000010>
+1522783673.370264 read(5</var/log/btmp>, "", 384) = 0 <0.000009>
+1522783673.370296 close(5</var/log/btmp>) = 0 <0.000010>
+1522783673.370331 access("/usr/X11R6/bin/xauth", X_OK) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.370364 access("/usr/bin/xauth", X_OK) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.370395 access("/usr/bin/X11/xauth", X_OK) = -1 ENOENT (No such file or directory) <0.000011>
+1522783673.370431 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 5<socket:[58167]> <0.000028>
+1522783673.370484 fcntl(5<socket:[58167]>, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+1522783673.370524 sendto(5<socket:[58167]>, "\xd4\x00\x00\x00\x51\x04\x05\x00\x04\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x73\x73\x69\x6f\x6e\x5f\x6f"..., 212, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 212 <0.000065>
+1522783673.370618 poll([{fd=5<socket:[58167]>, events=POLLIN}], 1, 500) = 1 ([{fd=5, revents=POLLIN}]) <0.000010>
+1522783673.370658 recvfrom(5<socket:[58167]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x04\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xd4\x00\x00\x00\x51\x04\x05\x00\x04\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.370696 recvfrom(5<socket:[58167]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x04\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xd4\x00\x00\x00\x51\x04\x05\x00\x04\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.370734 close(5<socket:[58167]>) = 0 <0.000013>
+1522783673.370774 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1942ce0a10) = 13516 <0.000168>
+1522783673.370982 chdir("/")            = 0 <0.000011>
+1522783673.371015 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], NULL, 8) = 0 <0.000009>
+1522783673.371051 rt_sigaction(SIGTERM, {0x5615866ea990, [], SA_RESTORER, 0x7f1942329270}, NULL, 8) = 0 <0.000009>
+1522783673.371080 rt_sigprocmask(SIG_UNBLOCK, [INT QUIT ALRM TERM], NULL, 8) = 0 <0.000009>
+1522783673.371108 rt_sigaction(SIGINT, {0x5615866ea990, [], SA_RESTORER, 0x7f1942329270}, NULL, 8) = 0 <0.000009>
+1522783673.371136 rt_sigaction(SIGQUIT, {0x5615866ea990, [], SA_RESTORER, 0x7f1942329270}, NULL, 8) = 0 <0.000009>
+1522783673.371164 wait4(13516, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WSTOPPED, NULL) = 13516 <0.005533>
+1522783673.376736 geteuid()             = 0 <0.000009>
+1522783673.376761 getegid()             = 0 <0.000008>
+1522783673.376788 setregid(-1, 995)     = 0 <0.000010>
+1522783673.376816 setresuid(-1, 997, 0) = 0 <0.000010>
+1522783673.376843 keyctl(KEYCTL_REVOKE, 1053416769) = 0 <0.000012>
+1522783673.376873 setreuid(-1, 0)       = 0 <0.000010>
+1522783673.376899 setregid(-1, 0)       = 0 <0.000009>
+1522783673.376931 getuid()              = 0 <0.000008>
+1522783673.376967 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5</etc/passwd> <0.000013>
+1522783673.377011 fstat(5</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.377046 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000015>
+1522783673.377129 read(5</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000013>
+1522783673.377172 close(5</etc/passwd>) = 0 <0.000010>
+1522783673.377206 munmap(0x7f1942ce9000, 4096) = 0 <0.000015>
+1522783673.377251 getuid()              = 0 <0.000008>
+1522783673.377277 open("/etc/login.defs", O_RDONLY) = 5</etc/login.defs> <0.000012>
+1522783673.377318 fstat(5</etc/login.defs>, {st_mode=S_IFREG|0644, st_size=2028, ...}) = 0 <0.000019>
+1522783673.377364 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000010>
+1522783673.377392 read(5</etc/login.defs>, "#\n# Please note that the paramet"..., 4096) = 2028 <0.000012>
+1522783673.377439 close(5</etc/login.defs>) = 0 <0.000010>
+1522783673.377471 munmap(0x7f1942ce9000, 4096) = 0 <0.000014>
+1522783673.377518 sendto(4<socket:[58165]>, "<86>Apr  3 15:27:53 su: pam_unix"..., 85, MSG_NOSIGNAL, NULL, 0) = 85 <0.000351>
+1522783673.377907 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5</etc/passwd> <0.000013>
+1522783673.377950 fstat(5</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000010>
+1522783673.377986 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1942ce9000 <0.000011>
+1522783673.378015 read(5</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000012>
+1522783673.378059 close(5</etc/passwd>) = 0 <0.000013>
+1522783673.378108 munmap(0x7f1942ce9000, 4096) = 0 <0.000015>
+1522783673.378157 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 5<socket:[58174]> <0.000031>
+1522783673.378214 fcntl(5<socket:[58174]>, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+1522783673.378259 sendto(5<socket:[58174]>, "\xd8\x00\x00\x00\x52\x04\x05\x00\x05\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x73\x73\x69\x6f\x6e\x5f\x63"..., 216, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 216 <0.000060>
+1522783673.378349 poll([{fd=5<socket:[58174]>, events=POLLIN}], 1, 500) = 1 ([{fd=5, revents=POLLIN}]) <0.000011>
+1522783673.378390 recvfrom(5<socket:[58174]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x05\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xd8\x00\x00\x00\x52\x04\x05\x00\x05\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.378429 recvfrom(5<socket:[58174]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x05\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\xd8\x00\x00\x00\x52\x04\x05\x00\x05\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000011>
+1522783673.378467 close(5<socket:[58174]>) = 0 <0.000013>
+1522783673.378509 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 5<socket:[58175]> <0.000021>
+1522783673.378555 fcntl(5<socket:[58175]>, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+1522783673.378592 sendto(5<socket:[58175]>, "\x98\x00\x00\x00\x50\x04\x05\x00\x06\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x74\x63\x72\x65\x64\x20\x67"..., 152, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 152 <0.000038>
+1522783673.378658 poll([{fd=5<socket:[58175]>, events=POLLIN}], 1, 500) = 1 ([{fd=5, revents=POLLIN}]) <0.000011>
+1522783673.378698 recvfrom(5<socket:[58175]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\x98\x00\x00\x00\x50\x04\x05\x00\x06\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.378735 recvfrom(5<socket:[58175]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\xcb\x34\x00\x00\x00\x00\x00\x00\x98\x00\x00\x00\x50\x04\x05\x00\x06\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783673.378773 close(5<socket:[58175]>) = 0 <0.000012>
+1522783673.378844 munmap(0x7f193b383000, 2105520) = 0 <0.000018>
+1522783673.378895 munmap(0x7f193aada000, 2109664) = 0 <0.000016>
+1522783673.378936 munmap(0x7f193a8d7000, 2105520) = 0 <0.000030>
+1522783673.379002 munmap(0x7f193a6bd000, 2200544) = 0 <0.000017>
+1522783673.379037 munmap(0x7f193a486000, 2318912) = 0 <0.000016>
+1522783673.379070 munmap(0x7f193a26d000, 2198200) = 0 <0.000016>
+1522783673.379103 munmap(0x7f193a06a000, 2105536) = 0 <0.000015>
+1522783673.379142 munmap(0x7f1939e66000, 2109648) = 0 <0.000015>
+1522783673.379180 munmap(0x7f1939c64000, 2101296) = 0 <0.000015>
+1522783673.379218 munmap(0x7f1939a61000, 2105464) = 0 <0.000015>
+1522783673.379255 munmap(0x7f193985f000, 2101320) = 0 <0.000015>
+1522783673.379303 munmap(0x7f193965c000, 2105576) = 0 <0.000015>
+1522783673.379335 munmap(0x7f1939456000, 2118240) = 0 <0.000014>
+1522783673.379367 munmap(0x7f193924b000, 2138640) = 0 <0.000019>
+1522783673.379407 munmap(0x7f1938e32000, 2105520) = 0 <0.000016>
+1522783673.379445 munmap(0x7f1938c2d000, 2113880) = 0 <0.000015>
+1522783673.379521 munmap(0x7f1942ca0000, 261585) = 0 <0.000017>
+1522783673.379556 munmap(0x7f1938820000, 2114112) = 0 <0.000015>
+1522783673.379588 munmap(0x7f193851e000, 3150136) = 0 <0.000016>
+1522783673.379622 munmap(0x7f19382d7000, 2386096) = 0 <0.000015>
+1522783673.379655 munmap(0x7f19380c1000, 2184192) = 0 <0.000015>
+1522783673.379687 munmap(0x7f1937ebc000, 2113904) = 0 <0.000015>
+1522783673.379719 munmap(0x7f1937ca4000, 2191824) = 0 <0.000016>
+1522783673.379752 munmap(0x7f1939035000, 2183688) = 0 <0.000018>
+1522783673.379788 munmap(0x7f1937a7e000, 2249352) = 0 <0.000015>
+1522783673.379820 munmap(0x7f193786e000, 2162024) = 0 <0.000022>
+1522783673.379873 munmap(0x7f193766a000, 2109712) = 0 <0.000015>
+1522783673.379907 munmap(0x7f1937467000, 2105616) = 0 <0.000015>
+1522783673.379952 munmap(0x7f1937262000, 2114064) = 0 <0.000016>
+1522783673.379987 munmap(0x7f193b15c000, 2255216) = 0 <0.000020>
+1522783673.380024 munmap(0x7f193aefa000, 2494984) = 0 <0.000015>
+1522783673.380064 close(1</dev/pts/2>)  = 0 <0.000009>
+1522783673.380101 close(2</dev/pts/2>)  = 0 <0.000009>
+1522783673.380156 exit_group(1)         = ?

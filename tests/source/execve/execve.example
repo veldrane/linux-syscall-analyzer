@@ -1,0 +1,42 @@
+1522783548.822808;execve;/usr/sbin/sshd, [/usr/sbin/sshd, -f, /etc/ssh/sshd_config_test], [/* 34 vars */];0;0.003235
+1522783603.818228;execve;/usr/sbin/sshd, [/usr/sbin/sshd, -f, /etc/ssh/sshd_config_test, -R], [/* 34 vars */];0;0.000527
+1522783605.209811;execve;/usr/sbin/unix_chkpwd, [/usr/sbin/unix_chkpwd, root, nonull], [/* 0 vars */];0;0.001060
+1522783605.339422;execve;/usr/sbin/unix_chkpwd, [/usr/sbin/unix_chkpwd, root, chkexpiry], [/* 0 vars */];0;0.000314
+1522783605.638640;execve;/bin/bash, [-bash], [/* 25 vars */];0;0.001120
+1522783605.652854;execve;/usr/bin/id, [/usr/bin/id, -un], [/* 28 vars */];0;0.004012
+1522783605.666634;execve;/usr/bin/hostname, [/usr/bin/hostname], [/* 28 vars */];0;0.000847
+1522783605.710185;execve;/usr/bin/ls, [ls, /etc/bash_completion.d], [/* 32 vars */];0;0.000158
+1522783605.738393;execve;/usr/bin/uname, [uname, -o], [/* 31 vars */];0;0.000131
+1522783605.745388;execve;/usr/libexec/grepconf.sh, [/usr/libexec/grepconf.sh, -c], [/* 31 vars */];0;0.000136
+1522783605.750636;execve;/usr/bin/grep, [grep, -qsi, ^COLOR.*none, /etc/GREP_COLORS], [/* 31 vars */];0;0.000100
+1522783605.760374;execve;/usr/bin/tty, [/usr/bin/tty, -s], [/* 31 vars */];0;0.003525
+1522783605.767185;execve;/usr/bin/tput, [/usr/bin/tput, colors], [/* 31 vars */];0;0.000750
+1522783605.773548;execve;/usr/bin/dircolors, [/usr/bin/dircolors, --sh, /etc/DIR_COLORS.256color], [/* 31 vars */];0;0.000855
+1522783605.779253;execve;/usr/bin/grep, [/usr/bin/grep, -qi, ^COLOR.*none, /etc/DIR_COLORS.256color], [/* 32 vars */];0;0.000136
+1522783607.173343;execve;/usr/bin/ls, [ls, --color=auto, -, tla], [/* 33 vars */];0;0.000483
+1522783608.545921;execve;/usr/bin/ls, [ls, --color=auto, -lta], [/* 33 vars */];0;0.001382
+1522783619.606530;execve;/usr/bin/cat, [cat, /etc/hosts], [/* 33 vars */];0;0.000800
+1522783628.672839;execve;/usr/sbin/lsof, [lsof, -a], [/* 33 vars */];0;0.002410
+1522783628.672746;execve;/usr/bin/grep, [grep, --color=auto, sshd], [/* 33 vars */];0;0.000546
+1522783636.352490;execve;/usr/sbin/lsof, [lsof], [/* 33 vars */];0;0.001016
+1522783636.352312;execve;/usr/bin/grep, [grep, --color=auto, sshd], [/* 33 vars */];0;0.001138
+1522783651.254406;execve;/usr/sbin/sshd, [/usr/sbin/sshd, -f, /etc/ssh/sshd_config_test, -R], [/* 34 vars */];0;0.001764
+1522783653.006479;execve;/usr/sbin/unix_chkpwd, [/usr/sbin/unix_chkpwd, root, nonull], [/* 0 vars */];0;0.000292
+1522783653.138611;execve;/usr/sbin/unix_chkpwd, [/usr/sbin/unix_chkpwd, root, chkexpiry], [/* 0 vars */];0;0.000291
+1522783653.409602;execve;/bin/bash, [-bash], [/* 25 vars */];0;0.001035
+1522783653.423803;execve;/usr/bin/id, [/usr/bin/id, -un], [/* 28 vars */];0;0.000121
+1522783653.433307;execve;/usr/bin/hostname, [/usr/bin/hostname], [/* 28 vars */];0;0.000411
+1522783653.475575;execve;/usr/bin/ls, [ls, /etc/bash_completion.d], [/* 32 vars */];0;0.000166
+1522783653.504040;execve;/usr/bin/uname, [uname, -o], [/* 31 vars */];0;0.000125
+1522783653.509480;execve;/usr/libexec/grepconf.sh, [/usr/libexec/grepconf.sh, -c], [/* 31 vars */];0;0.000128
+1522783653.514647;execve;/usr/bin/grep, [grep, -qsi, ^COLOR.*none, /etc/GREP_COLORS], [/* 31 vars */];0;0.000093
+1522783653.522707;execve;/usr/bin/tty, [/usr/bin/tty, -s], [/* 31 vars */];0;0.000114
+1522783653.525473;execve;/usr/bin/tput, [/usr/bin/tput, colors], [/* 31 vars */];0;0.000102
+1522783653.530372;execve;/usr/bin/dircolors, [/usr/bin/dircolors, --sh, /etc/DIR_COLORS.256color], [/* 31 vars */];0;0.000104
+1522783653.534784;execve;/usr/bin/grep, [/usr/bin/grep, -qi, ^COLOR.*none, /etc/DIR_COLORS.256color], [/* 32 vars */];0;0.000103
+1522783661.474188;execve;/usr/bin/su, [su, -, elasticsearch], [/* 33 vars */];0;0.003301
+1522783661.542622;execve;/sbin/nologin, [-nologin], [/* 7 vars */];0;0.000228
+1522783673.312961;execve;/usr/bin/su, [su, -, elasticsearch, -c, /bin/bash], [/* 33 vars */];0;0.000824
+1522783673.374726;execve;/sbin/nologin, [-nologin, -c, /bin/bash], [/* 7 vars */];0;0.000219
+1522783683.409348;execve;/usr/bin/cat, [cat, /etc/passwd], [/* 33 vars */];0;0.000346
+1522783702.761366;execve;/usr/sbin/sshd, [/usr/sbin/sshd, -f, /etc/ssh/sshd_config_test, -R], [/* 34 vars */];0;0.004233

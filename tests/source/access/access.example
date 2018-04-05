@@ -1,0 +1,265 @@
+1522783548.826409;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000019
+1522783548.871896;access;/etc/selinux/config, F_OK;0;0.000014
+1522783548.871977;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011
+1522783548.872278;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011
+1522783548.873216;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011
+1522783603.818995;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000017
+1522783603.842539;access;/etc/selinux/config, F_OK;0;0.000014
+1522783603.842619;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000013
+1522783603.842942;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000012
+1522783603.843885;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000012
+1522783605.367409;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000024
+1522783605.541649;open;/sys/fs/selinux/access, O_RDWR;4</sys/fs/selinux/access;0.000016>
+1522783605.541698;write;4</sys/fs/selinux/access, unconfined_u:unconfined_r:unconf..., 88;88;0.000596>
+1522783605.542321;read;4</sys/fs/selinux/access, 2 ffffffff 0 ffffffff 1 0, 4095;25;0.000009>
+1522783605.542363;close;4</sys/fs/selinux/access;0;0.000010>
+1522783605.551079;access;/run/systemd/seats/, F_OK;0;0.000181
+1522783605.563636;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000018
+1522783607.192320;read;12</dev/ptmx, ls: cannot access -, 16384;19;0.000090>
+1522783716.100309;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000075
+1522783716.102368;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000032
+1522783716.103579;access;/var/log/wtmpx, F_OK;-1 ENOENT (No such file or directory);0.000026
+1522783603.862964;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000019
+1522783605.211047;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783605.214215;access;/etc/selinux/config, F_OK;0;0.000010
+1522783605.339870;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783605.343011;access;/etc/selinux/config, F_OK;0;0.000011
+1522783605.627945;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000315
+1522783605.628484;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000014
+1522783605.629403;access;/var/log/wtmpx, F_OK;-1 ENOENT (No such file or directory);0.000012
+1522783605.639922;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783605.649578;faccessat;AT_FDCWD, /usr/bin/id, X_OK;0;0.000249
+1522783605.670837;faccessat;AT_FDCWD, /etc/profile.d/256term.sh, R_OK;0;0.000012
+1522783605.672303;faccessat;AT_FDCWD, /etc/profile.d/bash_completion.sh, R_OK;0;0.000012
+1522783605.673492;faccessat;AT_FDCWD, /root/.config/bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.673594;faccessat;AT_FDCWD, /usr/share/bash-completion/bash_completion, R_OK;0;0.000331
+1522783605.691850;faccessat;AT_FDCWD, /etc/rc.d/init.d/elasticsearch, X_OK;0;0.000255
+1522783605.692150;faccessat;AT_FDCWD, /etc/rc.d/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.692192;faccessat;AT_FDCWD, /etc/rc.d/init.d/jexec, X_OK;0;0.000369
+1522783605.692608;faccessat;AT_FDCWD, /etc/rc.d/init.d/kibana, X_OK;0;0.000013
+1522783605.692659;faccessat;AT_FDCWD, /etc/rc.d/init.d/netconsole, X_OK;0;0.000024
+1522783605.692724;faccessat;AT_FDCWD, /etc/rc.d/init.d/network, X_OK;0;0.000012
+1522783605.692770;faccessat;AT_FDCWD, /etc/rc.d/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.693149;faccessat;AT_FDCWD, /etc/init.d/elasticsearch, X_OK;0;0.000019
+1522783605.693215;faccessat;AT_FDCWD, /etc/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000015
+1522783605.693263;faccessat;AT_FDCWD, /etc/init.d/jexec, X_OK;0;0.000016
+1522783605.693313;faccessat;AT_FDCWD, /etc/init.d/kibana, X_OK;0;0.000014
+1522783605.693369;faccessat;AT_FDCWD, /etc/init.d/netconsole, X_OK;0;0.000012
+1522783605.693413;faccessat;AT_FDCWD, /etc/init.d/network, X_OK;0;0.000012
+1522783605.693457;faccessat;AT_FDCWD, /etc/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.706563;faccessat;AT_FDCWD, /etc/bash_completion.d, R_OK;0;0.000011
+1522783605.706597;faccessat;AT_FDCWD, /etc/bash_completion.d, X_OK;0;0.000010
+1522783605.715372;faccessat;AT_FDCWD, /etc/bash_completion.d/git, R_OK;0;0.000011
+1522783605.740671;faccessat;AT_FDCWD, /etc/bash_completion.d/iprutils, R_OK;0;0.000009
+1522783605.741824;faccessat;AT_FDCWD, /etc/bash_completion.d/redefine_filedir, R_OK;0;0.000010
+1522783605.743033;faccessat;AT_FDCWD, /root/.bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.743427;faccessat;AT_FDCWD, /etc/profile.d/colorgrep.sh, R_OK;0;0.000011
+1522783605.755364;faccessat;AT_FDCWD, /etc/profile.d/colorls.sh, R_OK;0;0.000010
+1522783605.783550;faccessat;AT_FDCWD, /etc/profile.d/lang.sh, R_OK;0;0.000010
+1522783605.784658;faccessat;AT_FDCWD, /etc/profile.d/less.sh, R_OK;0;0.000011
+1522783605.785601;faccessat;AT_FDCWD, /usr/bin/lesspipe.sh, X_OK;0;0.000011
+1522783605.785714;faccessat;AT_FDCWD, /etc/profile.d/mc.sh, R_OK;0;0.000010
+1522783605.786727;faccessat;AT_FDCWD, /etc/profile.d/which2.sh, R_OK;0;0.000011
+1522783605.792728;access;/etc/terminfo/x/xterm-256color, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783605.792759;access;/usr/share/terminfo/x/xterm-256color, R_OK;0;0.000011
+1522783607.160416;access;/usr/bin/ls, X_OK;0;0.000084
+1522783607.161623;access;/usr/bin/ls, R_OK;0;0.000081
+1522783607.163082;access;/usr/bin/ls, X_OK;0;0.000083
+1522783607.164334;access;/usr/bin/ls, R_OK;0;0.000061
+1522783619.593354;access;/usr/bin/cat, X_OK;0;0.000060
+1522783619.594376;access;/usr/bin/cat, R_OK;0;0.000061
+1522783619.595446;access;/usr/bin/cat, X_OK;0;0.000059
+1522783619.596562;access;/usr/bin/cat, R_OK;0;0.000061
+1522783605.657050;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000014
+1522783605.660642;access;/etc/selinux/config, F_OK;0;0.000107
+1522783605.667649;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000013
+1522783605.708328;access;/usr/bin/ls, X_OK;0;0.000011
+1522783605.708483;access;/usr/bin/ls, R_OK;0;0.000011
+1522783605.708666;access;/usr/bin/ls, X_OK;0;0.000010
+1522783605.708818;access;/usr/bin/ls, R_OK;0;0.000011
+1522783605.710507;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.713893;access;/etc/selinux/config, F_OK;0;0.000011
+1522783605.736748;access;/usr/bin/uname, X_OK;0;0.000010
+1522783605.736884;access;/usr/bin/uname, R_OK;0;0.000008
+1522783605.737044;access;/usr/bin/uname, X_OK;0;0.000009
+1522783605.737178;access;/usr/bin/uname, R_OK;0;0.000009
+1522783605.738666;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783605.745665;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783605.749511;access;/usr/bin/grep, X_OK;0;0.000009
+1522783605.749646;access;/usr/bin/grep, R_OK;0;0.000009
+1522783605.749808;access;/usr/bin/grep, X_OK;0;0.000009
+1522783605.749942;access;/usr/bin/grep, R_OK;0;0.000009
+1522783605.750876;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000009
+1522783605.764060;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000013
+1522783605.768097;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783605.769535;access;/etc/terminfo/x/xterm-256color, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.769569;access;/usr/share/terminfo/x/xterm-256color, R_OK;0;0.000011
+1522783605.774559;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.779541;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783607.174343;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000036
+1522783607.185717;access;/etc/selinux/config, F_OK;0;0.000040
+1522783607.191779;write;2</dev/pts/1, cannot access -, 15;15;0.000071>
+1522783607.194575;write;2</dev/pts/1, cannot access tla, 17;17;0.000048>
+1522783608.548290;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000065
+1522783608.561485;access;/etc/selinux/config, F_OK;0;0.000032
+1522783608.566121;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000212
+1522783608.566817;getxattr;.lesshst, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000021
+1522783608.569957;getxattr;.tcshrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570215;getxattr;.bash_profile, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570469;getxattr;.bashrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570742;getxattr;anaconda-ks.cfg, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.570997;getxattr;.bash_history, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571261;getxattr;.cshrc, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.571450;getxattr;.., system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000013
+1522783608.571873;getxattr;.oracle_jre_usage, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572061;getxattr;.pki, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572234;getxattr;., system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783608.572500;getxattr;.bash_logout, system.posix_acl_access, NULL, 0;-1 ENODATA (No data available);0.000014
+1522783619.608232;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000062
+1522783628.667715;access;/usr/sbin/lsof, X_OK;0;0.000067
+1522783628.668479;access;/usr/sbin/lsof, R_OK;0;0.000063
+1522783628.669394;access;/usr/sbin/lsof, X_OK;0;0.000063
+1522783628.670150;access;/usr/sbin/lsof, R_OK;0;0.000063
+1522783628.675705;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000047
+1522783628.682738;access;/etc/selinux/config, F_OK;0;0.000026
+1522783628.667688;access;/usr/bin/grep, X_OK;0;0.000067
+1522783628.668453;access;/usr/bin/grep, R_OK;0;0.000062
+1522783628.669368;access;/usr/bin/grep, X_OK;0;0.000062
+1522783628.670125;access;/usr/bin/grep, R_OK;0;0.000062
+1522783628.673656;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000025
+1522783636.343617;access;/usr/sbin/lsof, X_OK;0;0.000125
+1522783636.345291;access;/usr/sbin/lsof, R_OK;0;0.000162
+1522783636.347874;access;/usr/sbin/lsof, X_OK;0;0.000124
+1522783636.348981;access;/usr/sbin/lsof, R_OK;0;0.000064
+1522783636.354109;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000054
+1522783636.364466;access;/etc/selinux/config, F_OK;0;0.000037
+1522783636.343567;access;/usr/bin/grep, X_OK;0;0.000127
+1522783636.345223;access;/usr/bin/grep, R_OK;0;0.000148
+1522783636.347821;access;/usr/bin/grep, X_OK;0;0.000119
+1522783636.348955;access;/usr/bin/grep, R_OK;0;0.000064
+1522783636.354083;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000049
+1522783651.256554;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000026
+1522783651.279653;access;/etc/selinux/config, F_OK;0;0.000013
+1522783651.279730;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000012
+1522783651.279853;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011
+1522783651.280764;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011
+1522783653.167539;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000017
+1522783653.317501;open;/sys/fs/selinux/access, O_RDWR;4</sys/fs/selinux/access;0.000015>
+1522783653.317545;write;4</sys/fs/selinux/access, unconfined_u:unconfined_r:unconf..., 88;88;0.000493>
+1522783653.318064;read;4</sys/fs/selinux/access, 2 ffffffff 0 ffffffff 1 0, 4095;25;0.000008>
+1522783653.318102;close;4</sys/fs/selinux/access;0;0.000009>
+1522783653.324830;access;/run/systemd/seats/, F_OK;0;0.000128
+1522783653.335784;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000020
+1522783712.187640;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000022
+1522783712.188304;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000017
+1522783712.188908;access;/var/log/wtmpx, F_OK;-1 ENOENT (No such file or directory);0.000015
+1522783651.299849;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000020
+1522783653.006903;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783653.010083;access;/etc/selinux/config, F_OK;0;0.000011
+1522783653.139041;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783653.142194;access;/etc/selinux/config, F_OK;0;0.000010
+1522783653.398239;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000312
+1522783653.398779;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000015
+1522783653.399814;access;/var/log/wtmpx, F_OK;-1 ENOENT (No such file or directory);0.000015
+1522783653.410804;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783653.419795;faccessat;AT_FDCWD, /usr/bin/id, X_OK;0;0.000203
+1522783653.437224;faccessat;AT_FDCWD, /etc/profile.d/256term.sh, R_OK;0;0.000013
+1522783653.438246;faccessat;AT_FDCWD, /etc/profile.d/bash_completion.sh, R_OK;0;0.000013
+1522783653.439100;faccessat;AT_FDCWD, /root/.config/bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783653.439204;faccessat;AT_FDCWD, /usr/share/bash-completion/bash_completion, R_OK;0;0.000299
+1522783653.456454;faccessat;AT_FDCWD, /etc/rc.d/init.d/elasticsearch, X_OK;0;0.000269
+1522783653.456821;faccessat;AT_FDCWD, /etc/rc.d/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000034
+1522783653.456894;faccessat;AT_FDCWD, /etc/rc.d/init.d/jexec, X_OK;0;0.000359
+1522783653.457302;faccessat;AT_FDCWD, /etc/rc.d/init.d/kibana, X_OK;0;0.000014
+1522783653.457353;faccessat;AT_FDCWD, /etc/rc.d/init.d/netconsole, X_OK;0;0.000011
+1522783653.457399;faccessat;AT_FDCWD, /etc/rc.d/init.d/network, X_OK;0;0.000012
+1522783653.457444;faccessat;AT_FDCWD, /etc/rc.d/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783653.457791;faccessat;AT_FDCWD, /etc/init.d/elasticsearch, X_OK;0;0.000015
+1522783653.457860;faccessat;AT_FDCWD, /etc/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000014
+1522783653.457912;faccessat;AT_FDCWD, /etc/init.d/jexec, X_OK;0;0.000017
+1522783653.457964;faccessat;AT_FDCWD, /etc/init.d/kibana, X_OK;0;0.000013
+1522783653.458032;faccessat;AT_FDCWD, /etc/init.d/netconsole, X_OK;0;0.000013
+1522783653.458082;faccessat;AT_FDCWD, /etc/init.d/network, X_OK;0;0.000012
+1522783653.458127;faccessat;AT_FDCWD, /etc/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783653.471386;faccessat;AT_FDCWD, /etc/bash_completion.d, R_OK;0;0.000012
+1522783653.471421;faccessat;AT_FDCWD, /etc/bash_completion.d, X_OK;0;0.000010
+1522783653.480874;faccessat;AT_FDCWD, /etc/bash_completion.d/git, R_OK;0;0.000011
+1522783653.506386;faccessat;AT_FDCWD, /etc/bash_completion.d/iprutils, R_OK;0;0.000010
+1522783653.506975;faccessat;AT_FDCWD, /etc/bash_completion.d/redefine_filedir, R_OK;0;0.000009
+1522783653.507726;faccessat;AT_FDCWD, /root/.bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.508074;faccessat;AT_FDCWD, /etc/profile.d/colorgrep.sh, R_OK;0;0.000011
+1522783653.518896;faccessat;AT_FDCWD, /etc/profile.d/colorls.sh, R_OK;0;0.000010
+1522783653.538822;faccessat;AT_FDCWD, /etc/profile.d/lang.sh, R_OK;0;0.000010
+1522783653.539875;faccessat;AT_FDCWD, /etc/profile.d/less.sh, R_OK;0;0.000010
+1522783653.540229;faccessat;AT_FDCWD, /usr/bin/lesspipe.sh, X_OK;0;0.000010
+1522783653.540330;faccessat;AT_FDCWD, /etc/profile.d/mc.sh, R_OK;0;0.000011
+1522783653.540802;faccessat;AT_FDCWD, /etc/profile.d/which2.sh, R_OK;0;0.000009
+1522783653.544451;access;/etc/terminfo/x/xterm-256color, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.544480;access;/usr/share/terminfo/x/xterm-256color, R_OK;0;0.000010
+1522783661.460068;access;/usr/bin/su, X_OK;0;0.000080
+1522783661.461169;access;/usr/bin/su, R_OK;0;0.000069
+1522783661.462339;access;/usr/bin/su, X_OK;0;0.000060
+1522783661.463204;access;/usr/bin/su, R_OK;0;0.000059
+1522783680.395045;faccessat;AT_FDCWD, /tmp, W_OK;0;0.000019
+1522783683.404494;access;/usr/bin/cat, X_OK;0;0.000023
+1522783683.404804;access;/usr/bin/cat, R_OK;0;0.000021
+1522783683.405193;access;/usr/bin/cat, X_OK;0;0.000021
+1522783683.405518;access;/usr/bin/cat, R_OK;0;0.000021
+1522783653.424091;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783653.426958;access;/etc/selinux/config, F_OK;0;0.000126
+1522783653.433892;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000014
+1522783653.473373;access;/usr/bin/ls, X_OK;0;0.000012
+1522783653.473553;access;/usr/bin/ls, R_OK;0;0.000012
+1522783653.473761;access;/usr/bin/ls, X_OK;0;0.000012
+1522783653.473930;access;/usr/bin/ls, R_OK;0;0.000013
+1522783653.475906;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000013
+1522783653.479342;access;/etc/selinux/config, F_OK;0;0.000012
+1522783653.502353;access;/usr/bin/uname, X_OK;0;0.000010
+1522783653.502495;access;/usr/bin/uname, R_OK;0;0.000010
+1522783653.502663;access;/usr/bin/uname, X_OK;0;0.000010
+1522783653.502803;access;/usr/bin/uname, R_OK;0;0.000009
+1522783653.504305;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.509746;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.513529;access;/usr/bin/grep, X_OK;0;0.000009
+1522783653.513667;access;/usr/bin/grep, R_OK;0;0.000009
+1522783653.513831;access;/usr/bin/grep, X_OK;0;0.000009
+1522783653.513968;access;/usr/bin/grep, R_OK;0;0.000010
+1522783653.514880;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.522952;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000009
+1522783653.525703;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000009
+1522783653.526898;access;/etc/terminfo/x/xterm-256color, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.526928;access;/usr/share/terminfo/x/xterm-256color, R_OK;0;0.000010
+1522783653.530611;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.535114;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000013
+1522783661.478152;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000038
+1522783661.492502;access;/etc/selinux/config, F_OK;0;0.000016
+1522783661.510812;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000110
+1522783661.513048;open;/sys/fs/selinux/access, O_RDWR;4</sys/fs/selinux/access;0.000017>
+1522783661.513098;write;4</sys/fs/selinux/access, unconfined_u:unconfined_r:unconf..., 88;88;0.000777>
+1522783661.513902;read;4</sys/fs/selinux/access, 1f ffffffff 0 ffffffff 1 0, 4095;26;0.000010>
+1522783661.513944;close;4</sys/fs/selinux/access;0;0.000011>
+1522783661.524195;access;/run/systemd/seats/, F_OK;0;0.000156
+1522783661.533473;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000031
+1522783661.537664;access;/usr/X11R6/bin/xauth, X_OK;-1 ENOENT (No such file or directory);0.000016
+1522783661.537705;access;/usr/bin/xauth, X_OK;-1 ENOENT (No such file or directory);0.000038
+1522783661.537767;access;/usr/bin/X11/xauth, X_OK;-1 ENOENT (No such file or directory);0.000016
+1522783661.543003;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000016
+1522783673.315118;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000067
+1522783673.335721;access;/etc/selinux/config, F_OK;0;0.000021
+1522783673.352815;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000018
+1522783673.354701;open;/sys/fs/selinux/access, O_RDWR;4</sys/fs/selinux/access;0.000017>
+1522783673.354752;write;4</sys/fs/selinux/access, unconfined_u:unconfined_r:unconf..., 88;88;0.001250>
+1522783673.356041;read;4</sys/fs/selinux/access, 1f ffffffff 0 ffffffff 1 0, 4095;26;0.000010>
+1522783673.356103;close;4</sys/fs/selinux/access;0;0.000015>
+1522783673.364098;access;/run/systemd/seats/, F_OK;0;0.000012
+1522783673.367680;access;/var/run/utmpx, F_OK;-1 ENOENT (No such file or directory);0.000016
+1522783673.370331;access;/usr/X11R6/bin/xauth, X_OK;-1 ENOENT (No such file or directory);0.000011
+1522783673.370364;access;/usr/bin/xauth, X_OK;-1 ENOENT (No such file or directory);0.000011
+1522783673.370395;access;/usr/bin/X11/xauth, X_OK;-1 ENOENT (No such file or directory);0.000011
+1522783673.375184;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000012
+1522783683.410105;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000028
+1522783702.766587;access;/etc/ld.so.preload, R_OK;-1 ENOENT (No such file or directory);0.000829
+1522783702.800833;access;/etc/selinux/config, F_OK;0;0.000103
+1522783702.801011;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000013
+1522783702.801239;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000012
+1522783702.802131;access;/etc/system-fips, F_OK;-1 ENOENT (No such file or directory);0.000011

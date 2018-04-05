@@ -1,0 +1,25 @@
+
+|---[  Wed Apr  4 05:00:02 EDT 2018  ]---|
+
+- byl upraven linux.strace.debug a vykostena cast s uS, novej logstash neumi eventy
+- je nutny vytvorit skript pro testy, zatim je to delany onelinerem coz fugnuje ! :)
+- byl predelan vystup z strace kde zatim neni prvni radek nahrazen pidem. Je to tak lepsi
+  paac se vyhneme resume statum u konkurentnich syscall v ruznejch procesech
+
+- clone je fork+ threads dohromady - zajimave :)
+- kibanu budeme muset asi modifikovat
+- byl predelanej a prejmenovanej patern file aby reflektoval chybejici pid
+- byl zmenenej 01_convert.sh opet kvuli chybejicimu pidu - tenhle skript je potreba predelat
+
+
+
+
+|---[  Thu Apr  5 16:04:13 EDT 2018  ]---|
+
+- pridan accept, je potreba dodelat description ale v zakladu funguje
+- je velka otazka co s komplexnimi returny, kdy je vracen je jen fd ale napriklad cely socket, mozna nechat byt
+- upraven byl filtr na socket volani tak aby vracel socket name a socket_fd 
+- pridan bind
+- pridan listen
+- pridan connect
+- pridan getpeername a getsockname nicmene v examples neni zadna zajiamva return value. Nutno proverit

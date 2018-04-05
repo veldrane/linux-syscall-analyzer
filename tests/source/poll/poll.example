@@ -1,0 +1,324 @@
+1522783548.875543;poll;[{fd=3</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=3, revents=POLLIN}]);0.000010>
+1522783603.844915;poll;[{fd=3</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=3, revents=POLLIN}]);0.000011>
+1522783603.859103;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.005122>
+1522783603.864842;poll;[{fd=4<socket:[27978], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783603.865039;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000150>
+1522783603.865655;poll;[{fd=4<socket:[27980], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783603.865835;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.004953>
+1522783603.871157;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.045082>
+1522783603.919821;poll;[{fd=4<socket:[27982], events=POLLOUT}], 1, 0;1 ([{fd=4, revents=POLLOUT}]);0.000016>
+1522783603.920046;poll;[{fd=4<socket:[27982], events=POLLIN}], 1, 5000;1 ([{fd=4, revents=POLLIN}]);0.006786>
+1522783603.929952;ppoll;[{fd=4<socket:[27983], events=POLLIN}], 1, {24, 999815000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999812369});0.000019>
+1522783603.930185;ppoll;[{fd=4<socket:[27983], events=POLLIN}], 1, {24, 999582000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999580235});0.000018>
+1522783603.931139;ppoll;[{fd=4<socket:[27984], events=POLLIN}], 1, {24, 999785000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999782895});0.000019>
+1522783603.931390;ppoll;[{fd=4<socket:[27984], events=POLLIN}], 1, {24, 999534000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999532337});0.000018>
+1522783603.933017;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000208>
+1522783603.968400;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000020>
+1522783603.968634;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000018>
+1522783603.968846;poll;[{fd=6<socket:[27959], events=POLLIN}, {fd=7<pipe:[27960]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);1.095858>
+1522783605.234582;poll;[{fd=4<socket:[32087], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000009>
+1522783605.355537;poll;[{fd=4<socket:[36191], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000049>
+1522783605.359430;poll;[{fd=4<socket:[36201], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000009>
+1522783605.361043;poll;[{fd=4<socket:[36202], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000009>
+1522783605.364848;poll;[{fd=4<socket:[36203], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783605.544174;poll;[{fd=4<socket:[36210], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783605.569301;poll;[{fd=5<socket:[36217], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000010>
+1522783716.104772;poll;[{fd=8<socket:[58302], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000021>
+1522783716.113024;poll;[{fd=8<socket:[58305], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000013>
+1522783716.114922;poll;[{fd=8<socket:[58307], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000020>
+1522783716.117406;poll;[{fd=8<socket:[58309], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000012>
+1522783716.118142;poll;[{fd=8<socket:[58310], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000015>
+1522783716.118994;poll;[{fd=8<socket:[58311], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000017>
+1522783716.119926;poll;[{fd=8<socket:[58312], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000013>
+1522783603.860771;poll;[{fd=6</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.861592;poll;[{fd=6<socket:[27965], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.862088;poll;[{fd=6<socket:[27970], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.862504;poll;[{fd=6<socket:[27971], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783605.624084;poll;[{fd=4<socket:[36235], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783605.624654;poll;[{fd=4<socket:[36236], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783605.625170;poll;[{fd=4<socket:[36237], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783605.632150;poll;[{fd=4<socket:[36240], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783605.632763;poll;[{fd=4<socket:[36242], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783605.637650;poll;[{fd=4<socket:[36244], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783636.520265;readlink;/proc/1/fd/4, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.525901;stat;/run/lvm/lvmpolld.socket, {st_mode=S_IFSOCK|0600, st_size=0, ...};0;0.000208
+1522783636.579820;readlink;/proc/530/fd/7, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.594956;readlink;/proc/557/fd/11, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.613287;readlink;/proc/735/task/736/fd/6, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.617906;readlink;/proc/735/fd/6, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.654876;readlink;/proc/761/task/774/fd/4, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.662720;readlink;/proc/761/fd/4, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.688263;readlink;/proc/778/fd/4, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.720625;readlink;/proc/1197/task/1199/fd/5, anon_inode:[eventpoll], 4096;22;0.000014
+1522783636.726295;readlink;/proc/1197/task/1200/fd/5, anon_inode:[eventpoll], 4096;22;0.000014
+1522783636.731347;readlink;/proc/1197/task/1201/fd/5, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.736282;readlink;/proc/1197/task/1202/fd/5, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.741118;readlink;/proc/1197/task/1203/fd/5, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.745769;readlink;/proc/1197/task/1938/fd/5, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.750497;readlink;/proc/1197/task/1939/fd/5, anon_inode:[eventpoll], 4096;22;0.000016
+1522783636.755104;readlink;/proc/1197/task/1940/fd/5, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.759764;readlink;/proc/1197/task/1941/fd/5, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.764378;readlink;/proc/1197/fd/5, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.781718;readlink;/proc/1276/task/1396/fd/11, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.789764;readlink;/proc/1276/task/1397/fd/11, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.797513;readlink;/proc/1276/task/1399/fd/11, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.804676;readlink;/proc/1276/task/1406/fd/11, anon_inode:[eventpoll], 4096;22;0.000011
+1522783636.811903;readlink;/proc/1276/fd/11, anon_inode:[eventpoll], 4096;22;0.000011
+1522783636.847419;readlink;/proc/1277/task/1570/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.848210;readlink;/proc/1277/task/1570/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.849003;readlink;/proc/1277/task/1570/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.849788;readlink;/proc/1277/task/1570/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.851112;readlink;/proc/1277/task/1570/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.851905;readlink;/proc/1277/task/1570/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.885955;readlink;/proc/1277/task/1582/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.886751;readlink;/proc/1277/task/1582/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.887541;readlink;/proc/1277/task/1582/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.888339;readlink;/proc/1277/task/1582/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.889661;readlink;/proc/1277/task/1582/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.890454;readlink;/proc/1277/task/1582/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.924854;readlink;/proc/1277/task/1617/fd/102, anon_inode:[eventpoll], 4096;22;0.000014
+1522783636.925766;readlink;/proc/1277/task/1617/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.926619;readlink;/proc/1277/task/1617/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.927411;readlink;/proc/1277/task/1617/fd/111, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.928744;readlink;/proc/1277/task/1617/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.929584;readlink;/proc/1277/task/1617/fd/119, anon_inode:[eventpoll], 4096;22;0.000026
+1522783636.965823;readlink;/proc/1277/task/1619/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.966627;readlink;/proc/1277/task/1619/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.967418;readlink;/proc/1277/task/1619/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.968208;readlink;/proc/1277/task/1619/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783636.969546;readlink;/proc/1277/task/1619/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783636.970338;readlink;/proc/1277/task/1619/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.004189;readlink;/proc/1277/task/1623/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.004981;readlink;/proc/1277/task/1623/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.005846;readlink;/proc/1277/task/1623/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.006643;readlink;/proc/1277/task/1623/fd/111, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.007969;readlink;/proc/1277/task/1623/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.008762;readlink;/proc/1277/task/1623/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.042536;readlink;/proc/1277/task/1625/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.043329;readlink;/proc/1277/task/1625/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.044116;readlink;/proc/1277/task/1625/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.044909;readlink;/proc/1277/task/1625/fd/111, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.046334;readlink;/proc/1277/task/1625/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.047135;readlink;/proc/1277/task/1625/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.084237;readlink;/proc/1277/task/1629/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.085039;readlink;/proc/1277/task/1629/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.085906;readlink;/proc/1277/task/1629/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.086704;readlink;/proc/1277/task/1629/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.088034;readlink;/proc/1277/task/1629/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.088830;readlink;/proc/1277/task/1629/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.122568;readlink;/proc/1277/task/1670/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.123364;readlink;/proc/1277/task/1670/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.124148;readlink;/proc/1277/task/1670/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.124933;readlink;/proc/1277/task/1670/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.126357;readlink;/proc/1277/task/1670/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.127157;readlink;/proc/1277/task/1670/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.162235;readlink;/proc/1277/task/1671/fd/102, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.163141;readlink;/proc/1277/task/1671/fd/105, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.164037;readlink;/proc/1277/task/1671/fd/108, anon_inode:[eventpoll], 4096;22;0.000015
+1522783637.164957;readlink;/proc/1277/task/1671/fd/111, anon_inode:[eventpoll], 4096;22;0.000015
+1522783637.166489;readlink;/proc/1277/task/1671/fd/116, anon_inode:[eventpoll], 4096;22;0.000040
+1522783637.167442;readlink;/proc/1277/task/1671/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.202104;readlink;/proc/1277/task/1865/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.202947;readlink;/proc/1277/task/1865/fd/105, anon_inode:[eventpoll], 4096;22;0.000017
+1522783637.203735;readlink;/proc/1277/task/1865/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.204529;readlink;/proc/1277/task/1865/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.205920;readlink;/proc/1277/task/1865/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.206720;readlink;/proc/1277/task/1865/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.240521;readlink;/proc/1277/task/1899/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.241310;readlink;/proc/1277/task/1899/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.242103;readlink;/proc/1277/task/1899/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.242895;readlink;/proc/1277/task/1899/fd/111, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.244216;readlink;/proc/1277/task/1899/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.244999;readlink;/proc/1277/task/1899/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.278667;readlink;/proc/1277/task/1901/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.279457;readlink;/proc/1277/task/1901/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.280286;readlink;/proc/1277/task/1901/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.281077;readlink;/proc/1277/task/1901/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.282389;readlink;/proc/1277/task/1901/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.283183;readlink;/proc/1277/task/1901/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.316861;readlink;/proc/1277/task/3025/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.317648;readlink;/proc/1277/task/3025/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.318445;readlink;/proc/1277/task/3025/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.319324;readlink;/proc/1277/task/3025/fd/111, anon_inode:[eventpoll], 4096;22;0.000019
+1522783637.320700;readlink;/proc/1277/task/3025/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.321490;readlink;/proc/1277/task/3025/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.356128;readlink;/proc/1277/task/3361/fd/102, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.356955;readlink;/proc/1277/task/3361/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.357819;readlink;/proc/1277/task/3361/fd/108, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.358724;readlink;/proc/1277/task/3361/fd/111, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.360156;readlink;/proc/1277/task/3361/fd/116, anon_inode:[eventpoll], 4096;22;0.000014
+1522783637.360949;readlink;/proc/1277/task/3361/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.394716;readlink;/proc/1277/task/3421/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.395524;readlink;/proc/1277/task/3421/fd/105, anon_inode:[eventpoll], 4096;22;0.000077
+1522783637.396388;readlink;/proc/1277/task/3421/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.397208;readlink;/proc/1277/task/3421/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.398585;readlink;/proc/1277/task/3421/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.399370;readlink;/proc/1277/task/3421/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.433418;readlink;/proc/1277/task/3582/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.434214;readlink;/proc/1277/task/3582/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.435013;readlink;/proc/1277/task/3582/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.435873;readlink;/proc/1277/task/3582/fd/111, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.437194;readlink;/proc/1277/task/3582/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.437983;readlink;/proc/1277/task/3582/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.473297;readlink;/proc/1277/task/3586/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.474091;readlink;/proc/1277/task/3586/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.474891;readlink;/proc/1277/task/3586/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.475757;readlink;/proc/1277/task/3586/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.477080;readlink;/proc/1277/task/3586/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.477867;readlink;/proc/1277/task/3586/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.511606;readlink;/proc/1277/task/3625/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.512392;readlink;/proc/1277/task/3625/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.513175;readlink;/proc/1277/task/3625/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.514004;readlink;/proc/1277/task/3625/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.515324;readlink;/proc/1277/task/3625/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.516221;readlink;/proc/1277/task/3625/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.550694;readlink;/proc/1277/task/3744/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.551487;readlink;/proc/1277/task/3744/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.552279;readlink;/proc/1277/task/3744/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.553074;readlink;/proc/1277/task/3744/fd/111, anon_inode:[eventpoll], 4096;22;0.000030
+1522783637.554452;readlink;/proc/1277/task/3744/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.555314;readlink;/proc/1277/task/3744/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.589144;readlink;/proc/1277/task/3745/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.589938;readlink;/proc/1277/task/3745/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.590728;readlink;/proc/1277/task/3745/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.591522;readlink;/proc/1277/task/3745/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.592838;readlink;/proc/1277/task/3745/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.593627;readlink;/proc/1277/task/3745/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.627375;readlink;/proc/1277/task/3749/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.628162;readlink;/proc/1277/task/3749/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.628952;readlink;/proc/1277/task/3749/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.629742;readlink;/proc/1277/task/3749/fd/111, anon_inode:[eventpoll], 4096;22;0.000016
+1522783637.631103;readlink;/proc/1277/task/3749/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.631889;readlink;/proc/1277/task/3749/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.665701;readlink;/proc/1277/task/3795/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.666503;readlink;/proc/1277/task/3795/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.667397;readlink;/proc/1277/task/3795/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.668194;readlink;/proc/1277/task/3795/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.669517;readlink;/proc/1277/task/3795/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.670311;readlink;/proc/1277/task/3795/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.704181;readlink;/proc/1277/task/3798/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.704966;readlink;/proc/1277/task/3798/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.705830;readlink;/proc/1277/task/3798/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.706627;readlink;/proc/1277/task/3798/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.707947;readlink;/proc/1277/task/3798/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.708729;readlink;/proc/1277/task/3798/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.742456;readlink;/proc/1277/task/3890/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.743255;readlink;/proc/1277/task/3890/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.744041;readlink;/proc/1277/task/3890/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.744830;readlink;/proc/1277/task/3890/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.746220;readlink;/proc/1277/task/3890/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.747051;readlink;/proc/1277/task/3890/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.780705;readlink;/proc/1277/task/4085/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.781491;readlink;/proc/1277/task/4085/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.782284;readlink;/proc/1277/task/4085/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.783078;readlink;/proc/1277/task/4085/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.784397;readlink;/proc/1277/task/4085/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.785184;readlink;/proc/1277/task/4085/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.818899;readlink;/proc/1277/task/4345/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.819846;readlink;/proc/1277/task/4345/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.820639;readlink;/proc/1277/task/4345/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.821430;readlink;/proc/1277/task/4345/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.822751;readlink;/proc/1277/task/4345/fd/116, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.823539;readlink;/proc/1277/task/4345/fd/119, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.857559;readlink;/proc/1277/task/4449/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.858345;readlink;/proc/1277/task/4449/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.859139;readlink;/proc/1277/task/4449/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.859931;readlink;/proc/1277/task/4449/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.861254;readlink;/proc/1277/task/4449/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.862039;readlink;/proc/1277/task/4449/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.895809;readlink;/proc/1277/task/8016/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.896602;readlink;/proc/1277/task/8016/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.897446;readlink;/proc/1277/task/8016/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.898236;readlink;/proc/1277/task/8016/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.899565;readlink;/proc/1277/task/8016/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.900354;readlink;/proc/1277/task/8016/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.933995;readlink;/proc/1277/task/13277/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.934790;readlink;/proc/1277/task/13277/fd/105, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.935639;readlink;/proc/1277/task/13277/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.936429;readlink;/proc/1277/task/13277/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.937741;readlink;/proc/1277/task/13277/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.938544;readlink;/proc/1277/task/13277/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.972339;readlink;/proc/1277/task/13278/fd/102, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.973129;readlink;/proc/1277/task/13278/fd/105, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.973916;readlink;/proc/1277/task/13278/fd/108, anon_inode:[eventpoll], 4096;22;0.000013
+1522783637.974716;readlink;/proc/1277/task/13278/fd/111, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.976110;readlink;/proc/1277/task/13278/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783637.976901;readlink;/proc/1277/task/13278/fd/119, anon_inode:[eventpoll], 4096;22;0.000012
+1522783638.010208;readlink;/proc/1277/fd/102, anon_inode:[eventpoll], 4096;22;0.000012
+1522783638.011006;readlink;/proc/1277/fd/105, anon_inode:[eventpoll], 4096;22;0.000011
+1522783638.011781;readlink;/proc/1277/fd/108, anon_inode:[eventpoll], 4096;22;0.000012
+1522783638.012564;readlink;/proc/1277/fd/111, anon_inode:[eventpoll], 4096;22;0.000011
+1522783638.013867;readlink;/proc/1277/fd/116, anon_inode:[eventpoll], 4096;22;0.000012
+1522783638.014691;readlink;/proc/1277/fd/119, anon_inode:[eventpoll], 4096;22;0.000011
+1522783638.033590;readlink;/proc/1604/fd/15, anon_inode:[eventpoll], 4096;22;0.000012
+1522783638.060264;readlink;/proc/1608/fd/8, anon_inode:[eventpoll], 4096;22;0.000016
+1522783638.068222;readlink;/proc/1609/fd/8, anon_inode:[eventpoll], 4096;22;0.000014
+1522783638.106101;write;1<pipe:[37443], tpoll]\nauditd 735 736 ..., 4096;4096;0.000018>
+1522783638.214841;poll;[{fd=4<socket:[49650], events=POLLOUT}], 1, 0;1 ([{fd=4, revents=POLLOUT}]);0.000011>
+1522783638.215091;poll;[{fd=4<socket:[49650], events=POLLIN}], 1, 5000;1 ([{fd=4, revents=POLLIN}]);0.015914>
+1522783638.235678;ppoll;[{fd=4<socket:[49651], events=POLLIN}], 1, {24, 999900000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999898098});0.000012>
+1522783638.235813;ppoll;[{fd=4<socket:[49651], events=POLLIN}], 1, {24, 999764000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999763099});0.000010>
+1522783638.236359;ppoll;[{fd=4<socket:[49652], events=POLLIN}], 1, {24, 999880000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999878786});0.000010>
+1522783638.236498;ppoll;[{fd=4<socket:[49652], events=POLLIN}], 1, {24, 999742000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999741067});0.000010>
+1522783638.106025;read;0<pipe:[37443], tpoll]\nauditd 735 736 ..., 16384;4096;0.000090>
+1522783651.281797;poll;[{fd=3</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=3, revents=POLLIN}]);0.000010>
+1522783651.295966;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.005269>
+1522783651.301957;poll;[{fd=4<socket:[49700], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783651.302205;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000177>
+1522783651.302932;poll;[{fd=4<socket:[49702], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783651.303147;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.005317>
+1522783651.308843;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.043643>
+1522783651.355064;poll;[{fd=4<socket:[49704], events=POLLOUT}], 1, 0;1 ([{fd=4, revents=POLLOUT}]);0.000061>
+1522783651.355317;poll;[{fd=4<socket:[49704], events=POLLIN}], 1, 5000;1 ([{fd=4, revents=POLLIN}]);0.007142>
+1522783651.364266;ppoll;[{fd=4<socket:[49705], events=POLLIN}], 1, {24, 999852000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999849733});0.000016>
+1522783651.364452;ppoll;[{fd=4<socket:[49705], events=POLLIN}], 1, {24, 999666000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999664629});0.000015>
+1522783651.365277;ppoll;[{fd=4<socket:[49706], events=POLLIN}], 1, {24, 999763000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999761269});0.000016>
+1522783651.365480;ppoll;[{fd=4<socket:[49706], events=POLLIN}], 1, {24, 999559000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999557711});0.000015>
+1522783651.366791;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000034>
+1522783651.381731;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000016>
+1522783651.381916;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);0.000014>
+1522783651.382099;poll;[{fd=6<socket:[49681], events=POLLIN}, {fd=7<pipe:[49682]>, events=POLLIN}], 2, -1;1 ([{fd=6, revents=POLLIN}]);1.475366>
+1522783653.030956;poll;[{fd=4<socket:[53809], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000009>
+1522783653.154815;poll;[{fd=4<socket:[57913], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000008>
+1522783653.159256;poll;[{fd=4<socket:[57923], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783653.160862;poll;[{fd=4<socket:[57924], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783653.164941;poll;[{fd=4<socket:[57925], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783653.320112;poll;[{fd=4<socket:[57932], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783653.341257;poll;[{fd=5<socket:[57940], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000010>
+1522783712.189580;poll;[{fd=8<socket:[58284], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000013>
+1522783712.195785;poll;[{fd=8<socket:[58287], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000016>
+1522783712.198215;poll;[{fd=8<socket:[58289], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000017>
+1522783712.200117;poll;[{fd=8<socket:[58291], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000076>
+1522783712.201062;poll;[{fd=8<socket:[58292], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000026>
+1522783712.201636;poll;[{fd=8<socket:[58293], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000010>
+1522783712.202219;poll;[{fd=8<socket:[58294], events=POLLIN}], 1, 500;1 ([{fd=8, revents=POLLIN}]);0.000014>
+1522783651.296985;poll;[{fd=6</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783651.298428;poll;[{fd=6<socket:[49687], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783651.298954;poll;[{fd=6<socket:[49692], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783651.299387;poll;[{fd=6<socket:[49693], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000011>
+1522783653.394724;poll;[{fd=4<socket:[57958], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783653.395510;poll;[{fd=4<socket:[57959], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783653.396064;poll;[{fd=4<socket:[57960], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783653.401911;poll;[{fd=4<socket:[57963], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783653.402619;poll;[{fd=4<socket:[57965], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000012>
+1522783653.407886;poll;[{fd=4<socket:[57967], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783661.511715;poll;[{fd=3<socket:[58103], events=POLLIN|POLLPRI}], 1, 0;0 (Timeout);0.000011>
+1522783661.513009;poll;[{fd=3<socket:[58103], events=POLLIN|POLLPRI}], 1, 0;0 (Timeout);0.000010>
+1522783661.514307;poll;[{fd=4<socket:[58104], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783661.514964;poll;[{fd=4<socket:[58106], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000010>
+1522783661.521213;poll;[{fd=4<socket:[58117], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783661.538038;poll;[{fd=5<socket:[58123], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000011>
+1522783661.546346;poll;[{fd=5<socket:[58130], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000010>
+1522783661.546654;poll;[{fd=5<socket:[58131], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000011>
+1522783673.353226;poll;[{fd=3<socket:[58148], events=POLLIN|POLLPRI}], 1, 0;0 (Timeout);0.000011>
+1522783673.354661;poll;[{fd=3<socket:[58148], events=POLLIN|POLLPRI}], 1, 0;0 (Timeout);0.000011>
+1522783673.356550;poll;[{fd=4<socket:[58149], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783673.357251;poll;[{fd=4<socket:[58151], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783673.361922;poll;[{fd=4<socket:[58162], events=POLLIN}], 1, 500;1 ([{fd=4, revents=POLLIN}]);0.000011>
+1522783673.370618;poll;[{fd=5<socket:[58167], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000010>
+1522783673.378349;poll;[{fd=5<socket:[58174], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000011>
+1522783673.378658;poll;[{fd=5<socket:[58175], events=POLLIN}], 1, 500;1 ([{fd=5, revents=POLLIN}]);0.000011>
+1522783702.803159;poll;[{fd=3</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=3, revents=POLLIN}]);0.000012>
+1522783706.288607;poll;[{fd=3<socket:[58280], events=POLLIN}], 1, 500;1 ([{fd=3, revents=POLLIN}]);0.000060>
+1522783706.291128;poll;[{fd=3<socket:[58281], events=POLLIN}], 1, 500;1 ([{fd=3, revents=POLLIN}]);0.000058>
+1522783706.294322;poll;[{fd=3<socket:[58282], events=POLLIN}], 1, 500;1 ([{fd=3, revents=POLLIN}]);0.000061>

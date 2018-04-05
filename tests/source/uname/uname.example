@@ -1,0 +1,38 @@
+1522783605.623918;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000009
+1522783605.644757;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000009
+1522783605.668989;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000008
+1522783605.736494;stat;/usr/local/sbin/uname, 0x7ffe11f31b80;-1 ENOENT (No such file or directory);0.000011
+1522783605.736527;stat;/usr/local/bin/uname, 0x7ffe11f31b80;-1 ENOENT (No such file or directory);0.000010
+1522783605.736555;stat;/usr/sbin/uname, 0x7ffe11f31b80;-1 ENOENT (No such file or directory);0.000009
+1522783605.736582;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000010
+1522783605.736636;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783605.736748;access;/usr/bin/uname, X_OK;0;0.000010
+1522783605.736774;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000008
+1522783605.736884;access;/usr/bin/uname, R_OK;0;0.000008
+1522783605.736909;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783605.736936;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000008
+1522783605.737044;access;/usr/bin/uname, X_OK;0;0.000009
+1522783605.737069;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783605.737178;access;/usr/bin/uname, R_OK;0;0.000009
+1522783605.738393;execve;/usr/bin/uname, [uname, -o], [/* 31 vars */];0;0.000131
+1522783605.748038;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000007
+1522783653.394544;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000010
+1522783653.415555;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000009
+1522783653.435316;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000009
+1522783653.502093;stat;/usr/local/sbin/uname, 0x7ffc156cf710;-1 ENOENT (No such file or directory);0.000011
+1522783653.502125;stat;/usr/local/bin/uname, 0x7ffc156cf710;-1 ENOENT (No such file or directory);0.000010
+1522783653.502155;stat;/usr/sbin/uname, 0x7ffc156cf710;-1 ENOENT (No such file or directory);0.000010
+1522783653.502183;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000010
+1522783653.502237;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783653.502353;access;/usr/bin/uname, X_OK;0;0.000010
+1522783653.502381;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783653.502495;access;/usr/bin/uname, R_OK;0;0.000010
+1522783653.502521;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783653.502550;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783653.502663;access;/usr/bin/uname, X_OK;0;0.000010
+1522783653.502689;stat;/usr/bin/uname, {st_mode=S_IFREG|0755, st_size=33080, ...};0;0.000009
+1522783653.502803;access;/usr/bin/uname, R_OK;0;0.000009
+1522783653.504040;execve;/usr/bin/uname, [uname, -o], [/* 31 vars */];0;0.000125
+1522783653.512066;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000007
+1522783661.514150;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000009
+1522783673.356373;uname;{sysname=Linux, nodename=elkdev1.vitrace.io, ...};0;0.000010

@@ -1,0 +1,141 @@
+1522783651.296097 set_robust_list(0x7f41aaf28ba0, 24) = 0 <0.000010>
+1522783651.296165 close(6<socket:[49681]>) = 0 <0.000010>
+1522783651.296205 close(7<pipe:[49682]>) = 0 <0.000009>
+1522783651.296403 futex(0x7f41a5398530, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000010>
+1522783651.296479 futex(0x7f41a53983d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783651.296563 futex(0x7f41a8facfa0, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000010>
+1522783651.296609 lstat("/etc/gss/mech", 0x7ffdf5d43e60) = -1 ENOENT (No such file or directory) <0.000015>
+1522783651.296668 openat(AT_FDCWD, "/etc/gss/mech.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 6</etc/gss/mech.d> <0.000013>
+1522783651.296714 getdents(6</etc/gss/mech.d>, /* 2 entries */, 32768) = 48 <0.000015>
+1522783651.296766 getdents(6</etc/gss/mech.d>, /* 0 entries */, 32768) = 0 <0.000010>
+1522783651.296801 close(6</etc/gss/mech.d>) = 0 <0.000011>
+1522783651.296902 open("/dev/urandom", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 6</dev/urandom> <0.000015>
+1522783651.296947 fstat(6</dev/urandom>, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0 <0.000009>
+1522783651.296985 poll([{fd=6</dev/urandom>, events=POLLIN}], 1, 10) = 1 ([{fd=6, revents=POLLIN}]) <0.000010>
+1522783651.297023 read(6</dev/urandom>, "\x05\xc6\xff\x28\xf6\x3b\xd3\xb5\xfd\xab\xc3\x50\x13\x83\x7b\x28\xe5\xd0\x43\x77\x17\xc7\xf1\x4f\xe2\xfc\x59\xad\x17\xbf\x8a\xf0"..., 48) = 48 <0.000012>
+1522783651.297059 close(6</dev/urandom>) = 0 <0.000010>
+1522783651.297123 getuid()              = 0 <0.000008>
+1522783651.297192 getuid()              = 0 <0.000009>
+1522783651.297314 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 6<socket:[49687]> <0.000672>
+1522783651.298022 fcntl(6<socket:[49687]>, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+1522783651.298088 readlink("/proc/self/exe", "/usr/sbin/sshd", 4096) = 14 <0.000021>
+1522783651.298151 ioctl(0</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+1522783651.298190 ioctl(1</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+1522783651.298223 ioctl(2</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+1522783651.298285 sendto(6<socket:[49687]>, "\xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d"..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 240 <0.000108>
+1522783651.298428 poll([{fd=6<socket:[49687]>, events=POLLIN}], 1, 500) = 1 ([{fd=6, revents=POLLIN}]) <0.000010>
+1522783651.298474 recvfrom(6<socket:[49687]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783651.298513 recvfrom(6<socket:[49687]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000011>
+1522783651.298555 close(6<socket:[49687]>) = 0 <0.000014>
+1522783651.298678 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 6<socket:[49692]> <0.000024>
+1522783651.298728 fcntl(6<socket:[49692]>, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+1522783651.298761 ioctl(0</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+1522783651.298795 ioctl(1</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+1522783651.298827 ioctl(2</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+1522783651.298863 sendto(6<socket:[49692]>, "\xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d"..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 240 <0.000063>
+1522783651.298954 poll([{fd=6<socket:[49692]>, events=POLLIN}], 1, 500) = 1 ([{fd=6, revents=POLLIN}]) <0.000010>
+1522783651.298995 recvfrom(6<socket:[49692]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000011>
+1522783651.299039 recvfrom(6<socket:[49692]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783651.299077 close(6<socket:[49692]>) = 0 <0.000013>
+1522783651.299127 socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 6<socket:[49693]> <0.000021>
+1522783651.299174 fcntl(6<socket:[49693]>, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+1522783651.299206 ioctl(0</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+1522783651.299240 ioctl(1</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+1522783651.299272 ioctl(2</dev/null>, TCGETS, 0x7ffdf5d41920) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+1522783651.299308 sendto(6<socket:[49693]>, "\xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d"..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 240 <0.000052>
+1522783651.299387 poll([{fd=6<socket:[49693]>, events=POLLIN}], 1, 500) = 1 ([{fd=6, revents=POLLIN}]) <0.000011>
+1522783651.299427 recvfrom(6<socket:[49693]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00"..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000010>
+1522783651.299465 recvfrom(6<socket:[49693]>, "\x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\xa4\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00"..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12]) = 36 <0.000011>
+1522783651.299502 close(6<socket:[49693]>) = 0 <0.000012>
+1522783651.299566 futex(0x7f41aa5057dc, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783651.299616 open("/proc/thread-self/attr/current", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000015>
+1522783651.299663 gettid()              = 13476 <0.000008>
+1522783651.299692 open("/proc/self/task/13476/attr/current", O_RDONLY|O_CLOEXEC) = 6</proc/13476/task/13476/attr/current> <0.000022>
+1522783651.299753 read(6</proc/13476/task/13476/attr/current>, "unconfined_u:unconfined_r:unconf"..., 4095) = 54 <0.000027>
+1522783651.299809 close(6</proc/13476/task/13476/attr/current>) = 0 <0.000010>
+1522783651.299849 access("/var/run/setrans/.setrans-unix", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+1522783651.299892 futex(0x7f41aa506958, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000009>
+1522783651.299930 open("/proc/thread-self/attr/current", O_RDWR|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000013>
+1522783651.299965 gettid()              = 13476 <0.000009>
+1522783651.299992 open("/proc/self/task/13476/attr/current", O_RDWR|O_CLOEXEC) = 6</proc/13476/task/13476/attr/current> <0.000015>
+1522783651.300039 write(6</proc/13476/task/13476/attr/current>, "unconfined_u:unconfined_r:sshd_n"..., 52) = -1 EINVAL (Invalid argument) <0.000022>
+1522783651.300086 close(6</proc/13476/task/13476/attr/current>) = 0 <0.000010>
+1522783651.300155 getuid()              = 0 <0.000009>
+1522783651.300183 chroot("/var/empty/sshd") = 0 <0.000013>
+1522783651.300216 chdir("/")            = 0 <0.000010>
+1522783651.300250 setgroups(1, [74])    = 0 <0.000011>
+1522783651.300282 getuid()              = 0 <0.000009>
+1522783651.300308 getgid()              = 0 <0.000009>
+1522783651.300333 setresgid(74, 74, 74) = 0 <0.000010>
+1522783651.300361 setresuid(74, 74, 74) = 0 <0.000010>
+1522783651.300389 setgid(0)             = -1 EPERM (Operation not permitted) <0.000009>
+1522783651.300417 setresgid(-1, 0, -1)  = -1 EPERM (Operation not permitted) <0.000009>
+1522783651.300444 getgid()              = 74 <0.000010>
+1522783651.300475 getegid()             = 74 <0.000009>
+1522783651.300500 setuid(0)             = -1 EPERM (Operation not permitted) <0.000009>
+1522783651.300527 setresuid(-1, 0, -1)  = -1 EPERM (Operation not permitted) <0.000010>
+1522783651.300554 getuid()              = 74 <0.000009>
+1522783651.300579 geteuid()             = 74 <0.000008>
+1522783651.300624 setrlimit(RLIMIT_FSIZE, {rlim_cur=0, rlim_max=0}) = 0 <0.000009>
+1522783651.300655 setrlimit(RLIMIT_NOFILE, {rlim_cur=0, rlim_max=0}) = 0 <0.000009>
+1522783651.300684 setrlimit(RLIMIT_NPROC, {rlim_cur=0, rlim_max=0}) = 0 <0.000009>
+1522783651.300714 prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0) = 0 <0.000009>
+1522783651.300741 prctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER, {len=65, filter=0x5580f4755e60}) = 0 <0.000016>
+1522783651.300813 write(3<socket:[49654]>, "\x00\x00\x04\xfc\x0a\x14\xef\xbb\x0d\x0b\x1d\xb3\x9f\xbf\x0c\x24\x88\x32\x4e\x6a\xd6\xee\x00\x00\x01\x40\x63\x75\x72\x76\x65\x32"..., 1280) = 1280 <0.000152>
+1522783651.301008 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <0.000012>
+1522783651.301066 read(3<socket:[49654]>, "\x00\x00\x05\x34\x05\x14\xff\x40\x88\x96\xcd\xa3\xe5\xdd\x9e\x43\x6d\xfe\x8a\x87\xa9\x6d\x00\x00\x00\xc4\x63\x75\x72\x76\x65\x32"..., 8192) = 1336 <0.000015>
+1522783651.301162 getuid()              = 74 <0.000010>
+1522783651.301204 write(4<socket:[49680]>, "\x00\x00\x00\x6c\x78", 5) = 5 <0.000021>
+1522783651.301394 write(4<socket:[49680]>, "\x00\x00\x00\x00\x00\x00\x00\x1d\x63\x68\x61\x63\x68\x61\x32\x30\x2d\x70\x6f\x6c\x79\x31\x33\x30\x35\x40\x6f\x70\x65\x6e\x73\x73"..., 107) = 107 <0.000018>
+1522783651.302240 read(4<socket:[49680]>, "\x00\x00\x00\x01", 4) = 4 <0.000012>
+1522783651.302286 read(4<socket:[49680]>, "y", 1) = 1 <0.000013>
+1522783651.302330 getuid()              = 74 <0.000010>
+1522783651.302363 write(4<socket:[49680]>, "\x00\x00\x00\x6c\x78", 5) = 5 <0.000017>
+1522783651.302527 write(4<socket:[49680]>, "\x00\x00\x00\x01\x00\x00\x00\x1d\x63\x68\x61\x63\x68\x61\x32\x30\x2d\x70\x6f\x6c\x79\x31\x33\x30\x35\x40\x6f\x70\x65\x6e\x73\x73"..., 107) = 107 <0.000016>
+1522783651.303182 read(4<socket:[49680]>, "\x00\x00\x00\x01", 4) = 4 <0.000011>
+1522783651.303225 read(4<socket:[49680]>, "y", 1) = 1 <0.000012>
+1522783651.303273 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <0.000619>
+1522783651.303931 read(3<socket:[49654]>, "\x00\x00\x00\x2c\x06\x1e\x00\x00\x00\x20\x3c\x2c\x59\x42\xda\x7c\x45\x67\x66\xa5\xa6\x1c\xc8\x39\x4a\xf1\x49\x1e\x4b\xf8\x8e\x69"..., 8192) = 48 <0.000012>
+1522783651.308441 write(4<socket:[49680]>, "\x00\x00\x00\x40\x06", 5) = 5 <0.000016>
+1522783651.308594 write(4<socket:[49680]>, "\x00\x00\x00\x01\x00\x00\x00\x20\x07\x20\x97\xff\x4f\xc6\x3f\x96\x64\xee\xa0\x6c\x5f\x17\xa4\x98\x34\x06\xa2\x65\xb6\x2a\x87\x77"..., 63) = 63 <0.000015>
+1522783651.308873 read(4<socket:[49680]>, "\x00\x00\x00\x6a", 4) = 4 <0.000010>
+1522783651.308910 read(4<socket:[49680]>, "\x07\x00\x00\x00\x65\x00\x00\x00\x13\x65\x63\x64\x73\x61\x2d\x73\x68\x61\x32\x2d\x6e\x69\x73\x74\x70\x32\x35\x36\x00\x00\x00\x4a"..., 106) = 106 <0.000011>
+1522783651.308971 clock_gettime(CLOCK_BOOTTIME, {257, 957947120}) = 0 <0.000010>
+1522783651.309012 write(3<socket:[49654]>, "\x00\x00\x01\x04\x09\x1f\x00\x00\x00\x68\x00\x00\x00\x13\x65\x63\x64\x73\x61\x2d\x73\x68\x61\x32\x2d\x6e\x69\x73\x74\x70\x32\x35"..., 364) = 364 <0.000102>
+1522783651.309151 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <0.002805>
+1522783651.312013 read(3<socket:[49654]>, "\x00\x00\x00\x0c\x0a\x15\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00", 8192) = 16 <0.000016>
+1522783651.312086 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <0.039603>
+1522783651.351778 read(3<socket:[49654]>, "\x65\x5a\x43\x11\x31\x8b\x88\xdc\xfc\x3c\xaa\xf9\xeb\xb9\xa4\x31\x95\x70\x13\x42\x76\x9d\x05\x21\x4d\xdc\xb2\xe8\xb8\x86\xa7\xcb"..., 8192) = 44 <0.000020>
+1522783651.351891 write(3<socket:[49654]>, "\x9a\xe5\x46\x8b\x90\x48\xc2\x09\x87\xa5\xe5\x37\xf9\xd4\xea\xdd\x0d\xc5\x77\xaf\x93\xc0\x2a\x7d\x3d\xb7\xc4\x9e\x44\xdf\xa9\xb5"..., 44) = 44 <0.000174>
+1522783651.352295 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <0.000018>
+1522783651.352383 read(3<socket:[49654]>, "\x27\x50\x94\x84\x26\x8a\xaf\x55\x6b\x14\x92\x7b\x57\xa9\x3a\xe8\x13\x97\xc6\xd8\x55\x73\x87\x1a\x33\x1f\xd8\x85\xbb\x53\x36\xf2"..., 8192) = 60 <0.000017>
+1522783651.352452 write(4<socket:[49680]>, "\x00\x00\x00\x09\x08", 5) = 5 <0.000025>
+1522783651.352651 write(4<socket:[49680]>, "\x00\x00\x00\x04\x72\x6f\x6f\x74", 8) = 8 <0.000019>
+1522783651.355357 read(4<socket:[49680]>, "\x00\x00\x6a\x24", 4) = 4 <0.011173>
+1522783651.366596 read(4<socket:[49680]>, "\x09\x01\x00\x00\x00\x30\xf0\x3f\x72\xf6\x80\x55\x00\x00\x10\x40\x72\xf6\x80\x55\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x30\x40"..., 27172) = 27172 <0.000058>
+1522783651.366766 write(4<socket:[49680]>, "\x00\x00\x00\x01\x64", 5) = 5 <0.000048>
+1522783651.366893 write(4<socket:[49680]>, "\x00\x00\x00\x17\x04", 5) = 5 <0.000033>
+1522783651.366981 write(4<socket:[49680]>, "\x00\x00\x00\x0e\x73\x73\x68\x2d\x63\x6f\x6e\x6e\x65\x63\x74\x69\x6f\x6e\x00\x00\x00\x00", 22) = 22 <0.000033>
+1522783651.367112 write(4<socket:[49680]>, "\x00\x00\x00\x05\x50", 5) = 5 <0.000036>
+1522783651.367212 write(4<socket:[49680]>, "\x00\x00\x00\x00", 4) = 4 <0.000037>
+1522783651.367335 write(3<socket:[49654]>, "\x30\xf2\x04\x23\xd3\xb6\x88\x4e\x5c\x1a\x6d\x8d\x2f\x73\xfc\x41\x75\x02\x67\x42\xc6\x77\xef\x63\x2d\x5b\xe4\x53\xff\xdd\x1f\xfb"..., 84) = 84 <0.000184>
+1522783651.367590 select(4, [3<socket:[49654]>], NULL, NULL, NULL) = 1 (in [3]) <1.488912>
+1522783652.856761 read(3<socket:[49654]>, "\x5f\x90\x77\xaa\x4d\xa1\xcd\x6c\x4b\xf3\x6d\xe0\xa3\x3b\x9e\x5f\xba\x27\xac\x82\x15\xb9\x18\x71\xac\xcc\x79\x9d\x07\xd5\x1b\x25"..., 8192) = 84 <0.000088>
+1522783652.857225 write(4<socket:[49680]>, "\x00\x00\x00\x09\x0c", 5) = 5 <0.000118>
+1522783652.857665 write(4<socket:[49680]>, "\x00\x00\x00\x04\x72\x6f\x6f\x74", 8) = 8 <0.000131>
+1522783652.858008 read(4<socket:[49680]>, "\x00\x00\x00\x09", 4) = 4 <0.172989>
+1522783653.031153 read(4<socket:[49680]>, "\r", 9) = 1 <0.000009>
+1522783653.031187 read(4<socket:[49680]>, "\x00\x00\x00\x01\x00\x00\x00\x00", 8) = 8 <0.000034>
+1522783653.031258 write(4<socket:[49680]>, "\x00\x00\x00\x01\x66", 5) = 5 <0.000009>
+1522783653.031291 read(4<socket:[49680]>, "\x00\x00\x00\x09", 4) = 4 <0.123684>
+1522783653.155005 read(4<socket:[49680]>, "g", 9) = 1 <0.000059>
+1522783653.155110 read(4<socket:[49680]>, "\x00\x00\x00\x01\x00\x00\x00\x00", 8) = 8 <0.000033>
+1522783653.155185 write(3<socket:[49654]>, "\x37\xbc\x73\x8e\xa8\x84\x23\xd3\xda\x08\x2f\x2e\x2a\xd9\xd8\x38\x89\xc7\x00\x72\xf9\x10\xe0\x2d\x17\xb0\xac\x1a", 28) = 28 <0.000142>
+1522783653.155368 write(4<socket:[49680]>, "\x00\x00\x06\xcd\x1a", 5) = 5 <0.000144>
+1522783653.155554 write(4<socket:[49680]>, "\x00\x00\x00\x20\x07\x20\x97\xff\x4f\xc6\x3f\x96\x64\xee\xa0\x6c\x5f\x17\xa4\x98\x34\x06\xa2\x65\xb6\x2a\x87\x77\xb7\x66\x12\xa4"..., 1740) = 1740 <0.000009>
+1522783653.155591 getuid()              = 74 <0.000007>
+1522783653.155615 write(4<socket:[49680]>, "\x00\x00\x00\x15\x7a", 5) = 5 <0.000009>
+1522783653.155645 write(4<socket:[49680]>, "\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x34\xa4\x00\x00\x00\x00\x00\x00\x00\x4a", 20) = 20 <0.000009>
+1522783653.155674 read(4<socket:[49680]>, "\x00\x00\x00\x01", 4) = 4 <0.003736>
+1522783653.159441 read(4<socket:[49680]>, "{", 1) = 1 <0.000010>
+1522783653.160003 exit_group(0)         = ?

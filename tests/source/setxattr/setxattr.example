@@ -1,0 +1,2 @@
+1522783605.618477;setxattr;/dev/pts/1, security.selinux, unconfined_u:object_r:user_devpts_t:s0, 39, 0;0;0.000045
+1522783653.388769;setxattr;/dev/pts/2, security.selinux, unconfined_u:object_r:user_devpts_t:s0, 39, 0;0;0.000048

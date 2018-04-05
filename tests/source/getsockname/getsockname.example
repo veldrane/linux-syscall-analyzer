@@ -1,0 +1,66 @@
+1522783548.876810;getsockname;3<socket:[27870], {sa_family=AF_NETLINK, pid=13357, groups=00000000}, [12];0;0.000009>
+1522783548.877897;getsockname;3<socket:[27873], {sa_family=AF_INET6, sin6_port=htons(50291), inet_pton(AF_INET6, ::1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000009>
+1522783548.878022;getsockname;3<socket:[27873], {sa_family=AF_INET6, sin6_port=htons(52438), inet_pton(AF_INET6, ::ffff:127.0.0.1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000009>
+1522783603.845285;getsockname;3<socket:[27951], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000011>
+1522783603.845837;getsockname;3<socket:[27953], {sa_family=AF_INET6, sin6_port=htons(36803), inet_pton(AF_INET6, ::1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000011>
+1522783603.845962;getsockname;3<socket:[27953], {sa_family=AF_INET6, sin6_port=htons(40346), inet_pton(AF_INET6, ::ffff:127.0.0.1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000010>
+1522783603.853645;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.853683;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.853894;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.856288;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.864431;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.865361;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783603.929610;getsockname;4<socket:[27983], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000017>
+1522783603.930768;getsockname;4<socket:[27984], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000017>
+1522783605.234179;getsockname;8<socket:[32088], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000008>
+1522783605.355142;getsockname;8<socket:[36192], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000007>
+1522783605.358678;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000011>
+1522783605.364527;getsockname;5<socket:[36204], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000009>
+1522783605.543734;getsockname;5<socket:[36211], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000010>
+1522783605.554007;getsockname;4<socket:[36214], {sa_family=AF_LOCAL, NULL}, [2];0;0.000009>
+1522783605.568891;getsockname;7<socket:[36218], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000009>
+1522783605.620078;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783716.112590;getsockname;9<socket:[58306], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000011>
+1522783716.114400;getsockname;9<socket:[58308], {sa_family=AF_NETLINK, pid=13408, groups=00000000}, [12];0;0.000012>
+1522783716.119384;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000017>
+1522783605.631787;getsockname;8<socket:[36241], {sa_family=AF_NETLINK, pid=13413, groups=00000000}, [12];0;0.000009>
+1522783605.632461;getsockname;8<socket:[36243], {sa_family=AF_NETLINK, pid=13413, groups=00000000}, [12];0;0.000009>
+1522783605.637326;getsockname;8<socket:[36245], {sa_family=AF_NETLINK, pid=13413, groups=00000000}, [12];0;0.000009>
+1522783605.638138;getsockname;3<socket:[27928], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783638.235428;getsockname;4<socket:[49651], {sa_family=AF_NETLINK, pid=13460, groups=00000000}, [12];0;0.000010>
+1522783638.236149;getsockname;4<socket:[49652], {sa_family=AF_NETLINK, pid=13460, groups=00000000}, [12];0;0.000009>
+1522783651.283026;getsockname;3<socket:[49673], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000010>
+1522783651.284009;getsockname;3<socket:[49675], {sa_family=AF_INET6, sin6_port=htons(52776), inet_pton(AF_INET6, ::1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000010>
+1522783651.284123;getsockname;3<socket:[49675], {sa_family=AF_INET6, sin6_port=htons(41524), inet_pton(AF_INET6, ::ffff:127.0.0.1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000010>
+1522783651.292296;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783651.292334;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783651.292557;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783651.293298;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783651.301460;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000011>
+1522783651.302585;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783651.363993;getsockname;4<socket:[49705], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000014>
+1522783651.364914;getsockname;4<socket:[49706], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000013>
+1522783653.030534;getsockname;8<socket:[53810], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000026>
+1522783653.154516;getsockname;8<socket:[57914], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000008>
+1522783653.158930;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783653.164621;getsockname;5<socket:[57926], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000009>
+1522783653.319674;getsockname;5<socket:[57933], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000009>
+1522783653.327697;getsockname;4<socket:[57936], {sa_family=AF_LOCAL, NULL}, [2];0;0.000009>
+1522783653.340904;getsockname;7<socket:[57941], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000010>
+1522783653.390350;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000011>
+1522783712.195378;getsockname;9<socket:[58288], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000011>
+1522783712.197644;getsockname;9<socket:[58290], {sa_family=AF_NETLINK, pid=13475, groups=00000000}, [12];0;0.000016>
+1522783712.201844;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783653.401524;getsockname;8<socket:[57964], {sa_family=AF_NETLINK, pid=13480, groups=00000000}, [12];0;0.000011>
+1522783653.402275;getsockname;8<socket:[57966], {sa_family=AF_NETLINK, pid=13480, groups=00000000}, [12];0;0.000011>
+1522783653.407554;getsockname;8<socket:[57968], {sa_family=AF_NETLINK, pid=13480, groups=00000000}, [12];0;0.000010>
+1522783653.408384;getsockname;3<socket:[49654], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000719>
+1522783661.526073;getsockname;4<socket:[58118], {sa_family=AF_LOCAL, NULL}, [2];0;0.000009>
+1522783673.365244;getsockname;4<socket:[58163], {sa_family=AF_LOCAL, NULL}, [2];0;0.000009>
+1522783702.803569;getsockname;3<socket:[58264], {sa_family=AF_NETLINK, pid=13549, groups=00000000}, [12];0;0.000010>
+1522783702.804302;getsockname;3<socket:[58266], {sa_family=AF_INET6, sin6_port=htons(36116), inet_pton(AF_INET6, ::1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000022>
+1522783702.804434;getsockname;3<socket:[58266], {sa_family=AF_INET6, sin6_port=htons(40074), inet_pton(AF_INET6, ::ffff:127.0.0.1, &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28];0;0.000010>
+1522783702.812531;getsockname;3<socket:[58245], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783702.812570;getsockname;3<socket:[58245], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>
+1522783702.812790;getsockname;3<socket:[58245], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000009>
+1522783702.813530;getsockname;3<socket:[58245], {sa_family=AF_INET, sin_port=htons(10022), sin_addr=inet_addr(192.168.4.31)}, [16];0;0.000010>

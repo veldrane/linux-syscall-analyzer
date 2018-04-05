@@ -1,0 +1,12 @@
+1522783603.929952;ppoll;[{fd=4<socket:[27983], events=POLLIN}], 1, {24, 999815000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999812369});0.000019>
+1522783603.930185;ppoll;[{fd=4<socket:[27983], events=POLLIN}], 1, {24, 999582000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999580235});0.000018>
+1522783603.931139;ppoll;[{fd=4<socket:[27984], events=POLLIN}], 1, {24, 999785000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999782895});0.000019>
+1522783603.931390;ppoll;[{fd=4<socket:[27984], events=POLLIN}], 1, {24, 999534000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999532337});0.000018>
+1522783638.235678;ppoll;[{fd=4<socket:[49651], events=POLLIN}], 1, {24, 999900000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999898098});0.000012>
+1522783638.235813;ppoll;[{fd=4<socket:[49651], events=POLLIN}], 1, {24, 999764000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999763099});0.000010>
+1522783638.236359;ppoll;[{fd=4<socket:[49652], events=POLLIN}], 1, {24, 999880000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999878786});0.000010>
+1522783638.236498;ppoll;[{fd=4<socket:[49652], events=POLLIN}], 1, {24, 999742000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999741067});0.000010>
+1522783651.364266;ppoll;[{fd=4<socket:[49705], events=POLLIN}], 1, {24, 999852000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999849733});0.000016>
+1522783651.364452;ppoll;[{fd=4<socket:[49705], events=POLLIN}], 1, {24, 999666000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999664629});0.000015>
+1522783651.365277;ppoll;[{fd=4<socket:[49706], events=POLLIN}], 1, {24, 999763000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999761269});0.000016>
+1522783651.365480;ppoll;[{fd=4<socket:[49706], events=POLLIN}], 1, {24, 999559000}, NULL, 8;1 ([{fd=4, revents=POLLIN}], left {24, 999557711});0.000015>

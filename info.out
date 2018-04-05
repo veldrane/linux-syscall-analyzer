@@ -1,0 +1,42 @@
+
+Hello folks,
+all files there should be sufficient for grabing strace outputs and parse them into the elasticsearch database via logstash
+and grok filter. If you want to parse own files into to elk, please follow these steps:
+
+	1) Get the of the running process and start strace exact with these parameters:
+
+		strace -y -T -ttt -ff -x -qq -p $PID -o $OUTPUT_DIRECTORY
+	
+		example: strace -y -T -ttt -ff -x -qq -p 1401 -o traces/
+	   
+	2) Run script 01_convert.sh in subdir scripts with all outputfiles like a parameter and redirect output into some file.
+	   You get csv, which can be used in logstash but also for any other your analysis which you want
+	
+	3) Customize logstash for grabing csv (see input section) in the logstash/linux.strace.debug
+
+	4) run logstash with the config file logstash/linux.strace.conf, elk must running or you can enable ruby output 
+	   instead of elk
+
+Important files:
+
+	- scripts/01_convert.sh
+		
+		Script convert raw strace output into the csv file
+
+	- logstash/linux.strace.conf 
+
+		Main configuration file for logstash
+
+	- logstash/paterns/strace
+		
+		Patern file for grok filter
+
+	- tests/
+
+		Some source data for testing purpose. The file is already in csv format and so you can try to upload it
+		into the elk.
+
+	- kibana/export.all.json
+
+		Some searches and visualisations for kibana. Please search and reaplace all ocurrences of the old 
+		elk index if you are using different elasticsearch index name where you stored the data

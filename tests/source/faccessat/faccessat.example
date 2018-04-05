@@ -1,0 +1,65 @@
+1522783605.649578;faccessat;AT_FDCWD, /usr/bin/id, X_OK;0;0.000249
+1522783605.670837;faccessat;AT_FDCWD, /etc/profile.d/256term.sh, R_OK;0;0.000012
+1522783605.672303;faccessat;AT_FDCWD, /etc/profile.d/bash_completion.sh, R_OK;0;0.000012
+1522783605.673492;faccessat;AT_FDCWD, /root/.config/bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.673594;faccessat;AT_FDCWD, /usr/share/bash-completion/bash_completion, R_OK;0;0.000331
+1522783605.691850;faccessat;AT_FDCWD, /etc/rc.d/init.d/elasticsearch, X_OK;0;0.000255
+1522783605.692150;faccessat;AT_FDCWD, /etc/rc.d/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.692192;faccessat;AT_FDCWD, /etc/rc.d/init.d/jexec, X_OK;0;0.000369
+1522783605.692608;faccessat;AT_FDCWD, /etc/rc.d/init.d/kibana, X_OK;0;0.000013
+1522783605.692659;faccessat;AT_FDCWD, /etc/rc.d/init.d/netconsole, X_OK;0;0.000024
+1522783605.692724;faccessat;AT_FDCWD, /etc/rc.d/init.d/network, X_OK;0;0.000012
+1522783605.692770;faccessat;AT_FDCWD, /etc/rc.d/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.693149;faccessat;AT_FDCWD, /etc/init.d/elasticsearch, X_OK;0;0.000019
+1522783605.693215;faccessat;AT_FDCWD, /etc/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000015
+1522783605.693263;faccessat;AT_FDCWD, /etc/init.d/jexec, X_OK;0;0.000016
+1522783605.693313;faccessat;AT_FDCWD, /etc/init.d/kibana, X_OK;0;0.000014
+1522783605.693369;faccessat;AT_FDCWD, /etc/init.d/netconsole, X_OK;0;0.000012
+1522783605.693413;faccessat;AT_FDCWD, /etc/init.d/network, X_OK;0;0.000012
+1522783605.693457;faccessat;AT_FDCWD, /etc/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783605.706563;faccessat;AT_FDCWD, /etc/bash_completion.d, R_OK;0;0.000011
+1522783605.706597;faccessat;AT_FDCWD, /etc/bash_completion.d, X_OK;0;0.000010
+1522783605.715372;faccessat;AT_FDCWD, /etc/bash_completion.d/git, R_OK;0;0.000011
+1522783605.740671;faccessat;AT_FDCWD, /etc/bash_completion.d/iprutils, R_OK;0;0.000009
+1522783605.741824;faccessat;AT_FDCWD, /etc/bash_completion.d/redefine_filedir, R_OK;0;0.000010
+1522783605.743033;faccessat;AT_FDCWD, /root/.bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783605.743427;faccessat;AT_FDCWD, /etc/profile.d/colorgrep.sh, R_OK;0;0.000011
+1522783605.755364;faccessat;AT_FDCWD, /etc/profile.d/colorls.sh, R_OK;0;0.000010
+1522783605.783550;faccessat;AT_FDCWD, /etc/profile.d/lang.sh, R_OK;0;0.000010
+1522783605.784658;faccessat;AT_FDCWD, /etc/profile.d/less.sh, R_OK;0;0.000011
+1522783605.785601;faccessat;AT_FDCWD, /usr/bin/lesspipe.sh, X_OK;0;0.000011
+1522783605.785714;faccessat;AT_FDCWD, /etc/profile.d/mc.sh, R_OK;0;0.000010
+1522783605.786727;faccessat;AT_FDCWD, /etc/profile.d/which2.sh, R_OK;0;0.000011
+1522783653.419795;faccessat;AT_FDCWD, /usr/bin/id, X_OK;0;0.000203
+1522783653.437224;faccessat;AT_FDCWD, /etc/profile.d/256term.sh, R_OK;0;0.000013
+1522783653.438246;faccessat;AT_FDCWD, /etc/profile.d/bash_completion.sh, R_OK;0;0.000013
+1522783653.439100;faccessat;AT_FDCWD, /root/.config/bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000011
+1522783653.439204;faccessat;AT_FDCWD, /usr/share/bash-completion/bash_completion, R_OK;0;0.000299
+1522783653.456454;faccessat;AT_FDCWD, /etc/rc.d/init.d/elasticsearch, X_OK;0;0.000269
+1522783653.456821;faccessat;AT_FDCWD, /etc/rc.d/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000034
+1522783653.456894;faccessat;AT_FDCWD, /etc/rc.d/init.d/jexec, X_OK;0;0.000359
+1522783653.457302;faccessat;AT_FDCWD, /etc/rc.d/init.d/kibana, X_OK;0;0.000014
+1522783653.457353;faccessat;AT_FDCWD, /etc/rc.d/init.d/netconsole, X_OK;0;0.000011
+1522783653.457399;faccessat;AT_FDCWD, /etc/rc.d/init.d/network, X_OK;0;0.000012
+1522783653.457444;faccessat;AT_FDCWD, /etc/rc.d/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783653.457791;faccessat;AT_FDCWD, /etc/init.d/elasticsearch, X_OK;0;0.000015
+1522783653.457860;faccessat;AT_FDCWD, /etc/init.d/functions, X_OK;-1 EACCES (Permission denied);0.000014
+1522783653.457912;faccessat;AT_FDCWD, /etc/init.d/jexec, X_OK;0;0.000017
+1522783653.457964;faccessat;AT_FDCWD, /etc/init.d/kibana, X_OK;0;0.000013
+1522783653.458032;faccessat;AT_FDCWD, /etc/init.d/netconsole, X_OK;0;0.000013
+1522783653.458082;faccessat;AT_FDCWD, /etc/init.d/network, X_OK;0;0.000012
+1522783653.458127;faccessat;AT_FDCWD, /etc/init.d/README, X_OK;-1 EACCES (Permission denied);0.000012
+1522783653.471386;faccessat;AT_FDCWD, /etc/bash_completion.d, R_OK;0;0.000012
+1522783653.471421;faccessat;AT_FDCWD, /etc/bash_completion.d, X_OK;0;0.000010
+1522783653.480874;faccessat;AT_FDCWD, /etc/bash_completion.d/git, R_OK;0;0.000011
+1522783653.506386;faccessat;AT_FDCWD, /etc/bash_completion.d/iprutils, R_OK;0;0.000010
+1522783653.506975;faccessat;AT_FDCWD, /etc/bash_completion.d/redefine_filedir, R_OK;0;0.000009
+1522783653.507726;faccessat;AT_FDCWD, /root/.bash_completion, R_OK;-1 ENOENT (No such file or directory);0.000010
+1522783653.508074;faccessat;AT_FDCWD, /etc/profile.d/colorgrep.sh, R_OK;0;0.000011
+1522783653.518896;faccessat;AT_FDCWD, /etc/profile.d/colorls.sh, R_OK;0;0.000010
+1522783653.538822;faccessat;AT_FDCWD, /etc/profile.d/lang.sh, R_OK;0;0.000010
+1522783653.539875;faccessat;AT_FDCWD, /etc/profile.d/less.sh, R_OK;0;0.000010
+1522783653.540229;faccessat;AT_FDCWD, /usr/bin/lesspipe.sh, X_OK;0;0.000010
+1522783653.540330;faccessat;AT_FDCWD, /etc/profile.d/mc.sh, R_OK;0;0.000011
+1522783653.540802;faccessat;AT_FDCWD, /etc/profile.d/which2.sh, R_OK;0;0.000009
+1522783680.395045;faccessat;AT_FDCWD, /tmp, W_OK;0;0.000019

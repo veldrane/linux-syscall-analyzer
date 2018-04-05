@@ -1,0 +1,43 @@
+### Some definition of the additionals types for grok. This types are based on my previous project elk for tsm (will be added)
+### so they doesn't make a sense at all :)
+
+
+STRACEFLOAT (?:[0-9]+.[0-9]+|[0-9]+\,[0-9]+.[0-9]+)
+STRACEVALUE (?:KB|MB|GB|TB)
+STRACETRASH (?:\s+\(SESSION:\s\[0-9]+\))
+STRACEADDRESS (?:%{HOSTNAME}-%{HOSTNAME}:%{POSINT}|%{HOSTNAME}:%{POSINT}|%{IPV4}:%{POSINT}|\B)
+MSGCODE AN......
+STRACETIMESTAMP %{TIMESTAMP_ISO8601}.000000
+STRACEWORD (?:\w+|\B)
+STRACENODE (?:[^ ,\:\(\)]+|\B)
+STRACEPROTO (?:\w+|\w+\/\w+|\B)
+STRACESCHEDNAME (?:\w+|\w+-\w+|\B)
+STRACECUSTOM (?:[^;]*|\B)
+STRACECUSTOM2 (?:[^,]+|\B)
+STRACETIMESTAMP (?:%{TIMESTAMP_ISO8601}|\B)
+
+
+### MAIN
+### STRACEBASE is main rule for parsing whole messsage, other rules are used for parsing options in specifics syscalls 
+
+#3.4.2018 - commented due new schema without pid on the begining of the line
+#STRACEBASE %{STRACEWORD:pid};%{NUMBER:unixtime};%{WORD:syscall};%{STRACECUSTOM:arguments};%{STRACECUSTOM:return};%{NUMBER:run_time}
+
+STRACEBASE %{NUMBER:unixtime};%{WORD:syscall};%{STRACECUSTOM:arguments};%{STRACECUSTOM:return};%{NUMBER:run_time}
+
+
+STRACERW %{NUMBER:fd}<%{STRACECUSTOM2:filename}, %{STRACECUSTOM2:data}, %{STRACECUSTOM2:processed}
+STRACEOPEN %{STRACECUSTOM2:filename}, %{STRACECUSTOM2:attrs}
+STRACECLOSE %{NUMBER:fd}<%{STRACECUSTOM2:filename}
+STRACESOCKET %{STRACECUSTOM2:sock_domain}, %{STRACECUSTOM2:sock_type}, %{STRACECUSTOM2:protocol}
+STRACEFCNTL %{NUMBER:fd}<%{STRACECUSTOM2:filename}, %{STRACECUSTOM:fcntlarg}
+
+
+STRACEACCEPT %{NUMBER:sock_fd}<%{STRACECUSTOM2:sock_name}, %{STRACECUSTOM:sock_descr}
+#STRACEBIND %{NUMBER:sock_fd}<%{STRACECUSTOM2:sock_name}, %{STRACECUSTOM:sock_descr}
+
+### RETURN TYPES 
+SOCKETCUS %{NUMBER:sock_fd}<%{STRACECUSTOM:sock_name}
+
+
+

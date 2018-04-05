@@ -1,0 +1,3 @@
+1522783603.815421;accept;3<socket:[27885], {sa_family=AF_INET, sin_port=htons(45636), sin_addr=inet_addr(192.168.4.1)}, [16];5<socket:[27928]>;0.000030>
+1522783651.239831;accept;3<socket:[27885], {sa_family=AF_INET, sin_port=htons(45638), sin_addr=inet_addr(192.168.4.1)}, [16];5<socket:[49654]>;0.002627>
+1522783702.744652;accept;3<socket:[27885], {sa_family=AF_INET, sin_port=htons(45640), sin_addr=inet_addr(192.168.4.1)}, [16];5<socket:[58245]>;0.006558>

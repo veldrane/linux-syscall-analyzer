@@ -1,0 +1,496 @@
+1522783603.864636;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.864670;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.864701;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.865479;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783603.865511;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.865541;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00210;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.926959;ioctl;4<socket:[27982], FIONREAD, [42];0;0.000023>
+1522783605.358914;ioctl;0</dev/null, TCGETS, 0x7ffd7bb002b0;-1 ENOTTY (Inappropriate ioctl for device);0.000205>
+1522783605.359179;ioctl;1</dev/null, TCGETS, 0x7ffd7bb002b0;-1 ENOTTY (Inappropriate ioctl for device);0.000012>
+1522783605.359236;ioctl;2</dev/null, TCGETS, 0x7ffd7bb002b0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783605.542575;ioctl;0</dev/null, TCGETS, 0x7ffd7bb028d0;-1 ENOTTY (Inappropriate ioctl for device);0.000067>
+1522783605.542667;ioctl;1</dev/null, TCGETS, 0x7ffd7bb028d0;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.542699;ioctl;2</dev/null, TCGETS, 0x7ffd7bb028d0;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.613419;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig icanon echo ...};0;0.000013>
+1522783605.613467;ioctl;8</dev/ptmx, TIOCGPTN, [1];0;0.000012>
+1522783605.614906;ioctl;8</dev/ptmx, TIOCSPTLCK, [0];0;0.000012>
+1522783605.614959;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783605.615002;ioctl;8</dev/ptmx, TIOCGPTN, [1];0;0.000011>
+1522783605.615148;ioctl;9</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783605.616830;ioctl;9</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783605.616881;ioctl;9</dev/pts/1, SNDCTL_TMR_START or TCSETS, {B38400 opost isig icanon echo ...};0;0.000013>
+1522783605.616921;ioctl;9</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.618552;ioctl;8</dev/ptmx, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000012>
+1522783606.680876;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783606.753071;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783606.779977;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000162>
+1522783606.833159;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000116>
+1522783606.858553;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783606.869252;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000066>
+1522783606.918852;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783606.958221;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000066>
+1522783608.013756;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000033>
+1522783608.104320;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783608.145935;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783608.199807;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000066>
+1522783608.247105;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000084>
+1522783608.263568;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000085>
+1522783608.350068;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783616.299051;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000207>
+1522783616.412766;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783616.548288;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783616.633132;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783616.743822;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783616.808266;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783616.892009;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783617.652144;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783617.718247;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783618.163535;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000040>
+1522783618.647615;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000149>
+1522783618.766026;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000304>
+1522783618.844751;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783618.940193;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783623.728599;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783623.812814;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783623.933937;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783624.782557;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000126>
+1522783624.844956;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000123>
+1522783624.974070;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783625.095941;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000074>
+1522783625.127543;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000050>
+1522783626.952054;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783627.147689;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783627.383157;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783627.453470;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783627.536679;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000161>
+1522783627.546327;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783627.636854;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783627.804385;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783627.927944;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783628.028026;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783628.153485;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783630.773684;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000180>
+1522783632.771175;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000136>
+1522783632.947041;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000126>
+1522783633.096382;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000127>
+1522783633.597441;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000127>
+1522783633.627125;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000126>
+1522783633.660225;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000176>
+1522783633.689175;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000127>
+1522783633.720768;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000126>
+1522783633.752057;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000125>
+1522783633.783630;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000126>
+1522783633.815654;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000156>
+1522783634.582477;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000215>
+1522783635.263186;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000180>
+1522783635.642408;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000196>
+1522783635.784361;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783635.935504;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000252>
+1522783715.478076;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783715.657139;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783715.772955;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783715.865878;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783716.117066;ioctl;0</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000017>
+1522783716.117135;ioctl;1</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000017>
+1522783716.117198;ioctl;2</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000016>
+1522783716.117822;ioctl;0</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000018>
+1522783716.117894;ioctl;1</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783716.117935;ioctl;2</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783716.118697;ioctl;0</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000012>
+1522783716.118742;ioctl;1</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783716.118783;ioctl;2</dev/null, TCGETS, 0x7ffd7bb001f0;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783716.119614;ioctl;0</dev/null, TCGETS, 0x7ffd7bb001e0;-1 ENOTTY (Inappropriate ioctl for device);0.000015>
+1522783716.119671;ioctl;1</dev/null, TCGETS, 0x7ffd7bb001e0;-1 ENOTTY (Inappropriate ioctl for device);0.000012>
+1522783716.119718;ioctl;2</dev/null, TCGETS, 0x7ffd7bb001e0;-1 ENOTTY (Inappropriate ioctl for device);0.000014>
+1522783603.861323;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783603.861375;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861408;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861911;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783603.861944;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861974;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783603.862332;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.862364;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.862394;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.214427;ioctl;0<pipe:[27985], TCGETS, 0x7ffdd7f52d50;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783605.343223;ioctl;0<pipe:[32094], TCGETS, 0x7ffc5a479d70;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783605.622237;ioctl;9</dev/pts/1, TIOCSCTTY, 0;0;0.000011>
+1522783605.623446;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783605.624391;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.624918;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.627782;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783605.642291;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783605.642330;ioctl;2</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.647886;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000011>
+1522783605.647922;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000009>
+1522783605.648027;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783605.720403;ioctl;1</dev/null, TCGETS, 0x7ffe11f31ae0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783605.754102;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783605.756172;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783605.782122;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.792489;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.792531;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000008>
+1522783605.792577;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783605.793034;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783605.793071;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783605.793105;ioctl;1</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783605.793169;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000008>
+1522783605.793461;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000019>
+1522783605.793515;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000017>
+1522783605.793563;ioctl;1</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000016>
+1522783605.793624;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000022>
+1522783605.793705;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000015>
+1522783605.793753;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000035>
+1522783605.794814;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000009>
+1522783605.794957;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783605.794996;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783605.795026;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783605.795082;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000012>
+1522783607.151463;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000118>
+1522783607.168793;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000054>
+1522783607.169163;ioctl;255</dev/pts/1, TIOCSPGRP, [13431];0;0.000055>
+1522783607.197283;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000022>
+1522783607.197418;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000021>
+1522783607.197492;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000020>
+1522783607.198463;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000039>
+1522783607.198951;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000079>
+1522783607.199110;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000041>
+1522783607.199223;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000040>
+1522783607.199337;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000041>
+1522783608.531417;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000120>
+1522783608.538971;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000053>
+1522783608.539361;ioctl;255</dev/pts/1, TIOCSPGRP, [13433];0;0.000057>
+1522783608.578052;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000012>
+1522783608.578126;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783608.578165;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000011>
+1522783608.578681;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000020>
+1522783608.578930;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000040>
+1522783608.579012;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000021>
+1522783608.579071;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000020>
+1522783608.579129;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000021>
+1522783610.661612;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000116>
+1522783610.668825;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000105>
+1522783610.670057;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000198>
+1522783610.670462;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000105>
+1522783610.670754;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000103>
+1522783610.671038;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000099>
+1522783610.825259;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000114>
+1522783610.832092;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000103>
+1522783610.833315;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000199>
+1522783610.833721;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000112>
+1522783610.834033;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000104>
+1522783610.834323;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000099>
+1522783619.585547;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000239>
+1522783619.598888;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000053>
+1522783619.599316;ioctl;255</dev/pts/1, TIOCSPGRP, [13443];0;0.000054>
+1522783619.615090;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000045>
+1522783619.615664;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000047>
+1522783619.615827;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000021>
+1522783619.617019;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000040>
+1522783619.617508;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000080>
+1522783619.617667;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000047>
+1522783619.617803;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000055>
+1522783619.617948;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000039>
+1522783628.641818;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000145>
+1522783628.651611;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000055>
+1522783628.651972;ioctl;255</dev/pts/1, TIOCSPGRP, [13451];0;0.000055>
+1522783628.718062;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000021>
+1522783628.718167;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000019>
+1522783628.718218;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000020>
+1522783628.718999;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000020>
+1522783628.719226;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000035>
+1522783628.719299;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000019>
+1522783628.719351;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000018>
+1522783628.719404;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000018>
+1522783636.321430;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000115>
+1522783636.331085;ioctl;255</dev/pts/1, TIOCGPGRP, [13413];0;0.000054>
+1522783636.331445;ioctl;255</dev/pts/1, TIOCSPGRP, [13460];0;0.000055>
+1522783638.677274;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000020>
+1522783638.677395;ioctl;255</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000020>
+1522783638.677449;ioctl;255</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000016>
+1522783638.678127;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000021>
+1522783638.678386;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000032>
+1522783638.678452;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000020>
+1522783638.678512;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000016>
+1522783638.678560;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000016>
+1522783715.168857;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000114>
+1522783715.178084;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000100>
+1522783715.179555;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000107>
+1522783715.179855;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000103>
+1522783715.180177;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000094>
+1522783715.180473;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.001105>
+1522783715.321696;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000113>
+1522783715.328561;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000105>
+1522783715.329779;ioctl;0</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000197>
+1522783715.330183;ioctl;0</dev/pts/1, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000106>
+1522783715.330476;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000102>
+1522783715.330763;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000100>
+1522783716.082663;ioctl;0</dev/pts/1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000124>
+1522783716.097727;ioctl;255</dev/pts/1, TIOCSPGRP, [13413];0;0.000032>
+1522783605.713958;ioctl;1<pipe:[36294], TCGETS, 0x7ffcfb3d02a0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783605.714004;ioctl;1<pipe:[36294], TIOCGWINSZ, 0x7ffcfb3d0380;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.748679;ioctl;3</usr/libexec/grepconf.sh, TCGETS, 0x7ffc43c563d0;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.752873;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783605.752976;ioctl;3</etc/GREP_COLORS, TCGETS, 0x7ffe32a8fa10;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783605.765236;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783605.765400;ioctl;0</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783605.769235;ioctl;1<pipe:[36327], TCGETS, 0x7ffcb368bef0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783605.769877;ioctl;2</dev/null, TCGETS, 0x7ffcb368bef0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783605.769913;ioctl;2</dev/null, TCGETS, 0x7ffcb368be90;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.781649;ioctl;1</dev/null, TCGETS, 0x7ffe249f1e10;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783605.781755;ioctl;3</etc/DIR_COLORS.256color, TCGETS, 0x7ffe249f1c70;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783607.170799;ioctl;255</dev/pts/1, TIOCSPGRP, [13431];0;0.000036>
+1522783607.187033;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000039>
+1522783607.187199;ioctl;1</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000030>
+1522783607.187399;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000031>
+1522783607.187602;ioctl;1</dev/pts/1, TIOCGPGRP, [13431];0;0.000030>
+1522783608.541651;ioctl;255</dev/pts/1, TIOCSPGRP, [13433];0;0.000057>
+1522783608.562166;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000025>
+1522783608.562263;ioctl;1</dev/pts/1, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000021>
+1522783608.562374;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000020>
+1522783608.564411;ioctl;1</dev/pts/1, TIOCGPGRP, [13433];0;0.000020>
+1522783619.601823;ioctl;255</dev/pts/1, TIOCSPGRP, [13443];0;0.000072>
+1522783628.654379;ioctl;255</dev/pts/1, TIOCSPGRP, [13451];0;0.000056>
+1522783628.657254;ioctl;255</dev/pts/1, TIOCSPGRP, [13451];0;0.000082>
+1522783628.679967;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000042>
+1522783628.680800;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000033>
+1522783628.682170;ioctl;0<pipe:[36399], TCGETS, 0x7ffd543f8ad0;-1 ENOTTY (Inappropriate ioctl for device);0.000023>
+1522783636.333815;ioctl;255</dev/pts/1, TIOCSPGRP, [13460];0;0.000056>
+1522783638.231098;ioctl;4<socket:[49650], FIONREAD, [42];0;0.000014>
+1522783636.336698;ioctl;255</dev/pts/1, TIOCSPGRP, [13460];0;0.000077>
+1522783636.362209;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000041>
+1522783636.363126;ioctl;1</dev/pts/1, TCGETS, {B38400 opost isig icanon echo ...};0;0.000047>
+1522783636.365077;ioctl;0<pipe:[37443], TCGETS, 0x7ffe60084840;-1 ENOTTY (Inappropriate ioctl for device);0.000034>
+1522783651.301709;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783651.301749;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.301785;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.302722;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.302760;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.302796;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41720;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.362569;ioctl;4<socket:[49704], FIONREAD, [42];0;0.000019>
+1522783653.159049;ioctl;0</dev/null, TCGETS, 0x7ffdf5d417c0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.159082;ioctl;1</dev/null, TCGETS, 0x7ffdf5d417c0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.159110;ioctl;2</dev/null, TCGETS, 0x7ffdf5d417c0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.318308;ioctl;0</dev/null, TCGETS, 0x7ffdf5d43de0;-1 ENOTTY (Inappropriate ioctl for device);0.000053>
+1522783653.318384;ioctl;1</dev/null, TCGETS, 0x7ffdf5d43de0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.318413;ioctl;2</dev/null, TCGETS, 0x7ffdf5d43de0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.384006;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.384051;ioctl;8</dev/ptmx, TIOCGPTN, [2];0;0.000011>
+1522783653.385515;ioctl;8</dev/ptmx, TIOCSPTLCK, [0];0;0.000011>
+1522783653.385560;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.385609;ioctl;8</dev/ptmx, TIOCGPTN, [2];0;0.000011>
+1522783653.385737;ioctl;9</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.387258;ioctl;9</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.387306;ioctl;9</dev/pts/2, SNDCTL_TMR_START or TCSETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.387346;ioctl;9</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.388847;ioctl;8</dev/ptmx, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000012>
+1522783654.867043;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000173>
+1522783654.973004;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783655.040457;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783658.166712;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783658.276639;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783658.351447;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783658.511585;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783658.581320;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783658.760708;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000075>
+1522783658.859940;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000183>
+1522783658.957113;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783659.080773;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783659.292021;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783659.650485;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783659.868378;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783660.416510;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783660.521270;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783660.699368;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783660.848721;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783661.025603;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000185>
+1522783661.107650;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000067>
+1522783664.174589;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000347>
+1522783665.468641;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000056>
+1522783666.592680;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000124>
+1522783666.688271;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783666.753047;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783667.012294;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783667.924238;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000123>
+1522783668.096316;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783668.497241;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783668.538737;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783668.956794;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000030>
+1522783669.084470;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783669.225344;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000206>
+1522783669.378364;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783669.556646;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783670.420944;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000125>
+1522783671.249296;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000182>
+1522783671.461623;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000066>
+1522783671.567874;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000123>
+1522783671.627210;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783671.858917;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783672.022046;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783672.175642;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783672.262164;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783672.393218;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000184>
+1522783672.914084;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783679.546546;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000153>
+1522783679.651402;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783679.764128;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000262>
+1522783679.881732;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783679.895466;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000123>
+1522783679.991339;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783680.355183;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000124>
+1522783680.706891;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000118>
+1522783680.801253;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783680.948061;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783681.200973;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000193>
+1522783681.286426;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783681.621419;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783681.901921;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783682.244987;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000131>
+1522783682.369331;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783682.596481;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000174>
+1522783682.787763;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783682.962103;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000123>
+1522783710.777656;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000020>
+1522783710.979603;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000120>
+1522783711.077459;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783711.160861;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000121>
+1522783711.345903;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000122>
+1522783711.935302;ioctl;8</dev/ptmx, TCGETS, {B38400 opost isig -icanon -echo ...};0;0.000119>
+1522783712.199779;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783712.199819;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.199851;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.200700;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000019>
+1522783712.200748;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783712.200796;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.201450;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.201486;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.201518;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41700;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783712.201989;ioctl;0</dev/null, TCGETS, 0x7ffdf5d416f0;-1 ENOTTY (Inappropriate ioctl for device);0.000011>
+1522783712.202027;ioctl;1</dev/null, TCGETS, 0x7ffdf5d416f0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783712.202063;ioctl;2</dev/null, TCGETS, 0x7ffdf5d416f0;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.298151;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.298190;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783651.298223;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783651.298761;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.298795;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.298827;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783651.299206;ioctl;0</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.299240;ioctl;1</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783651.299272;ioctl;2</dev/null, TCGETS, 0x7ffdf5d41920;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783653.010301;ioctl;0<pipe:[49707], TCGETS, 0x7ffd67e52aa0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.142408;ioctl;0<pipe:[53816], TCGETS, 0x7ffcbf45cd90;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.392239;ioctl;9</dev/pts/2, TIOCSCTTY, 0;0;0.000011>
+1522783653.394246;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.395046;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000132>
+1522783653.395794;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.398064;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.413194;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783653.413233;ioctl;2</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783653.418564;ioctl;255</dev/pts/2, TIOCGPGRP, [13480];0;0.000010>
+1522783653.418600;ioctl;255</dev/pts/2, TIOCGPGRP, [13480];0;0.000010>
+1522783653.418704;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.485136;ioctl;1</dev/null, TCGETS, 0x7ffc156cf670;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783653.517635;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.519327;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783653.537507;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.544233;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.544270;ioctl;255</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783653.544311;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783653.544727;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.544760;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783653.544791;ioctl;1</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000008>
+1522783653.544850;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783653.545215;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000019>
+1522783653.545267;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000016>
+1522783653.545312;ioctl;1</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000015>
+1522783653.545371;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000021>
+1522783653.545440;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000014>
+1522783653.545486;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000032>
+1522783653.546211;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000009>
+1522783653.546335;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000008>
+1522783653.546363;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000008>
+1522783653.546391;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.546422;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000009>
+1522783655.218284;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000118>
+1522783655.226026;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000200>
+1522783655.227011;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000067>
+1522783655.227193;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000523>
+1522783655.227853;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000055>
+1522783655.228029;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000117>
+1522783661.451252;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000115>
+1522783661.466182;ioctl;255</dev/pts/2, TIOCGPGRP, [13480];0;0.000056>
+1522783661.466550;ioctl;255</dev/pts/2, TIOCSPGRP, [13504];0;0.000054>
+1522783661.548528;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000011>
+1522783661.548600;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783661.548636;ioctl;255</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000010>
+1522783661.549113;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000018>
+1522783661.549351;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000037>
+1522783661.549426;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000019>
+1522783661.549478;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000019>
+1522783661.549536;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000019>
+1522783673.297464;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000868>
+1522783673.305902;ioctl;255</dev/pts/2, TIOCGPGRP, [13480];0;0.000055>
+1522783673.306263;ioctl;255</dev/pts/2, TIOCSPGRP, [13515];0;0.000055>
+1522783673.380383;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000011>
+1522783673.380454;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783673.380489;ioctl;255</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000009>
+1522783673.380978;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000019>
+1522783673.381208;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000038>
+1522783673.381283;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000019>
+1522783673.381348;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000019>
+1522783673.381403;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000019>
+1522783680.394105;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000084>
+1522783680.396708;ioctl;0</tmp/sh-thd-1522769615 (deleted), TCGETS, 0x7ffc156cf6c0;-1 ENOTTY (Inappropriate ioctl for device);0.000013>
+1522783680.396882;ioctl;0</tmp/sh-thd-1522769615 (deleted), TCGETS, 0x7ffc156cf6c0;-1 ENOTTY (Inappropriate ioctl for device);0.000012>
+1522783680.400097;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000013>
+1522783680.400883;ioctl;0</tmp/sh-thd-4014245264 (deleted), TCGETS, 0x7ffc156cf5b0;-1 ENOTTY (Inappropriate ioctl for device);0.000013>
+1522783680.401047;ioctl;0</tmp/sh-thd-4014245264 (deleted), TCGETS, 0x7ffc156cf5b0;-1 ENOTTY (Inappropriate ioctl for device);0.000013>
+1522783681.941670;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000016>
+1522783681.945513;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000014>
+1522783682.996430;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000017>
+1522783682.999871;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000014>
+1522783683.000753;ioctl;0</tmp/sh-thd-6514442976 (deleted), TCGETS, 0x7ffc156cf5b0;-1 ENOTTY (Inappropriate ioctl for device);0.000013>
+1522783683.000963;ioctl;0</tmp/sh-thd-6514442976 (deleted), TCGETS, 0x7ffc156cf5b0;-1 ENOTTY (Inappropriate ioctl for device);0.000013>
+1522783683.001133;ioctl;0</tmp/sh-thd-6514442976 (deleted), TCGETS, 0x7ffc156cf5b0;-1 ENOTTY (Inappropriate ioctl for device);0.000012>
+1522783683.402081;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000034>
+1522783683.406502;ioctl;255</dev/pts/2, TIOCGPGRP, [13480];0;0.000019>
+1522783683.406631;ioctl;255</dev/pts/2, TIOCSPGRP, [13531];0;0.000019>
+1522783683.416441;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000026>
+1522783683.416603;ioctl;255</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000025>
+1522783683.416691;ioctl;255</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000023>
+1522783683.417875;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000046>
+1522783683.418445;ioctl;0</dev/pts/2, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000090>
+1522783683.418628;ioctl;0</dev/pts/2, TIOCSWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0};0;0.000048>
+1522783683.418761;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000046>
+1522783683.418894;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...};0;0.000046>
+1522783712.183532;ioctl;0</dev/pts/2, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...};0;0.000025>
+1522783712.186568;ioctl;255</dev/pts/2, TIOCSPGRP, [13480];0;0.000013>
+1522783653.479409;ioctl;1<pipe:[58017], TCGETS, 0x7ffc1e08a520;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783653.479456;ioctl;1<pipe:[58017], TIOCGWINSZ, 0x7ffc1e08a600;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783653.512711;ioctl;3</usr/libexec/grepconf.sh, TCGETS, 0x7ffca6d65e50;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783653.516919;ioctl;1</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783653.517023;ioctl;3</etc/GREP_COLORS, TCGETS, 0x7ffc7bdd72b0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.523874;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783653.523999;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000008>
+1522783653.526632;ioctl;1<pipe:[58050], TCGETS, 0x7ffe37d55ec0;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783653.527194;ioctl;2</dev/null, TCGETS, 0x7ffe37d55ec0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.527225;ioctl;2</dev/null, TCGETS, 0x7ffe37d55e60;-1 ENOTTY (Inappropriate ioctl for device);0.000007>
+1522783653.537073;ioctl;1</dev/null, TCGETS, 0x7ffd429585e0;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783653.537171;ioctl;3</etc/DIR_COLORS.256color, TCGETS, 0x7ffd42958440;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783661.470018;ioctl;255</dev/pts/2, TIOCSPGRP, [13504];0;0.000058>
+1522783661.508712;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783661.508755;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000010>
+1522783661.515461;ioctl;2</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000011>
+1522783673.308593;ioctl;255</dev/pts/2, TIOCSPGRP, [13515];0;0.000057>
+1522783673.352112;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783673.352155;ioctl;0</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000009>
+1522783673.357751;ioctl;2</dev/pts/2, TCGETS, {B38400 opost isig icanon echo ...};0;0.000012>
+1522783683.407481;ioctl;255</dev/pts/2, TIOCSPGRP, [13531];0;0.000020>
+1522783706.287164;ioctl;0</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000055>
+1522783706.287385;ioctl;1</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000053>
+1522783706.287568;ioctl;2</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000052>
+1522783706.290122;ioctl;0</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000051>
+1522783706.290305;ioctl;1</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000051>
+1522783706.290481;ioctl;2</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000050>
+1522783706.292544;ioctl;0</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000052>
+1522783706.292727;ioctl;1</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000054>
+1522783706.292933;ioctl;2</dev/null, TCGETS, 0x7ffe47746e00;-1 ENOTTY (Inappropriate ioctl for device);0.000052>

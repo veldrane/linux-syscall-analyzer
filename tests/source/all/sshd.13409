@@ -1,0 +1,142 @@
+1522783603.859381;set_robust_list;0x7fe76e926ba0, 24;0;0.000010
+1522783603.859493;close;6<socket:[27959];0;0.000010>
+1522783603.859555;close;7<pipe:[27960];0;0.000009>
+1522783603.859754;futex;0x7fe768d96530, FUTEX_WAKE_PRIVATE, 2147483647;0;0.000009
+1522783603.859830;futex;0x7fe768d963d0, FUTEX_WAKE_PRIVATE, 2147483647;0;0.000009
+1522783603.859916;futex;0x7fe76c9aafa0, FUTEX_WAKE_PRIVATE, 2147483647;0;0.000008
+1522783603.859959;lstat;/etc/gss/mech, 0x7ffd7bb02950;-1 ENOENT (No such file or directory);0.000012
+1522783603.860013;openat;AT_FDCWD, /etc/gss/mech.d, O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC;6</etc/gss/mech.d;0.000013>
+1522783603.860061;getdents;6</etc/gss/mech.d, /* 2 entries */, 32768;48;0.000432>
+1522783603.860539;getdents;6</etc/gss/mech.d, /* 0 entries */, 32768;0;0.000010>
+1522783603.860577;close;6</etc/gss/mech.d;0;0.000012>
+1522783603.860686;open;/dev/urandom, O_RDONLY|O_NOCTTY|O_NONBLOCK;6</dev/urandom;0.000016>
+1522783603.860733;fstat;6</dev/urandom, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...};0;0.000010>
+1522783603.860771;poll;[{fd=6</dev/urandom, events=POLLIN}], 1, 10;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.860812;read;6</dev/urandom, \xa5\xb8\xfd\xb7\x90\x30\xa1\xc2\x4b\xaf\x27\xba\x62\xec\x73\x98\x80\xe1\x44\x6f\xa7\x52\x1f\xe0\x41\x06\x38\x7e\x95\x13\x49\xba..., 48;48;0.000011>
+1522783603.860847;close;6</dev/urandom;0;0.000010>
+1522783603.860912;getuid;;0;0.000008
+1522783603.861004;getuid;;0;0.000009
+1522783603.861130;socket;AF_NETLINK, SOCK_RAW, NETLINK_AUDIT;6<socket:[27965];0.000037>
+1522783603.861203;fcntl;6<socket:[27965], F_SETFD, FD_CLOEXEC;0;0.000009>
+1522783603.861266;readlink;/proc/self/exe, /usr/sbin/sshd, 4096;14;0.000020
+1522783603.861323;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783603.861375;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861408;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861471;sendto;6<socket:[27965], \xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12;240;0.000086>
+1522783603.861592;poll;[{fd=6<socket:[27965], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.861635;recvfrom;6<socket:[27965], \x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000010>
+1522783603.861673;recvfrom;6<socket:[27965], \x24\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x01\x00\x00\x00..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000010>
+1522783603.861713;close;6<socket:[27965];0;0.000013>
+1522783603.861830;socket;AF_NETLINK, SOCK_RAW, NETLINK_AUDIT;6<socket:[27970];0.000024>
+1522783603.861880;fcntl;6<socket:[27970], F_SETFD, FD_CLOEXEC;0;0.000009>
+1522783603.861911;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000010>
+1522783603.861944;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.861974;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000008>
+1522783603.862008;sendto;6<socket:[27970], \xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12;240;0.000052>
+1522783603.862088;poll;[{fd=6<socket:[27970], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.862126;recvfrom;6<socket:[27970], \x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000010>
+1522783603.862170;recvfrom;6<socket:[27970], \x24\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x02\x00\x00\x00..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000009>
+1522783603.862208;close;6<socket:[27970];0;0.000012>
+1522783603.862257;socket;AF_NETLINK, SOCK_RAW, NETLINK_AUDIT;6<socket:[27971];0.000020>
+1522783603.862301;fcntl;6<socket:[27971], F_SETFD, FD_CLOEXEC;0;0.000009>
+1522783603.862332;ioctl;0</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.862364;ioctl;1</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.862394;ioctl;2</dev/null, TCGETS, 0x7ffd7bb00410;-1 ENOTTY (Inappropriate ioctl for device);0.000009>
+1522783603.862427;sendto;6<socket:[27971], \xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00\x00\x00\x00\x00\x6f\x70\x3d\x64\x65\x73\x74\x72\x6f\x79\x20\x6b\x69\x6e\x64\x3d..., 240, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12;240;0.000050>
+1522783603.862504;poll;[{fd=6<socket:[27971], events=POLLIN}], 1, 500;1 ([{fd=6, revents=POLLIN}]);0.000010>
+1522783603.862541;recvfrom;6<socket:[27971], \x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00..., 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000009>
+1522783603.862576;recvfrom;6<socket:[27971], \x24\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x61\x34\x00\x00\x00\x00\x00\x00\xf0\x00\x00\x00\x64\x09\x05\x00\x03\x00\x00\x00..., 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, pid=0, groups=00000000}, [12];36;0.000009>
+1522783603.862612;close;6<socket:[27971];0;0.000011>
+1522783603.862673;futex;0x7fe76df037dc, FUTEX_WAKE_PRIVATE, 2147483647;0;0.000009
+1522783603.862727;open;/proc/thread-self/attr/current, O_RDONLY|O_CLOEXEC;-1 ENOENT (No such file or directory);0.000016
+1522783603.862784;gettid;;13409;0.000009
+1522783603.862812;open;/proc/self/task/13409/attr/current, O_RDONLY|O_CLOEXEC;6</proc/13409/task/13409/attr/current;0.000022>
+1522783603.862871;read;6</proc/13409/task/13409/attr/current, unconfined_u:unconfined_r:unconf..., 4095;54;0.000025>
+1522783603.862925;close;6</proc/13409/task/13409/attr/current;0;0.000009>
+1522783603.862964;access;/var/run/setrans/.setrans-unix, F_OK;-1 ENOENT (No such file or directory);0.000019
+1522783603.863005;futex;0x7fe76df04958, FUTEX_WAKE_PRIVATE, 2147483647;0;0.000009
+1522783603.863043;open;/proc/thread-self/attr/current, O_RDWR|O_CLOEXEC;-1 ENOENT (No such file or directory);0.000012
+1522783603.863075;gettid;;13409;0.000008
+1522783603.863101;open;/proc/self/task/13409/attr/current, O_RDWR|O_CLOEXEC;6</proc/13409/task/13409/attr/current;0.000014>
+1522783603.863146;write;6</proc/13409/task/13409/attr/current, unconfined_u:unconfined_r:sshd_n..., 52;-1 EINVAL (Invalid argument);0.000020>
+1522783603.863191;close;6</proc/13409/task/13409/attr/current;0;0.000010>
+1522783603.863241;getuid;;0;0.000008
+1522783603.863267;chroot;/var/empty/sshd;0;0.000012
+1522783603.863298;chdir;/;0;0.000009
+1522783603.863330;setgroups;1, [74];0;0.000010
+1522783603.863362;getuid;;0;0.000008
+1522783603.863386;getgid;;0;0.000008
+1522783603.863410;setresgid;74, 74, 74;0;0.000009
+1522783603.863467;setresuid;74, 74, 74;0;0.000012
+1522783603.863499;setgid;0;-1 EPERM (Operation not permitted);0.000009
+1522783603.863526;setresgid;-1, 0, -1;-1 EPERM (Operation not permitted);0.000009
+1522783603.863552;getgid;;74;0.000008
+1522783603.863581;getegid;;74;0.000008
+1522783603.863605;setuid;0;-1 EPERM (Operation not permitted);0.000008
+1522783603.863631;setresuid;-1, 0, -1;-1 EPERM (Operation not permitted);0.000008
+1522783603.863657;getuid;;74;0.000008
+1522783603.863680;geteuid;;74;0.000008
+1522783603.863720;setrlimit;RLIMIT_FSIZE, {rlim_cur=0, rlim_max=0};0;0.000009
+1522783603.863749;setrlimit;RLIMIT_NOFILE, {rlim_cur=0, rlim_max=0};0;0.000009
+1522783603.863776;setrlimit;RLIMIT_NPROC, {rlim_cur=0, rlim_max=0};0;0.000008
+1522783603.863805;prctl;PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0;0;0.000008
+1522783603.863831;prctl;PR_SET_SECCOMP, SECCOMP_MODE_FILTER, {len=65, filter=0x55bef7c02e60};0;0.000015
+1522783603.863900;write;3<socket:[27928], \x00\x00\x04\xfc\x0a\x14\x8d\xbd\x95\x3f\x7e\x9e\xf5\xed\x94\x10\xa4\x5f\x55\x76\x2b\xd8\x00\x00\x01\x40\x63\x75\x72\x76\x65\x32..., 1280;1280;0.000123>
+1522783603.864062;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000011>
+1522783603.864107;read;3<socket:[27928], \x00\x00\x05\x34\x05\x14\x9b\xe7\x85\xb4\x9e\xe9\x53\xc5\x27\xf0\x20\xf3\x56\x42\x97\x47\x00\x00\x00\xc4\x63\x75\x72\x76\x65\x32..., 8192;1336;0.000012>
+1522783603.864182;getuid;;74;0.000008
+1522783603.864218;write;4<socket:[27958], \x00\x00\x00\x6c\x78, 5;5;0.000018>
+1522783603.864378;write;4<socket:[27958], \x00\x00\x00\x00\x00\x00\x00\x1d\x63\x68\x61\x63\x68\x61\x32\x30\x2d\x70\x6f\x6c\x79\x31\x33\x30\x35\x40\x6f\x70\x65\x6e\x73\x73..., 107;107;0.000014>
+1522783603.865069;read;4<socket:[27958], \x00\x00\x00\x01, 4;4;0.000010>
+1522783603.865108;read;4<socket:[27958], y, 1;1;0.000010>
+1522783603.865145;getuid;;74;0.000008
+1522783603.865173;write;4<socket:[27958], \x00\x00\x00\x6c\x78, 5;5;0.000014>
+1522783603.865313;write;4<socket:[27958], \x00\x00\x00\x01\x00\x00\x00\x1d\x63\x68\x61\x63\x68\x61\x32\x30\x2d\x70\x6f\x6c\x79\x31\x33\x30\x35\x40\x6f\x70\x65\x6e\x73\x73..., 107;107;0.000015>
+1522783603.865863;read;4<socket:[27958], \x00\x00\x00\x01, 4;4;0.000010>
+1522783603.865900;read;4<socket:[27958], y, 1;1;0.000010>
+1522783603.865941;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000221>
+1522783603.866198;read;3<socket:[27928], \x00\x00\x00\x2c\x06\x1e\x00\x00\x00\x20\x4c\xac\x76\x1f\xb1\xf5\x40\x5f\x47\x22\x39\x85\x07\xec\xb0\x82\xa8\x11\xce\xed\xbb\x51..., 8192;48;0.000011>
+1522783603.870761;write;4<socket:[27958], \x00\x00\x00\x40\x06, 5;5;0.000017>
+1522783603.870912;write;4<socket:[27958], \x00\x00\x00\x01\x00\x00\x00\x20\x9c\x16\x5c\xc7\xff\x48\x91\xd0\xb7\xa5\xc2\xd1\xbc\xc5\xf3\x53\x62\x4d\x11\xff\x96\x39\x89\x45..., 63;63;0.000015>
+1522783603.871187;read;4<socket:[27958], \x00\x00\x00\x69, 4;4;0.000009>
+1522783603.871224;read;4<socket:[27958], \x07\x00\x00\x00\x64\x00\x00\x00\x13\x65\x63\x64\x73\x61\x2d\x73\x68\x61\x32\x2d\x6e\x69\x73\x74\x70\x32\x35\x36\x00\x00\x00\x49..., 105;105;0.000011>
+1522783603.871284;clock_gettime;CLOCK_BOOTTIME, {210, 520259292};0;0.000009
+1522783603.871323;write;3<socket:[27928], \x00\x00\x01\x04\x0a\x1f\x00\x00\x00\x68\x00\x00\x00\x13\x65\x63\x64\x73\x61\x2d\x73\x68\x61\x32\x2d\x6e\x69\x73\x74\x70\x32\x35..., 364;364;0.000151>
+1522783603.871508;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.002667>
+1522783603.874220;read;3<socket:[27928], \x00\x00\x00\x0c\x0a\x15\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00, 8192;16;0.000013>
+1522783603.874279;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.041141>
+1522783603.915538;read;3<socket:[27928], \xc0\x5f\x2d\xa0\x5a\x69\x74\x76\xc7\x03\xf3\x8c\x6f\xf6\xd4\x65\x61\x28\xba\x48\xd4\x29\x78\x3c\x53\xd8\x59\xfe\xb6\x8b\x18\x17..., 8192;44;0.000021>
+1522783603.915655;write;3<socket:[27928], \xb5\x03\x2a\x1d\x90\x28\x79\xfb\xab\xfe\x2a\x40\xa2\x66\x52\xeb\xdd\xbd\x83\x01\x98\x1b\x78\x78\x64\xfb\x74\x05\x86\xa3\x1a\xc3..., 44;44;0.000185>
+1522783603.916027;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);0.000017>
+1522783603.916110;read;3<socket:[27928], \x71\xce\x9b\xae\xa9\x7e\xaa\x12\x10\x31\x41\xd8\x6b\x58\xcb\xc3\x00\xd0\x02\xb8\x67\x6b\xee\x11\xc0\xcf\x8f\xea\x73\x90\x69\xbd..., 8192;60;0.000031>
+1522783603.916190;write;4<socket:[27958], \x00\x00\x00\x09\x08, 5;5;0.000039>
+1522783603.916438;write;4<socket:[27958], \x00\x00\x00\x04\x72\x6f\x6f\x74, 8;8;0.000072>
+1522783603.918805;read;4<socket:[27958], \x00\x00\x6a\x24, 4;4;0.013959>
+1522783603.932867;read;4<socket:[27958], \t, 27172;1;0.000055>
+1522783603.932994;read;4<socket:[27958], \x01\x00\x00\x00\x30\xb0\x07\x5f\xf9\xbe\x55\x00\x00\xd0\x07\x5f\xf9\xbe\x55\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf0\x07\x5f..., 27171;27171;0.000072>
+1522783603.933184;write;4<socket:[27958], \x00\x00\x00\x01\x64, 5;5;0.000028>
+1522783603.933299;write;4<socket:[27958], \x00\x00\x00\x17\x04, 5;5;0.000044>
+1522783603.933411;write;4<socket:[27958], \x00\x00\x00\x0e\x73\x73\x68\x2d\x63\x6f\x6e\x6e\x65\x63\x74\x69\x6f\x6e\x00\x00\x00\x00, 22;22;0.000043>
+1522783603.933579;write;4<socket:[27958], \x00\x00\x00\x05\x50, 5;5;0.000045>
+1522783603.933714;write;4<socket:[27958], \x00\x00\x00\x00, 4;4;0.000047>
+1522783603.933870;write;3<socket:[27928], \xa8\xd8\x76\xa9\xda\x65\x33\x92\x2e\x17\x4d\x15\x5a\x7f\x79\x9e\x5e\xe9\x73\x04\x6a\x30\xce\x6e\x80\xe3\x24\x6e\xde\xdb\x9f\xfe..., 84;84;0.000233>
+1522783603.934194;select;4, [3<socket:[27928]], NULL, NULL, NULL;1 (in [3]);1.128848>
+1522783605.063295;read;3<socket:[27928], \x3b\xd4\xc5\xce\x00\x19\x87\xb5\xf2\xcb\x81\xa1\x1d\x38\x3a\x56\x9c\x20\x23\x94\xd0\xe9\x4b\xec\x97\x16\xf1\x39\xbe\x0d\x0c\x89..., 8192;84;0.000125>
+1522783605.064165;write;4<socket:[27958], \x00\x00\x00\x09\x0c, 5;5;0.000124>
+1522783605.064928;write;4<socket:[27958], \x00\x00\x00\x04\x72\x6f\x6f\x74, 8;8;0.000195>
+1522783605.065409;read;4<socket:[27958], \x00\x00\x00\x09, 4;4;0.169329>
+1522783605.234828;read;4<socket:[27958], \r, 9;1;0.000009>
+1522783605.234861;read;4<socket:[27958], \x00\x00\x00\x01\x00\x00\x00\x00, 8;8;0.000031>
+1522783605.234928;write;4<socket:[27958], \x00\x00\x00\x01\x66, 5;5;0.000009>
+1522783605.234958;read;4<socket:[27958], \x00\x00\x00\x09, 4;4;0.120948>
+1522783605.355948;read;4<socket:[27958], g, 9;1;0.000011>
+1522783605.355985;read;4<socket:[27958], \x00\x00\x00\x01\x00\x00\x00\x00, 8;8;0.000040>
+1522783605.356078;write;3<socket:[27928], \x66\xfb\xc5\x8c\xb9\x22\x0f\xb9\x8e\x24\xbb\x50\x47\x91\xb2\x95\xe7\xeb\xb9\xe4\xb0\xf4\x7f\x7c\xa6\x88\xb6\x81, 28;28;0.000292>
+1522783605.356605;write;4<socket:[27958], \x00\x00\x06\xcd\x1a, 5;5;0.000016>
+1522783605.356664;write;4<socket:[27958], \x00\x00\x00\x20\x9c\x16\x5c\xc7\xff\x48\x91\xd0\xb7\xa5\xc2\xd1\xbc\xc5\xf3\x53\x62\x4d\x11\xff\x96\x39\x89\x45\x1b\xe4\x34\x2e..., 1740;1740;0.000014>
+1522783605.356721;getuid;;74;0.000009
+1522783605.356802;write;4<socket:[27958], \x00\x00\x00\x15\x7a, 5;5;0.000014>
+1522783605.356863;write;4<socket:[27958], \x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x34\x61\x00\x00\x00\x00\x00\x00\x00\x4a, 20;20;0.000010>
+1522783605.356903;read;4<socket:[27958], \x00\x00\x00\x01, 4;4;0.002686>
+1522783605.359628;read;4<socket:[27958], {, 1;1;0.000010>
+1522783605.360191;exit_group;0;?

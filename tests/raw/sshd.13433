@@ -1,0 +1,351 @@
+1522783608.540575 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000057>
+1522783608.540847 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000049>
+1522783608.541017 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000047>
+1522783608.541178 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000047>
+1522783608.541338 setpgid(13433, 13433) = 0 <0.000047>
+1522783608.541478 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0 <0.000047>
+1522783608.541651 ioctl(255</dev/pts/1>, TIOCSPGRP, [13433]) = 0 <0.000057>
+1522783608.541883 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000046>
+1522783608.542044 close(4<pipe:[36371]>) = 0 <0.000057>
+1522783608.542232 read(3<pipe:[36371]>, "", 1) = 0 <0.000053>
+1522783608.542426 close(3<pipe:[36371]>) = 0 <0.000063>
+1522783608.542628 rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000048>
+1522783608.542783 rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.542930 rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.543077 rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.543224 rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.543410 rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000048>
+1522783608.543564 rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.543711 rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.543857 rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.544005 rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.544153 rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.544300 rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.544448 rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000046>
+1522783608.544596 rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.544744 rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, NULL, 8) = 0 <0.000047>
+1522783608.544906 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {0x456a20, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000048>
+1522783608.545088 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000063>
+1522783608.545317 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000066>
+1522783608.545531 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, {0x441310, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, 8) = 0 <0.000048>
+1522783608.545921 execve("/usr/bin/ls", ["ls", "--color=auto", "-lta"], [/* 33 vars */]) = 0 <0.001382>
+1522783608.547729 brk(NULL)             = 0x19d6000 <0.000048>
+1522783608.548045 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5d000 <0.000061>
+1522783608.548290 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000065>
+1522783608.548518 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache> <0.000067>
+1522783608.548742 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000052>
+1522783608.548933 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7fcfecf58000 <0.000062>
+1522783608.549119 close(3</etc/ld.so.cache>) = 0 <0.000048>
+1522783608.549323 open("/lib64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libselinux.so.1> <0.000071>
+1522783608.549530 read(3</usr/lib64/libselinux.so.1>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xc0\x6a\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000057>
+1522783608.549756 fstat(3</usr/lib64/libselinux.so.1>, {st_mode=S_IFREG|0755, st_size=155744, ...}) = 0 <0.000051>
+1522783608.549946 mmap(NULL, 2255216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libselinux.so.1>, 0) = 0x7fcfecb16000 <0.000063>
+1522783608.550135 mprotect(0x7fcfecb3a000, 2093056, PROT_NONE) = 0 <0.000075>
+1522783608.550301 mmap(0x7fcfecd39000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libselinux.so.1>, 0x23000) = 0x7fcfecd39000 <0.000083>
+1522783608.550531 mmap(0x7fcfecd3b000, 6512, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcfecd3b000 <0.000064>
+1522783608.550726 close(3</usr/lib64/libselinux.so.1>) = 0 <0.000048>
+1522783608.550935 open("/lib64/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libcap.so.2.22> <0.000074>
+1522783608.551147 read(3</usr/lib64/libcap.so.2.22>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x20\x16\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000053>
+1522783608.551363 fstat(3</usr/lib64/libcap.so.2.22>, {st_mode=S_IFREG|0755, st_size=20032, ...}) = 0 <0.000053>
+1522783608.551564 mmap(NULL, 2114112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libcap.so.2.22>, 0) = 0x7fcfec911000 <0.000063>
+1522783608.551750 mprotect(0x7fcfec915000, 2093056, PROT_NONE) = 0 <0.000067>
+1522783608.551906 mmap(0x7fcfecb14000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libcap.so.2.22>, 0x3000) = 0x7fcfecb14000 <0.000069>
+1522783608.552142 close(3</usr/lib64/libcap.so.2.22>) = 0 <0.000047>
+1522783608.552334 open("/lib64/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libacl.so.1.1.0> <0.000072>
+1522783608.552541 read(3</usr/lib64/libacl.so.1.1.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x80\x1f\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000052>
+1522783608.552721 fstat(3</usr/lib64/libacl.so.1.1.0>, {st_mode=S_IFREG|0755, st_size=37056, ...}) = 0 <0.000051>
+1522783608.552904 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf57000 <0.000056>
+1522783608.553076 mmap(NULL, 2130560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libacl.so.1.1.0>, 0) = 0x7fcfec708000 <0.000062>
+1522783608.553260 mprotect(0x7fcfec70f000, 2097152, PROT_NONE) = 0 <0.000065>
+1522783608.553414 mmap(0x7fcfec90f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libacl.so.1.1.0>, 0x7000) = 0x7fcfec90f000 <0.000069>
+1522783608.553650 close(3</usr/lib64/libacl.so.1.1.0>) = 0 <0.000048>
+1522783608.553856 open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc-2.17.so> <0.000072>
+1522783608.554066 read(3</usr/lib64/libc-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x10\x1d\x02\x00\x00\x00\x00\x00"..., 832) = 832 <0.000053>
+1522783608.554248 fstat(3</usr/lib64/libc-2.17.so>, {st_mode=S_IFREG|0755, st_size=2127336, ...}) = 0 <0.000052>
+1522783608.554435 mmap(NULL, 3940800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc-2.17.so>, 0) = 0x7fcfec345000 <0.000036>
+1522783608.554575 mprotect(0x7fcfec4fd000, 2097152, PROT_NONE) = 0 <0.000046>
+1522783608.554672 mmap(0x7fcfec6fd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc-2.17.so>, 0x1b8000) = 0x7fcfec6fd000 <0.000043>
+1522783608.554795 mmap(0x7fcfec703000, 16832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcfec703000 <0.000034>
+1522783608.554903 close(3</usr/lib64/libc-2.17.so>) = 0 <0.000026>
+1522783608.555015 open("/lib64/libpcre.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libpcre.so.1.2.0> <0.000040>
+1522783608.555131 read(3</usr/lib64/libpcre.so.1.2.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xf0\x15\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000030>
+1522783608.555244 fstat(3</usr/lib64/libpcre.so.1.2.0>, {st_mode=S_IFREG|0755, st_size=402384, ...}) = 0 <0.000028>
+1522783608.555371 mmap(NULL, 2494984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libpcre.so.1.2.0>, 0) = 0x7fcfec0e3000 <0.000036>
+1522783608.555479 mprotect(0x7fcfec143000, 2097152, PROT_NONE) = 0 <0.000040>
+1522783608.555569 mmap(0x7fcfec343000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpcre.so.1.2.0>, 0x60000) = 0x7fcfec343000 <0.000039>
+1522783608.555721 close(3</usr/lib64/libpcre.so.1.2.0>) = 0 <0.000027>
+1522783608.555831 open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libdl-2.17.so> <0.000047>
+1522783608.555975 read(3</usr/lib64/libdl-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x60\x0e\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000042>
+1522783608.556112 fstat(3</usr/lib64/libdl-2.17.so>, {st_mode=S_IFREG|0755, st_size=19776, ...}) = 0 <0.000029>
+1522783608.556220 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf56000 <0.000033>
+1522783608.556327 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libdl-2.17.so>, 0) = 0x7fcfebedf000 <0.000209>
+1522783608.556635 mprotect(0x7fcfebee1000, 2097152, PROT_NONE) = 0 <0.000040>
+1522783608.556728 mmap(0x7fcfec0e1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libdl-2.17.so>, 0x2000) = 0x7fcfec0e1000 <0.000043>
+1522783608.556875 close(3</usr/lib64/libdl-2.17.so>) = 0 <0.000027>
+1522783608.556990 open("/lib64/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libattr.so.1.1.0> <0.000041>
+1522783608.557111 read(3</usr/lib64/libattr.so.1.1.0>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xd0\x13\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000030>
+1522783608.557213 fstat(3</usr/lib64/libattr.so.1.1.0>, {st_mode=S_IFREG|0755, st_size=19888, ...}) = 0 <0.000028>
+1522783608.557319 mmap(NULL, 2113904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libattr.so.1.1.0>, 0) = 0x7fcfebcda000 <0.000036>
+1522783608.557424 mprotect(0x7fcfebcde000, 2093056, PROT_NONE) = 0 <0.000036>
+1522783608.557513 mmap(0x7fcfebedd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libattr.so.1.1.0>, 0x3000) = 0x7fcfebedd000 <0.000040>
+1522783608.557653 close(3</usr/lib64/libattr.so.1.1.0>) = 0 <0.000027>
+1522783608.557772 open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libpthread-2.17.so> <0.000040>
+1522783608.557906 read(3</usr/lib64/libpthread-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x00\x6d\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000043>
+1522783608.558052 fstat(3</usr/lib64/libpthread-2.17.so>, {st_mode=S_IFREG|0755, st_size=144792, ...}) = 0 <0.000029>
+1522783608.558165 mmap(NULL, 2208904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libpthread-2.17.so>, 0) = 0x7fcfebabe000 <0.000037>
+1522783608.558271 mprotect(0x7fcfebad5000, 2093056, PROT_NONE) = 0 <0.000038>
+1522783608.558361 mmap(0x7fcfebcd4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpthread-2.17.so>, 0x16000) = 0x7fcfebcd4000 <0.000058>
+1522783608.558525 mmap(0x7fcfebcd6000, 13448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcfebcd6000 <0.000040>
+1522783608.558648 close(3</usr/lib64/libpthread-2.17.so>) = 0 <0.000027>
+1522783608.558768 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf55000 <0.000032>
+1522783608.558902 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf53000 <0.000030>
+1522783608.559001 arch_prctl(ARCH_SET_FS, 0x7fcfecf53800) = 0 <0.000026>
+1522783608.559360 mprotect(0x7fcfec6fd000, 16384, PROT_READ) = 0 <0.000059>
+1522783608.559551 mprotect(0x7fcfebcd4000, 4096, PROT_READ) = 0 <0.000029>
+1522783608.559643 mprotect(0x7fcfebedd000, 4096, PROT_READ) = 0 <0.000028>
+1522783608.559721 mprotect(0x7fcfec0e1000, 4096, PROT_READ) = 0 <0.000029>
+1522783608.559799 mprotect(0x7fcfec343000, 4096, PROT_READ) = 0 <0.000029>
+1522783608.559888 mprotect(0x7fcfec90f000, 4096, PROT_READ) = 0 <0.000029>
+1522783608.559966 mprotect(0x7fcfecb14000, 4096, PROT_READ) = 0 <0.000029>
+1522783608.560067 mprotect(0x7fcfecd39000, 4096, PROT_READ) = 0 <0.000031>
+1522783608.560158 mprotect(0x61a000, 4096, PROT_READ) = 0 <0.000028>
+1522783608.560236 mprotect(0x7fcfecf5e000, 4096, PROT_READ) = 0 <0.000032>
+1522783608.560308 munmap(0x7fcfecf58000, 18407) = 0 <0.000042>
+1522783608.560395 set_tid_address(0x7fcfecf53ad0) = 13433 <0.000018>
+1522783608.560452 set_robust_list(0x7fcfecf53ae0, 24) = 0 <0.000020>
+1522783608.560522 rt_sigaction(SIGRTMIN, {0x7fcfebac47e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcfebacd5e0}, NULL, 8) = 0 <0.000023>
+1522783608.560603 rt_sigaction(SIGRT_1, {0x7fcfebac4870, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fcfebacd5e0}, NULL, 8) = 0 <0.000018>
+1522783608.560664 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0 <0.000018>
+1522783608.560760 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000018>
+1522783608.560931 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={0, 0}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000049>
+1522783608.561047 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={0, 0}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000030>
+1522783608.561129 stat("/sys/fs/selinux", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000031>
+1522783608.561305 brk(NULL)             = 0x19d6000 <0.000024>
+1522783608.561380 brk(0x19f7000)        = 0x19f7000 <0.000031>
+1522783608.561485 access("/etc/selinux/config", F_OK) = 0 <0.000032>
+1522783608.561710 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive> <0.000045>
+1522783608.561836 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=106070960, ...}) = 0 <0.000021>
+1522783608.561927 mmap(NULL, 106070960, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7fcfe5595000 <0.000031>
+1522783608.562017 close(3</usr/lib/locale/locale-archive>) = 0 <0.000019>
+1522783608.562166 ioctl(1</dev/pts/1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000025>
+1522783608.562263 ioctl(1</dev/pts/1>, TIOCGWINSZ, {ws_row=39, ws_col=159, ws_xpixel=0, ws_ypixel=0}) = 0 <0.000021>
+1522783608.562374 ioctl(1</dev/pts/1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000020>
+1522783608.562509 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3</usr/share/locale/locale.alias> <0.000029>
+1522783608.562611 fstat(3</usr/share/locale/locale.alias>, {st_mode=S_IFREG|0644, st_size=2502, ...}) = 0 <0.000020>
+1522783608.562684 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5c000 <0.000023>
+1522783608.562747 read(3</usr/share/locale/locale.alias>, "# Locale name alias data base.\n#"..., 4096) = 2502 <0.000026>
+1522783608.562861 read(3</usr/share/locale/locale.alias>, "", 4096) = 0 <0.000020>
+1522783608.562936 close(3</usr/share/locale/locale.alias>) = 0 <0.000022>
+1522783608.563003 munmap(0x7fcfecf5c000, 4096) = 0 <0.000035>
+1522783608.563112 open("/usr/share/locale/it_IT.UTF-8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000027>
+1522783608.563186 open("/usr/share/locale/it_IT.utf8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000023>
+1522783608.563252 open("/usr/share/locale/it_IT/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000024>
+1522783608.563336 open("/usr/share/locale/it.UTF-8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000026>
+1522783608.563406 open("/usr/share/locale/it.utf8/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000023>
+1522783608.563481 open("/usr/share/locale/it/LC_TIME/coreutils.mo", O_RDONLY) = 3</usr/share/locale/it/LC_TIME/coreutils.mo> <0.000026>
+1522783608.563562 fstat(3</usr/share/locale/it/LC_TIME/coreutils.mo>, {st_mode=S_IFREG|0644, st_size=215384, ...}) = 0 <0.000020>
+1522783608.563634 mmap(NULL, 215384, PROT_READ, MAP_PRIVATE, 3</usr/share/locale/it/LC_TIME/coreutils.mo>, 0) = 0x7fcfecf1e000 <0.000025>
+1522783608.563711 close(3</usr/share/locale/it/LC_TIME/coreutils.mo>) = 0 <0.000019>
+1522783608.563864 open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = 3</usr/lib64/gconv/gconv-modules.cache> <0.000027>
+1522783608.563946 fstat(3</usr/lib64/gconv/gconv-modules.cache>, {st_mode=S_IFREG|0644, st_size=26254, ...}) = 0 <0.000020>
+1522783608.564016 mmap(NULL, 26254, PROT_READ, MAP_SHARED, 3</usr/lib64/gconv/gconv-modules.cache>, 0) = 0x7fcfecf17000 <0.000025>
+1522783608.564087 close(3</usr/lib64/gconv/gconv-modules.cache>) = 0 <0.000019>
+1522783608.564154 futex(0x7fcfec702a80, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000019>
+1522783608.564232 stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7fff5659a970) = -1 ENOENT (No such file or directory) <0.000023>
+1522783608.564411 ioctl(1</dev/pts/1>, TIOCGPGRP, [13433]) = 0 <0.000020>
+1522783608.564504 rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564554 rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564598 rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564641 rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564685 rt_sigaction(SIGPIPE, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000017>
+1522783608.564742 rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000019>
+1522783608.564803 rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564849 rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564892 rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.564935 rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000013>
+1522783608.564978 rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.565020 rt_sigaction(SIGXFSZ, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000014>
+1522783608.565067 rt_sigaction(SIGTSTP, {0x405b60, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565115 rt_sigaction(SIGALRM, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565160 rt_sigaction(SIGHUP, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000013>
+1522783608.565205 rt_sigaction(SIGINT, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565249 rt_sigaction(SIGPIPE, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565294 rt_sigaction(SIGQUIT, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565338 rt_sigaction(SIGTERM, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000013>
+1522783608.565382 rt_sigaction(SIGIO, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000013>
+1522783608.565426 rt_sigaction(SIGPROF, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565470 rt_sigaction(SIGVTALRM, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000013>
+1522783608.565514 rt_sigaction(SIGXCPU, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000015>
+1522783608.565566 rt_sigaction(SIGXFSZ, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, NULL, 8) = 0 <0.000014>
+1522783608.565626 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</root> <0.000020>
+1522783608.565699 getdents(3</root>, /* 12 entries */, 32768) = 392 <0.000029>
+1522783608.565779 lstat(".lesshst", {st_mode=S_IFREG|0600, st_size=89, ...}) = 0 <0.000059>
+1522783608.565888 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000015>
+1522783608.565951 getxattr(".lesshst", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000020>
+1522783608.566037 lgetxattr(".lesshst", "security.selinux", "unconfined_u:object_r:admin_home_t:s0", 255) = 38 <0.000025>
+1522783608.566121 access("/var/run/setrans/.setrans-unix", F_OK) = -1 ENOENT (No such file or directory) <0.000212>
+1522783608.566372 futex(0x7fcfecd3c958, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000389>
+1522783608.566817 getxattr(".lesshst", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000021>
+1522783608.566882 getxattr(".lesshst", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000018>
+1522783608.566958 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[36378]> <0.000050>
+1522783608.567055 connect(4<socket:[36378]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000032>
+1522783608.567130 close(4<socket:[36378]>) = 0 <0.000021>
+1522783608.567187 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[36379]> <0.000035>
+1522783608.567260 connect(4<socket:[36379]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000025>
+1522783608.567339 close(4<socket:[36379]>) = 0 <0.000019>
+1522783608.567414 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4</etc/nsswitch.conf> <0.000021>
+1522783608.567482 fstat(4</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=1746, ...}) = 0 <0.000016>
+1522783608.567537 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5c000 <0.000017>
+1522783608.567586 read(4</etc/nsswitch.conf>, "#\n# /etc/nsswitch.conf\n#\n# An ex"..., 4096) = 1746 <0.000020>
+1522783608.567669 read(4</etc/nsswitch.conf>, "", 4096) = 0 <0.000014>
+1522783608.567722 close(4</etc/nsswitch.conf>) = 0 <0.000015>
+1522783608.567771 munmap(0x7fcfecf5c000, 4096) = 0 <0.000026>
+1522783608.567842 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4</etc/ld.so.cache> <0.000020>
+1522783608.567903 fstat(4</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=18407, ...}) = 0 <0.000015>
+1522783608.567957 mmap(NULL, 18407, PROT_READ, MAP_PRIVATE, 4</etc/ld.so.cache>, 0) = 0x7fcfecf58000 <0.000018>
+1522783608.568011 close(4</etc/ld.so.cache>) = 0 <0.000014>
+1522783608.568071 open("/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4</usr/lib64/libnss_files-2.17.so> <0.000022>
+1522783608.568134 read(4</usr/lib64/libnss_files-2.17.so>, "\x7f\x45\x4c\x46\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\xd0\x21\x00\x00\x00\x00\x00\x00"..., 832) = 832 <0.000015>
+1522783608.568188 fstat(4</usr/lib64/libnss_files-2.17.so>, {st_mode=S_IFREG|0755, st_size=62184, ...}) = 0 <0.000015>
+1522783608.568246 mmap(NULL, 2173048, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4</usr/lib64/libnss_files-2.17.so>, 0) = 0x7fcfe5382000 <0.000021>
+1522783608.568305 mprotect(0x7fcfe538e000, 2093056, PROT_NONE) = 0 <0.000023>
+1522783608.568355 mmap(0x7fcfe558d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4</usr/lib64/libnss_files-2.17.so>, 0xb000) = 0x7fcfe558d000 <0.000023>
+1522783608.568421 mmap(0x7fcfe558f000, 22648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcfe558f000 <0.000020>
+1522783608.568481 close(4</usr/lib64/libnss_files-2.17.so>) = 0 <0.000015>
+1522783608.568554 mprotect(0x7fcfe558d000, 4096, PROT_READ) = 0 <0.000022>
+1522783608.568615 munmap(0x7fcfecf58000, 18407) = 0 <0.000021>
+1522783608.568681 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000020>
+1522783608.568750 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1049, ...}) = 0 <0.000016>
+1522783608.568808 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5c000 <0.000017>
+1522783608.568856 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1049 <0.000020>
+1522783608.568925 close(4</etc/passwd>) = 0 <0.000016>
+1522783608.568976 munmap(0x7fcfecf5c000, 4096) = 0 <0.000022>
+1522783608.569045 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[36380]> <0.000036>
+1522783608.569122 connect(4<socket:[36380]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000028>
+1522783608.569192 close(4<socket:[36380]>) = 0 <0.000019>
+1522783608.569247 socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[36381]> <0.000033>
+1522783608.569317 connect(4<socket:[36381]>, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000024>
+1522783608.569382 close(4<socket:[36381]>) = 0 <0.000018>
+1522783608.569443 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4</etc/group> <0.000019>
+1522783608.569517 fstat(4</etc/group>, {st_mode=S_IFREG|0644, st_size=500, ...}) = 0 <0.000012>
+1522783608.569561 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5c000 <0.000013>
+1522783608.569598 read(4</etc/group>, "root:x:0:\nbin:x:1:\ndaemon:x:2:\ns"..., 4096) = 500 <0.000016>
+1522783608.569650 close(4</etc/group>)  = 0 <0.000013>
+1522783608.569692 munmap(0x7fcfecf5c000, 4096) = 0 <0.000017>
+1522783608.569740 lstat(".tcshrc", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0 <0.000048>
+1522783608.569822 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.569860 getxattr(".tcshrc", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000016>
+1522783608.569907 lgetxattr(".tcshrc", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000017>
+1522783608.569957 getxattr(".tcshrc", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570000 getxattr(".tcshrc", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570045 lstat(".bash_profile", {st_mode=S_IFREG|0644, st_size=176, ...}) = 0 <0.000013>
+1522783608.570088 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.570125 getxattr(".bash_profile", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000015>
+1522783608.570168 lgetxattr(".bash_profile", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000015>
+1522783608.570215 getxattr(".bash_profile", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570257 getxattr(".bash_profile", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570301 lstat(".bashrc", {st_mode=S_IFREG|0644, st_size=176, ...}) = 0 <0.000013>
+1522783608.570343 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.570380 getxattr(".bashrc", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000015>
+1522783608.570423 lgetxattr(".bashrc", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000015>
+1522783608.570469 getxattr(".bashrc", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570511 getxattr(".bashrc", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570554 lstat("anaconda-ks.cfg", {st_mode=S_IFREG|0600, st_size=1960, ...}) = 0 <0.000024>
+1522783608.570609 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.570646 getxattr("anaconda-ks.cfg", "security.capability", 0x7fff5659aad0, 20) = -1 ENODATA (No data available) <0.000015>
+1522783608.570695 lgetxattr("anaconda-ks.cfg", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000016>
+1522783608.570742 getxattr("anaconda-ks.cfg", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.570784 getxattr("anaconda-ks.cfg", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000013>
+1522783608.570828 lstat(".bash_history", {st_mode=S_IFREG|0600, st_size=12685, ...}) = 0 <0.000014>
+1522783608.570870 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.570907 getxattr(".bash_history", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000015>
+1522783608.570949 lgetxattr(".bash_history", "security.selinux", "unconfined_u:object_r:admin_home_t:s0", 255) = 38 <0.000017>
+1522783608.570997 getxattr(".bash_history", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.571039 getxattr(".bash_history", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.571083 lstat(".cshrc", {st_mode=S_IFREG|0644, st_size=100, ...}) = 0 <0.000023>
+1522783608.571135 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.571172 getxattr(".cshrc", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000014>
+1522783608.571214 lgetxattr(".cshrc", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000016>
+1522783608.571261 getxattr(".cshrc", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.571302 getxattr(".cshrc", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000026>
+1522783608.571360 lstat("..", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000013>
+1522783608.571402 lgetxattr("..", "security.selinux", "system_u:object_r:root_t:s0", 255) = 28 <0.000015>
+1522783608.571450 getxattr("..", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000013>
+1522783608.571490 getxattr("..", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000012>
+1522783608.571532 lstat(".oracle_jre_usage", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000259>
+1522783608.571823 lgetxattr(".oracle_jre_usage", "security.selinux", "unconfined_u:object_r:admin_home_t:s0", 255) = 38 <0.000017>
+1522783608.571873 getxattr(".oracle_jre_usage", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.571915 getxattr(".oracle_jre_usage", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.571960 lstat(".pki", {st_mode=S_IFDIR|0740, st_size=4096, ...}) = 0 <0.000022>
+1522783608.572012 lgetxattr(".pki", "security.selinux", "unconfined_u:object_r:admin_home_t:s0", 255) = 38 <0.000017>
+1522783608.572061 getxattr(".pki", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572102 getxattr(".pki", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572146 lstat(".", {st_mode=S_IFDIR|0550, st_size=4096, ...}) = 0 <0.000012>
+1522783608.572187 lgetxattr(".", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000015>
+1522783608.572234 getxattr(".", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572275 getxattr(".", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572319 lstat(".bash_logout", {st_mode=S_IFREG|0644, st_size=18, ...}) = 0 <0.000023>
+1522783608.572372 capget({_LINUX_CAPABILITY_VERSION_3, 0}, NULL) = 0 <0.000011>
+1522783608.572410 getxattr(".bash_logout", "security.capability", 0x7fff5659aae0, 20) = -1 ENODATA (No data available) <0.000014>
+1522783608.572452 lgetxattr(".bash_logout", "security.selinux", "system_u:object_r:admin_home_t:s0", 255) = 34 <0.000016>
+1522783608.572500 getxattr(".bash_logout", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572541 getxattr(".bash_logout", "system.posix_acl_default", NULL, 0) = -1 ENODATA (No data available) <0.000014>
+1522783608.572591 getdents(3</root>, /* 0 entries */, 32768) = 0 <0.000013>
+1522783608.572639 close(3</root>)       = 0 <0.000016>
+1522783608.572711 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000017>
+1522783608.572756 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000014>
+1522783608.572797 open("/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000016>
+1522783608.572838 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000015>
+1522783608.572878 open("/usr/share/locale/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000014>
+1522783608.572918 open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000016>
+1522783608.572964 fstat(1</dev/pts/1>, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0 <0.000013>
+1522783608.573011 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5c000 <0.000014>
+1522783608.573062 write(1</dev/pts/1>, "total 60\n", 9) = 9 <0.000034>
+1522783608.573179 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3</usr/share/zoneinfo/America/New_York> <0.000036>
+1522783608.573267 fstat(3</usr/share/zoneinfo/America/New_York>, {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000025>
+1522783608.573338 fstat(3</usr/share/zoneinfo/America/New_York>, {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000023>
+1522783608.573409 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfecf5b000 <0.000035>
+1522783608.573499 read(3</usr/share/zoneinfo/America/New_York>, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00"..., 4096) = 3519 <0.000027>
+1522783608.573578 lseek(3</usr/share/zoneinfo/America/New_York>, -2252, SEEK_CUR) = 1267 <0.000051>
+1522783608.573676 read(3</usr/share/zoneinfo/America/New_York>, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x05\x00\x00\x00\x00"..., 4096) = 2252 <0.000026>
+1522783608.573757 close(3</usr/share/zoneinfo/America/New_York>) = 0 <0.000025>
+1522783608.573823 munmap(0x7fcfecf5b000, 4096) = 0 <0.000030>
+1522783608.573927 write(1</dev/pts/1>, "-rw-------.  1 root root 12685  "..., 58) = 58 <0.000298>
+1522783608.574297 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000041>
+1522783608.574411 write(1</dev/pts/1>, "-rw-------.  1 root root    89  "..., 53) = 53 <0.000067>
+1522783608.574532 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000028>
+1522783608.574602 write(1</dev/pts/1>, "dr-xr-x---.  4 root root  4096  "..., 64) = 64 <0.000025>
+1522783608.574669 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000022>
+1522783608.574735 write(1</dev/pts/1>, "dr-xr-xr-x. 19 root root  4096 3"..., 61) = 61 <0.000042>
+1522783608.574858 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000027>
+1522783608.574934 write(1</dev/pts/1>, "drwxr-----.  3 root root  4096 3"..., 63) = 63 <0.000049>
+1522783608.575031 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000025>
+1522783608.575097 write(1</dev/pts/1>, "drwxr-xr-x.  2 root root  4096 3"..., 76) = 76 <0.000025>
+1522783608.575164 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000023>
+1522783608.575232 write(1</dev/pts/1>, "-rw-------.  1 root root  1960 3"..., 60) = 60 <0.000032>
+1522783608.575315 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000266>
+1522783608.575690 write(1</dev/pts/1>, "-rw-r--r--.  1 root root    18 2"..., 57) = 57 <0.000028>
+1522783608.575784 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000057>
+1522783608.575890 write(1</dev/pts/1>, "-rw-r--r--.  1 root root   176 2"..., 58) = 58 <0.000028>
+1522783608.575972 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000025>
+1522783608.576039 write(1</dev/pts/1>, "-rw-r--r--.  1 root root   176 2"..., 52) = 52 <0.000024>
+1522783608.576110 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000039>
+1522783608.576199 write(1</dev/pts/1>, "-rw-r--r--.  1 root root   100 2"..., 51) = 51 <0.000235>
+1522783608.576495 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3519, ...}) = 0 <0.000024>
+1522783608.576571 write(1</dev/pts/1>, "-rw-r--r--.  1 root root   129 2"..., 52) = 52 <0.000053>
+1522783608.576684 rt_sigaction(SIGTSTP, {SIG_DFL, [TSTP], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x405b60, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000020>
+1522783608.576743 rt_sigaction(SIGALRM, {SIG_DFL, [ALRM], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000019>
+1522783608.576796 rt_sigaction(SIGHUP, {SIG_DFL, [HUP], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000018>
+1522783608.576849 rt_sigaction(SIGINT, {SIG_DFL, [INT], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000026>
+1522783608.576914 rt_sigaction(SIGPIPE, {SIG_DFL, [PIPE], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000128>
+1522783608.577090 rt_sigaction(SIGQUIT, {SIG_DFL, [QUIT], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000019>
+1522783608.577146 rt_sigaction(SIGTERM, {SIG_DFL, [TERM], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000044>
+1522783608.577228 rt_sigaction(SIGIO, {SIG_DFL, [IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000021>
+1522783608.577282 rt_sigaction(SIGPROF, {SIG_DFL, [PROF], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000019>
+1522783608.577334 rt_sigaction(SIGVTALRM, {SIG_DFL, [VTALRM], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000018>
+1522783608.577388 rt_sigaction(SIGXCPU, {SIG_DFL, [XCPU], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000130>
+1522783608.577565 rt_sigaction(SIGXFSZ, {SIG_DFL, [XFSZ], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, {0x404c70, [HUP INT QUIT PIPE ALRM TERM TSTP XCPU XFSZ VTALRM PROF IO], SA_RESTORER|SA_RESTART, 0x7fcfec37a270}, 8) = 0 <0.000018>
+1522783608.577634 close(1</dev/pts/1>)  = 0 <0.000037>
+1522783608.577700 munmap(0x7fcfecf5c000, 4096) = 0 <0.000021>
+1522783608.577741 close(2</dev/pts/1>)  = 0 <0.000010>
+1522783608.577808 exit_group(0)         = ?

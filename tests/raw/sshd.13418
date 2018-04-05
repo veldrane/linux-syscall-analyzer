@@ -1,0 +1,60 @@
+1522783605.707199 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000010>
+1522783605.707252 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.707282 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.707311 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.707348 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {0x456a20, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000009>
+1522783605.707380 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000017>
+1522783605.707419 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_IGN, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000009>
+1522783605.707447 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, {0x441310, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, 8) = 0 <0.000009>
+1522783605.707482 rt_sigaction(SIGCHLD, {0x441310, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.707515 rt_sigaction(SIGINT, {0x456c10, [], SA_RESTORER, 0x7fd924ee5270}, {SIG_DFL, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.707552 dup2(4<pipe:[36294]>, 1</dev/pts/1>) = 1<pipe:[36294]> <0.000010>
+1522783605.707604 close(4<pipe:[36294]>) = 0 <0.000008>
+1522783605.707634 close(3<pipe:[36294]>) = 0 <0.000009>
+1522783605.707696 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0 <0.000008>
+1522783605.707725 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0 <0.000008>
+1522783605.707790 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0 <0.000008>
+1522783605.708003 stat(".", {st_mode=S_IFDIR|0550, st_size=4096, ...}) = 0 <0.000011>
+1522783605.708044 stat("/usr/local/sbin/ls", 0x7ffe11f32430) = -1 ENOENT (No such file or directory) <0.000012>
+1522783605.708078 stat("/usr/local/bin/ls", 0x7ffe11f32430) = -1 ENOENT (No such file or directory) <0.000011>
+1522783605.708110 stat("/usr/sbin/ls", 0x7ffe11f32430) = -1 ENOENT (No such file or directory) <0.000010>
+1522783605.708140 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000011>
+1522783605.708203 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000010>
+1522783605.708234 geteuid()             = 0 <0.000008>
+1522783605.708258 getegid()             = 0 <0.000008>
+1522783605.708282 getuid()              = 0 <0.000008>
+1522783605.708305 getgid()              = 0 <0.000008>
+1522783605.708328 access("/usr/bin/ls", X_OK) = 0 <0.000011>
+1522783605.708359 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000010>
+1522783605.708389 geteuid()             = 0 <0.000009>
+1522783605.708413 getegid()             = 0 <0.000008>
+1522783605.708436 getuid()              = 0 <0.000008>
+1522783605.708459 getgid()              = 0 <0.000008>
+1522783605.708483 access("/usr/bin/ls", R_OK) = 0 <0.000011>
+1522783605.708512 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000010>
+1522783605.708543 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000010>
+1522783605.708573 geteuid()             = 0 <0.000008>
+1522783605.708597 getegid()             = 0 <0.000008>
+1522783605.708620 getuid()              = 0 <0.000008>
+1522783605.708643 getgid()              = 0 <0.000008>
+1522783605.708666 access("/usr/bin/ls", X_OK) = 0 <0.000010>
+1522783605.708695 stat("/usr/bin/ls", {st_mode=S_IFREG|0755, st_size=117656, ...}) = 0 <0.000010>
+1522783605.708725 geteuid()             = 0 <0.000008>
+1522783605.708748 getegid()             = 0 <0.000008>
+1522783605.708771 getuid()              = 0 <0.000008>
+1522783605.708794 getgid()              = 0 <0.000008>
+1522783605.708818 access("/usr/bin/ls", R_OK) = 0 <0.000011>
+1522783605.708887 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0 <0.000009>
+1522783605.708917 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd9258b9a10) = 13419 <0.000065>
+1522783605.709032 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000009>
+1522783605.709248 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0 <0.000009>
+1522783605.709282 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000008>
+1522783605.709309 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0 <0.000008>
+1522783605.709337 rt_sigaction(SIGINT, {0x43e780, [], SA_RESTORER, 0x7fd924ee5270}, {0x456c10, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.709373 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 13419 <0.005287>
+1522783605.714692 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000009>
+1522783605.714721 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13419, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1522783605.714738 wait4(-1, 0x7ffe11f31e50, WNOHANG, NULL) = -1 ECHILD (No child processes) <0.000008>
+1522783605.714765 rt_sigreturn({mask=[]}) = 0 <0.000010>
+1522783605.714793 rt_sigaction(SIGINT, {0x456c10, [], SA_RESTORER, 0x7fd924ee5270}, {0x43e780, [], SA_RESTORER, 0x7fd924ee5270}, 8) = 0 <0.000008>
+1522783605.714902 exit_group(0)         = ?
