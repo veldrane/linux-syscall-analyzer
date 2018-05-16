@@ -51,6 +51,32 @@ def gettracefiles(target):
 	log("First file "+str((tracelist[0])[2])+" will be processed...");
 	return tracelist;
 
+def dotrace(member):
+	
+	trace = open(member,'r');
+
+	for line in trace:
+		columns = parseline(line);
+
+
+	trace.close;
+	return 0;
+
+def parseline(line):
+
+	line = line.split('(');
+	timestamp, syscall = line[0].split(' ');
+	line = line[1].split(')');
+	arguments = line[0];
+	#rccode, spenttime = line[1].split(' '); 
+	#print(timestamp, syscall, arguments, line);
+	print(line[1]);
+	
+	return 0;
+	
+
+
 args=parseargv();
 logging=args.log
 traces=gettracefiles(args.directory);
+dotrace('/data/tests/raw/sshd.13357');
