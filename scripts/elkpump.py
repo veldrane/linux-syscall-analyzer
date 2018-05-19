@@ -2,6 +2,7 @@ import argparse;
 import re;
 import glob;
 from elasticsearch import Elasticsearch;
+from elasticsearch import helpers;
 from operator import itemgetter;
 
 VERSION = "0.1";
@@ -53,30 +54,49 @@ def gettracefiles(target):
 
 def dotrace(member):
 	
+	patern = re.compile(r"(?P<timestamp>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<duration>\d+.\d+)\>\n");
 	trace = open(member,'r');
 
 	for line in trace:
-		columns = parseline(line);
 
+		try:
+			cols = patern.search(line).groupdict();
+
+		except AttributeError:
+			log("Error: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
+			continue;
+		elkdoc = createdoc(cols);
+		print(elkdoc);
 
 	trace.close;
 	return 0;
 
-def parseline(line):
-
-	line = line.split('(');
-	timestamp, syscall = line[0].split(' ');
-	line = line[1].split(')');
-	arguments = line[0];
-	#rccode, spenttime = line[1].split(' '); 
-	#print(timestamp, syscall, arguments, line);
-	print(line[1]);
+def createdoc(cols):
 	
-	return 0;
+	cols['duration'] = float(cols['duration']);
+	cols['timestamp'] = float(cols['timestamp']);
+	speccols = addspec(cols['syscall'],cols['args'],cols['rc']);
+	#print (speccols);
+	cols = {**cols, **speccols};
+	return cols;
 	
+def addspec(syscall,args,rc):
 
+	specs = {};
+
+	if syscall == ('open'): specs = specsopen(args,rc);
+
+	return specs;
+
+def specsopen(args,rc):
+
+	argpatern = re.compile(r"\"(?P<objectname>.*)\"\,\s(?P<mode>.*)");
+	specs = argpatern.search(args).groupdict();
+
+	return specs;
 
 args=parseargv();
 logging=args.log
 traces=gettracefiles(args.directory);
-dotrace('/data/tests/raw/sshd.13357');
+for trace in traces:
+	dotrace(trace[2]);
