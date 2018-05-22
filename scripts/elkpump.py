@@ -15,7 +15,12 @@ iddoc=1;
 
 
 argregex = {
-	"open" : '(?P<objectname>.*)\"\,\s(?P<mode>.*)'
+	"open" : '(?P<objectname>.*)\"\,\s(?P<mode>.*)',
+	"close" : '(?P<fd>\d+).*'
+}
+
+rcregex = {
+	"open" : '(?P<fd>\d+).*'
 }
 
 def log(message):
@@ -66,6 +71,7 @@ def dotrace(member,indx):
 	
 	global es;
 	global iddoc;
+	speccols = {};
 	
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
@@ -74,45 +80,77 @@ def dotrace(member,indx):
 	for line in trace:
 
 		try:
-			cols = patern.search(line).groupdict();
-			cols['pid'] = pid;
-			cols['tracefile'] = member;
+			basecols = patern.search(line).groupdict();
 	
 		except AttributeError:
 			log("Error: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
 			continue;
 
-		elkdoc = createdoc(cols);
-		es.index(index=indx, doc_type='trace', id=iddoc, body=elkdoc);
+
+		basecols['pid'] = pid;
+		basecols['tracefile'] = member;
+	
+		speccols = addcolumns(basecols);
+		argcols = addargcols(basecols['syscall'],basecols['args']);
+		rccols = addrccols(basecols['syscall'],basecols['rc']);
+
+
+		elkdoc = {**basecols, **speccols, **argcols, **rccols};
+
+		#es.index(index=indx, doc_type='trace', id=iddoc, body=elkdoc);
 		iddoc += 1;
-		#print(elkdoc);
+		print(elkdoc);
 
 	trace.close;
 	return 0;
 
-def createdoc(cols):
+def addcolumns(basecols):
 	
-	cols['runt'] = float(cols['runt']);
-	cols['epoch'] = float(cols['epoch']);
-	cols['u_epoch'] = int(cols['epoch']*1000000);
-	cols['u_runt'] = int(cols['runt']*1000000);
-	cols['@timestamp'] = datetime.datetime.fromtimestamp(cols['epoch']).strftime('%Y-%m-%dT%H:%M:%S.%fZ');
-	speccols = addspec(cols['syscall'],cols['args'],cols['rc']);
-	#print (speccols);
-	cols = {**cols, **speccols};
-	return cols;
-	
-def addspec(syscall,args,rc):
 
-	specs = {};
+
+	speccols = {};
+	
+	speccols['runt'] = float(basecols['runt']);
+	speccols['epoch'] = float(basecols['epoch']);
+
+	speccols['u_epoch'] = int(speccols['epoch']*1000000);
+	speccols['u_runt'] = int(speccols['runt']*1000000);
+	speccols['@timestamp'] = datetime.datetime.fromtimestamp(speccols['epoch']).strftime('%Y-%m-%dT%H:%M:%S.%fZ');
+
+	return speccols;
+	
+def addargcols(syscall,args):
+
+	global argregex;
+
+	parsed = {};
 
 	try:
 		argpatern = re.compile(argregex[syscall]);
-		specs = argpatern.search(args).groupdict();
+		parsed = argpatern.search(args).groupdict();
 	except:
-		specs = {};
+		parsed = {};
 
-	return specs;
+	return parsed;
+
+
+
+def addrccols(syscall,rc):
+
+	global rcregex;
+
+	parsed = {};
+
+	try:
+		argpatern = re.compile(rcregex[syscall]);
+		parsed = argpatern.search(rc).groupdict();
+	except:
+		parsed = {};
+
+	return parsed;
+
+
+
 
 def createindex(id):
 	global es;
