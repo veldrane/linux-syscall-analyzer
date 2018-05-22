@@ -16,7 +16,11 @@ iddoc=1;
 
 argregex = {
 	"open" : '(?P<objectname>.*)\"\,\s(?P<mode>.*)',
-	"close" : '(?P<fd>\d+).*'
+	"close" : '(?P<fd>\d+).*',
+	"mmap" : '(?P<addr>.*),\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
+	"read" : '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"write" : '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"fcntl" : '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmd>.*)'
 }
 
 rcregex = {
@@ -162,7 +166,7 @@ def createindex(id):
 	#indx[2] = ('linux.relations.'+id);
 
 	try:
-		es.indices.create(index = indx[0], ignore=400);
+	#	es.indices.create(index = indx[0], ignore=400);
 		log('Index '+indx[0]+' has been created');
 	except:
 		log('Index '+indx[0]+' was not created');
