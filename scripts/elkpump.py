@@ -7,6 +7,8 @@ from elasticsearch import helpers;
 from operator import itemgetter;
 import datetime;
 import time;
+import context;
+
 
 VERSION = "0.1";
 logging = False;
@@ -15,17 +17,35 @@ iddoc=1;
 
 
 argregex = {
-	"open" : '(?P<objectname>.*)\"\,\s(?P<mode>.*)',
-	"close" : '(?P<fd>\d+).*',
-	"mmap" : '(?P<addr>.*),\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
-	"read" : '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"write" : '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"fcntl" : '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmd>.*)'
+	"open" : 	'(?P<request>.*)\"\,\s(?P<mode>.*)',
+	"close" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>',
+	"mmap" : 	'(?P<addr>.*)\,\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
+	"read" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"write" : 	'(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"fcntl" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmd>.*)',
+	"socket" :	'(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)',
+	"execve" : 	'\"(?P<command>.*)\"\,\s\[(?P<options>.*)\]\,\s(.*)\]'
 }
 
+#argregex = {
+#	"open" : ('(?P<objectname>.*)\"\,\s(?P<mode>.*)',''),
+#	"read" : ('(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',''),
+#	"write" : ('(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)','')
+#}
+
+
+
 rcregex = {
-	"open" : '(?P<fd>\d+).*'
+	"open" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>',
+	"socket" :	'(?P<sd>\d+)\<(?P<objectname>.*)\>'
 }
+
+contextf = {
+	"open" : context.c_open,
+	"read" : context.c_read,
+	"write" : context.c_write
+}
+
 
 def log(message):
 
@@ -98,7 +118,6 @@ def dotrace(member,indx):
 		argcols = addargcols(basecols['syscall'],basecols['args']);
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
 
-
 		elkdoc = {**basecols, **speccols, **argcols, **rccols};
 
 		#es.index(index=indx, doc_type='trace', id=iddoc, body=elkdoc);
@@ -152,7 +171,6 @@ def addrccols(syscall,rc):
 		parsed = {};
 
 	return parsed;
-
 
 
 
