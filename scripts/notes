@@ -1,0 +1,13 @@
+- rc code je mozne parsovat na -1 a chybovy kod ktery je velkymi pismeny
+
+- vice regexu v ramci pole:
+###>>
+
+#argregex = {
+#       "open" : ('(?P<objectname>.*)\"\,\s(?P<mode>.*)',''),
+#       "read" : ('(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',''),
+#       "write" : ('(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)','')
+#}
+
+###<<
+
