@@ -16,12 +16,55 @@ logging = False;
 es = Elasticsearch (["elkdev1:9200"]);
 iddoc=1;
 
+descriptors = {};
+
+
+
 
 contextf = {
 	"open" : context.c_open,
 	"read" : context.c_read,
 	"write" : context.c_write
 }
+
+def createrecord(syscallrec):
+
+	global descriptors;
+	contextcols = {};
+
+	fd = syscallrec['r_fd'];
+	starttime=syscallrec['u_epoch'];
+	stoptime=[];
+	pid=syscallrec['pid'];
+	objectname=syscallrec['r_objectname'];
+	id=str(uuid.uuid4().hex)[:8];
+
+	descriptors[fd] = [starttime,pid,objectname,id];
+	contextcols['sessionid'] = id;
+
+	return contextcols;
+
+def getrecord(syscallrec):
+
+	global descriptors;
+	contextcols = {};
+
+	fd = syscallrec['fd'];
+	contextcols['sessionid'] = descriptors[fd][3];
+
+	return contextcols;
+
+def delrecord(syscallrec):
+
+	global descriptors;
+	contextcols = {};
+
+	fd = syscallrec['fd'];
+	contextcols['sessionid'] = descriptors[fd][3];
+
+	del descriptors[fd];
+
+	return contextcols;
 
 
 def log(message):
@@ -72,7 +115,14 @@ def dotrace(member,indx):
 
 	global es;
 	global iddoc;
+
+	crlist = ('open','openat','socket');
+	modlist = ('read', 'write','rcvfrom','sendto','accept','bind','fcntl','getdents');
+	dellist = {'close'};
+	clonelist={'clone'};
+
 	speccols = {};
+	contextcols = {};
 
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
@@ -96,11 +146,30 @@ def dotrace(member,indx):
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
 
 
-		elkdoc = {**basecols, **speccols, **argcols, **rccols};
+		if (any(basecols['syscall'] in s for s in crlist) and ('r_fd' in rccols)):
+
+			contextcols = createrecord({**basecols, **speccols, **argcols, **rccols});
+		else:
+			contextcols ={};
+
+
+		if (any(basecols['syscall'] in s for s in modlist) and ('fd' in argcols) and (argcols['fd']  != "-1")):
+
+			contextcols = getrecord({**basecols, **speccols, **argcols, **rccols});
+
+		if (any(basecols['syscall'] in s for s in dellist) and ('fd' in argcols)):
+
+			contextcols = delrecord({**basecols, **speccols, **argcols, **rccols});
+
+
+		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
+		print(elkdoc);
+
+
+
 
 		#es.index(index=indx, doc_type='trace', id=iddoc, body=elkdoc);
 		iddoc += 1;
-		print(elkdoc);
 
 	trace.close;
 	return 0;

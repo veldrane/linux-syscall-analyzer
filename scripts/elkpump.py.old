@@ -7,6 +7,7 @@ from elasticsearch import helpers;
 from operator import itemgetter;
 import datetime;
 import time;
+from sparser import *;
 import context;
 
 
@@ -15,31 +16,6 @@ logging = False;
 es = Elasticsearch (["elkdev1:9200"]);
 iddoc=1;
 
-
-argregex = {
-	"open" : 	'(?P<request>.*)\"\,\s(?P<mode>.*)',
-	"close" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>',
-	"mmap" : 	'(?P<addr>.*)\,\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
-	"read" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"write" : 	'(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"fcntl" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmd>.*)',
-	"socket" :	'(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)',
-	"execve" : 	'\"(?P<command>.*)\"\,\s\[(?P<options>.*)\]\,\s(.*)\]'
-}
-
-#argregex = {
-#	"open" : ('(?P<objectname>.*)\"\,\s(?P<mode>.*)',''),
-#	"read" : ('(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',''),
-#	"write" : ('(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)','')
-#}
-
-
-
-rcregex = {
-	"open" : 	'(?P<fd>\d+)\<(?P<objectname>.*)\>',
-	"socket" :	'(?P<sd>\d+)\<(?P<objectname>.*)\>',
-	"clone" : 	'(?P<childpid>\d+)'
-}
 
 contextf = {
 	"open" : context.c_open,
@@ -59,7 +35,7 @@ def log(message):
 	localtime = time.asctime(time.localtime(time.time()));
 	output = (localtime+' ---| '+message);
 	print (output);
-		
+
 	return 0;
 
 
@@ -93,11 +69,11 @@ def gettracefiles(target):
 	return tracelist;
 
 def dotrace(member,indx):
-	
+
 	global es;
 	global iddoc;
 	speccols = {};
-	
+
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
 	trace = open(member,'r');
@@ -106,7 +82,7 @@ def dotrace(member,indx):
 
 		try:
 			basecols = patern.search(line).groupdict();
-	
+
 		except AttributeError:
 			log("Error: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
 			continue;
@@ -114,10 +90,11 @@ def dotrace(member,indx):
 
 		basecols['pid'] = pid;
 		basecols['tracefile'] = member;
-	
+
 		speccols = addcolumns(basecols);
 		argcols = addargcols(basecols['syscall'],basecols['args']);
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
+
 
 		elkdoc = {**basecols, **speccols, **argcols, **rccols};
 
@@ -129,11 +106,9 @@ def dotrace(member,indx):
 	return 0;
 
 def addcolumns(basecols):
-	
-
 
 	speccols = {};
-	
+
 	speccols['runt'] = float(basecols['runt']);
 	speccols['epoch'] = float(basecols['epoch']);
 
@@ -142,36 +117,6 @@ def addcolumns(basecols):
 	speccols['@timestamp'] = datetime.datetime.fromtimestamp(speccols['epoch']).strftime('%Y-%m-%dT%H:%M:%S.%fZ');
 
 	return speccols;
-	
-def addargcols(syscall,args):
-
-	global argregex;
-
-	parsed = {};
-
-	try:
-		argpatern = re.compile(argregex[syscall]);
-		parsed = argpatern.search(args).groupdict();
-	except:
-		parsed = {};
-
-	return parsed;
-
-
-
-def addrccols(syscall,rc):
-
-	global rcregex;
-
-	parsed = {};
-
-	try:
-		argpatern = re.compile(rcregex[syscall]);
-		parsed = argpatern.search(rc).groupdict();
-	except:
-		parsed = {};
-
-	return parsed;
 
 
 
