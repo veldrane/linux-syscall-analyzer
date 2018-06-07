@@ -16,8 +16,8 @@ logging = False;
 es = Elasticsearch (["elkdev1:9200"]);
 iddoc=1;
 
-descriptors = {};
-
+livefd = {};
+closedfd=[];
 
 
 
@@ -29,7 +29,7 @@ contextf = {
 
 def createrecord(syscallrec):
 
-	global descriptors;
+	global livefd;
 	contextcols = {};
 
 	fd = syscallrec['r_fd'];
@@ -39,30 +39,60 @@ def createrecord(syscallrec):
 	objectname=syscallrec['r_objectname'];
 	id=str(uuid.uuid4().hex)[:8];
 
-	descriptors[fd] = [starttime,pid,objectname,id];
+	livefd[fd] = [pid,starttime,stoptime,objectname,id];
 	contextcols['sessionid'] = id;
 
 	return contextcols;
 
+def mulrecord(syscallrec):
+
+	global livefd;
+	contextcols = {};
+
+	starttime=syscallrec['u_epoch'];
+	stoptime=[];
+	pid=syscallrec['pid'];
+	id=str(uuid.uuid4().hex)[:8];
+
+
+	fd = syscallrec['fd1'];
+	objectname=syscallrec['object1'];
+	livefd[fd] = [pid,starttime,stoptime,objectname,id];
+
+	fd = syscallrec['fd2'];
+	objectname=syscallrec['object2'];
+	livefd[fd] = [pid,starttime,stoptime,objectname,id];
+
+	#print(livefd);
+
+	contextcols['sessionid'] = id;
+	return contextcols;
+
+
 def getrecord(syscallrec):
 
-	global descriptors;
+	global livefd;
 	contextcols = {};
 
 	fd = syscallrec['fd'];
-	contextcols['sessionid'] = descriptors[fd][3];
+	contextcols['sessionid'] = livefd[fd][4];
 
 	return contextcols;
 
 def delrecord(syscallrec):
 
-	global descriptors;
+	global livefd;
+	global closedfd;
 	contextcols = {};
 
 	fd = syscallrec['fd'];
-	contextcols['sessionid'] = descriptors[fd][3];
+	livefd[fd][2] = syscallrec['u_epoch'];
 
-	del descriptors[fd];
+	contextcols['sessionid'] = livefd[fd][4];
+
+	closedfd.append(livefd[fd]+[fd]);
+
+	del livefd[fd];
 
 	return contextcols;
 
@@ -115,14 +145,15 @@ def dotrace(member,indx):
 
 	global es;
 	global iddoc;
+	global closedfd;
 
-	crlist = ('open','openat','socket');
+	crlist = ('open','openat','socket','accept');
 	modlist = ('read', 'write','rcvfrom','sendto','accept','bind','fcntl','getdents');
 	dellist = {'close'};
+	mullist = {'pipe','socketpair'};
 	clonelist={'clone'};
 
 	speccols = {};
-	contextcols = {};
 
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
@@ -145,26 +176,30 @@ def dotrace(member,indx):
 		argcols = addargcols(basecols['syscall'],basecols['args']);
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
 
+		contextcols = {};
 
-		if (any(basecols['syscall'] in s for s in crlist) and ('r_fd' in rccols)):
-
-			contextcols = createrecord({**basecols, **speccols, **argcols, **rccols});
-		else:
-			contextcols ={};
-
-
-		if (any(basecols['syscall'] in s for s in modlist) and ('fd' in argcols) and (argcols['fd']  != "-1")):
-
-			contextcols = getrecord({**basecols, **speccols, **argcols, **rccols});
-
-		if (any(basecols['syscall'] in s for s in dellist) and ('fd' in argcols)):
+		if (basecols['syscall'] in dellist) and ('fd' in argcols):
 
 			contextcols = delrecord({**basecols, **speccols, **argcols, **rccols});
 
+		if (basecols['syscall'] in crlist) and ('r_fd' in rccols):
+
+			contextcols = createrecord({**basecols, **speccols, **argcols, **rccols});
+
+		if (basecols['syscall'] in mullist):
+
+			contextcols = mulrecord({**basecols, **speccols, **argcols, **rccols});
+
+		if (basecols['syscall'] in modlist) and ('fd' in argcols) and (argcols['fd']  != "-1"):
+
+			#print({**basecols, **speccols, **argcols, **rccols});
+			contextcols = getrecord({**basecols, **speccols, **argcols, **rccols});
+
 
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
-		print(elkdoc);
+		#print(elkdoc);
 
+		#print(livefd);
 
 
 
@@ -214,3 +249,5 @@ id=str(uuid.uuid4().hex)[:8];
 createindex(id);
 for trace in traces:
 	dotrace(trace[2],'linux.main.'+id);
+
+print(*closedfd, sep='\n');
