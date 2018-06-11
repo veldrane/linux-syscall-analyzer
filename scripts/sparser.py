@@ -1,6 +1,7 @@
 #sparser - module for parsing the strace messages
 
 import re;
+import datetime;
 
 argregex = {
 	"open" :        '\"(?P<objectname>.*)\"\,\s(?P<mode>.*)',
@@ -35,6 +36,20 @@ rcregex = {
 	"dup3" :		'(?P<r_fd>\d+)\<(?P<r_objectname>.*)\>',
 	"clone" :       '(?P<childpid>\d+)'
 }
+
+
+def addcolumns(basecols):
+
+	speccols = {};
+
+	speccols['runt'] = float(basecols['runt']);
+	speccols['epoch'] = float(basecols['epoch']);
+
+	speccols['u_epoch'] = int(speccols['epoch']*1000000);
+	speccols['u_runt'] = int(speccols['runt']*1000000);
+	speccols['@timestamp'] = datetime.datetime.fromtimestamp(speccols['epoch']).strftime('%Y-%m-%dT%H:%M:%S.%fZ');
+
+	return speccols;
 
 
 def addargcols(syscall,args):

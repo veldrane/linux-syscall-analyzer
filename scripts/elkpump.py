@@ -5,7 +5,6 @@ import uuid;
 from elasticsearch import Elasticsearch;
 from elasticsearch import helpers;
 from operator import itemgetter;
-import datetime;
 import time;
 from sparser import *;
 from context import *;
@@ -29,7 +28,6 @@ def log(message):
 	print (output);
 
 	return 0;
-
 
 
 def parseargv():
@@ -93,25 +91,11 @@ def dotrace(member,indx):
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
 		print(elkdoc);
 
-		es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
+#		es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
 		settings.iddoc += 1;
 
 	trace.close;
 	return 0;
-
-def addcolumns(basecols):
-
-	speccols = {};
-
-	speccols['runt'] = float(basecols['runt']);
-	speccols['epoch'] = float(basecols['epoch']);
-
-	speccols['u_epoch'] = int(speccols['epoch']*1000000);
-	speccols['u_runt'] = int(speccols['runt']*1000000);
-	speccols['@timestamp'] = datetime.datetime.fromtimestamp(speccols['epoch']).strftime('%Y-%m-%dT%H:%M:%S.%fZ');
-
-	return speccols;
-
 
 
 def createindex(id):
@@ -124,7 +108,7 @@ def createindex(id):
 	#indx[2] = ('linux.relations.'+id);
 
 	try:
-		es.indices.create(index = indx[0], ignore=400);
+#		es.indices.create(index = indx[0], ignore=400);
 		log('Index '+indx[0]+' has been created');
 	except:
 		log('Index '+indx[0]+' was not created');
