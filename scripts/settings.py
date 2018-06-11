@@ -1,4 +1,4 @@
-# settings.py
+# settings.py - initializing the global variable
 
 def init():
 
@@ -13,6 +13,9 @@ def init():
 
   global logging;
   logging = False;
+
+  global debugging;
+  debugging = False;
 
   global iddoc;
   iddoc = 1;
