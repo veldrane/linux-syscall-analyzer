@@ -8,93 +8,12 @@ from operator import itemgetter;
 import datetime;
 import time;
 from sparser import *;
-import context;
+from context import *;
+import settings;
 
 
-VERSION = "0.1";
-logging = False;
 es = Elasticsearch (["elkdev1:9200"]);
-iddoc=1;
 
-livefd = {};
-closedfd=[];
-
-
-
-contextf = {
-	"open" : context.c_open,
-	"read" : context.c_read,
-	"write" : context.c_write
-}
-
-def createrecord(syscallrec):
-
-	global livefd;
-	contextcols = {};
-
-	fd = syscallrec['r_fd'];
-	starttime=syscallrec['u_epoch'];
-	stoptime=[];
-	pid=syscallrec['pid'];
-	objectname=syscallrec['r_objectname'];
-	id=str(uuid.uuid4().hex)[:8];
-
-	livefd[fd] = [pid,starttime,stoptime,objectname,id];
-	contextcols['sessionid'] = id;
-
-	return contextcols;
-
-def mulrecord(syscallrec):
-
-	global livefd;
-	contextcols = {};
-
-	starttime=syscallrec['u_epoch'];
-	stoptime=[];
-	pid=syscallrec['pid'];
-	id=str(uuid.uuid4().hex)[:8];
-
-
-	fd = syscallrec['fd1'];
-	objectname=syscallrec['object1'];
-	livefd[fd] = [pid,starttime,stoptime,objectname,id];
-
-	fd = syscallrec['fd2'];
-	objectname=syscallrec['object2'];
-	livefd[fd] = [pid,starttime,stoptime,objectname,id];
-
-	#print(livefd);
-
-	contextcols['sessionid'] = id;
-	return contextcols;
-
-
-def getrecord(syscallrec):
-
-	global livefd;
-	contextcols = {};
-
-	fd = syscallrec['fd'];
-	contextcols['sessionid'] = livefd[fd][4];
-
-	return contextcols;
-
-def delrecord(syscallrec):
-
-	global livefd;
-	global closedfd;
-	contextcols = {};
-
-	fd = syscallrec['fd'];
-	livefd[fd][2] = syscallrec['u_epoch'];
-
-	contextcols['sessionid'] = livefd[fd][4];
-
-	closedfd.append(livefd[fd]+[fd]);
-
-	del livefd[fd];
-
-	return contextcols;
 
 
 def log(message):
@@ -144,14 +63,7 @@ def gettracefiles(target):
 def dotrace(member,indx):
 
 	global es;
-	global iddoc;
-	global closedfd;
 
-	crlist = ('open','openat','socket','accept');
-	modlist = ('read', 'write','rcvfrom','sendto','accept','bind','fcntl','getdents');
-	dellist = {'close'};
-	mullist = {'pipe','socketpair'};
-	clonelist={'clone'};
 
 	speccols = {};
 
@@ -168,6 +80,7 @@ def dotrace(member,indx):
 			log("Error: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
 			continue;
 
+		contextcols = {};
 
 		basecols['pid'] = pid;
 		basecols['tracefile'] = member;
@@ -175,36 +88,13 @@ def dotrace(member,indx):
 		speccols = addcolumns(basecols);
 		argcols = addargcols(basecols['syscall'],basecols['args']);
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
-
-		contextcols = {};
-
-		if (basecols['syscall'] in dellist) and ('fd' in argcols):
-
-			contextcols = delrecord({**basecols, **speccols, **argcols, **rccols});
-
-		if (basecols['syscall'] in crlist) and ('r_fd' in rccols):
-
-			contextcols = createrecord({**basecols, **speccols, **argcols, **rccols});
-
-		if (basecols['syscall'] in mullist):
-
-			contextcols = mulrecord({**basecols, **speccols, **argcols, **rccols});
-
-		if (basecols['syscall'] in modlist) and ('fd' in argcols) and (argcols['fd']  != "-1"):
-
-			#print({**basecols, **speccols, **argcols, **rccols});
-			contextcols = getrecord({**basecols, **speccols, **argcols, **rccols});
-
+		contextcols = addcontextcols({**basecols, **speccols, **argcols, **rccols});
 
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
-		#print(elkdoc);
+		print(elkdoc);
 
-		#print(livefd);
-
-
-
-		#es.index(index=indx, doc_type='trace', id=iddoc, body=elkdoc);
-		iddoc += 1;
+		es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
+		settings.iddoc += 1;
 
 	trace.close;
 	return 0;
@@ -234,13 +124,17 @@ def createindex(id):
 	#indx[2] = ('linux.relations.'+id);
 
 	try:
-	#	es.indices.create(index = indx[0], ignore=400);
+		es.indices.create(index = indx[0], ignore=400);
 		log('Index '+indx[0]+' has been created');
 	except:
 		log('Index '+indx[0]+' was not created');
 
 	return indx;
 
+
+# MAIN !
+
+settings.init();
 
 args=parseargv();
 logging=args.log
@@ -250,4 +144,5 @@ createindex(id);
 for trace in traces:
 	dotrace(trace[2],'linux.main.'+id);
 
-print(*closedfd, sep='\n');
+
+#print(*settings.closedfd, sep='\n');

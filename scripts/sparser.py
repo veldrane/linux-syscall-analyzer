@@ -1,7 +1,9 @@
+#sparser - module for parsing the strace messages
+
 import re;
 
 argregex = {
-	"open" :        '(?P<objectname>.*)\"\,\s(?P<mode>.*)',
+	"open" :        '\"(?P<objectname>.*)\"\,\s(?P<mode>.*)',
 	"openat" :      '(?P<dirfd>.*)\,\s\"(?P<objectname>.*)\"\,\s(?P<mode>.*)',
 	"close" :       '(?P<fd>\d+)\<(?P<objectname>.*)\>',
 	"pipe" :        '(?P<fd1>\d+)\<(?P<object1>.*)\>,\s(?P<fd2>\d+)\<(?P<object2>.*)\>',
