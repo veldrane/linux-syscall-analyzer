@@ -1,4 +1,4 @@
 # known bugs and limitation
 
 - sessions id check is missing. I hope that no session if concurrency will occur :). I need to write some check function.
-  
+- some sessions are created via messages and and its difficult to catch them.

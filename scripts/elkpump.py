@@ -1,3 +1,5 @@
+# MAIN program
+
 import argparse;
 import re;
 from glob import glob;
@@ -76,6 +78,8 @@ def dotrace(member,indx):
 
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
+
+	initlivefd(pid);
 	trace = open(member,'r');
 
 	for line in trace:
@@ -98,10 +102,16 @@ def dotrace(member,indx):
 		contextcols = addcontextcols({**basecols, **speccols, **argcols, **rccols});
 
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
+
 		debug(elkdoc);
-#		print(elkdoc);
+		debug(settings.livefd);
+#		debug(settings.clonedfd);
+		debug("");
+		debug("");
+		debug("");
 
 #		es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
+
 		settings.iddoc += 1;
 
 	trace.close;
@@ -138,6 +148,6 @@ id=str(uuid4().hex)[:8];
 createindex(id);
 for trace in traces:
 	dotrace(trace[2],'linux.main.'+id);
+	#debug(settings.clonedfd);
 
-
-#print(*settings.closedfd, sep='\n');
+#print(*settings.clonedfd, sep='\n');
