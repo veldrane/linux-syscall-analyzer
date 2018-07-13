@@ -1,17 +1,9 @@
 # context module for adding sessions to output etc
 
+import re;
 import uuid;
 import settings;
-
-
-crlist = ('open','openat','socket','accept','dup');
-modlist = ('read', 'write','rcvfrom','sendto','accept','bind','fcntl','getdents');
-dellist = ('close');
-mullist = ('pipe','pipe2','socketpair');
-clonelist=('clone');
-dup2list = ('dup2','dup3');
-
-
+from parselog import *;
 
 
 def createrecord(syscallrec):
@@ -69,7 +61,7 @@ def dup2record(syscallrec):
 		del settings.livefd[fd];
 
 	except KeyError:
-		print("Info: Renewed file descriptor not found during tracking dup2 syscall");
+		log("Info: Renewed file descriptor not found during tracking dup2 syscall");
 
 	stoptime = "";
 	fd = syscallrec['r_fd'];
@@ -93,7 +85,7 @@ def getrecord(syscallrec):
 
 	except KeyError:
 
-		print('Session was not found for descriptor: '+fd);
+		log('Error: During operation getrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
 
 	return contextcols;
 
@@ -111,7 +103,7 @@ def delrecord(syscallrec):
 
 	except KeyError:
 
-		print('Session was not found for descriptor: '+fd);
+		log('Error: During operation delrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
 		return contextcols;
 
 
@@ -158,32 +150,66 @@ def initlivefd(pid):
 		settings.livefd = {**settings.clonedfd[pid]};
 
 	except KeyError:
-		print("Info: cloned descriptors not found for pid: "+pid);
+		log('Info: cloned descriptors not found for pid: ');
 
 	return 0
 
 
 def addcontextcols(syscallrec):
 
+	import cntxfnct;
+
+	contextcols = {};
+	syscall = syscallrec['syscall'];
+
+	try:
+		contextcols = cntxfnct.cntxfnct[syscall](syscallrec);
+
+	except KeyError:
+		pass
+
+	return contextcols;
+
+
+def fcntlrecord(syscallrec):
+
 	contextcols = {};
 
-	if (syscallrec['syscall'] in dellist) and ('fd' in syscallrec):
-		contextcols = delrecord(syscallrec);
+	if not 'objectname' in syscallrec:
+		return contextcols;
 
-	if (syscallrec['syscall'] in crlist) and ('r_fd' in syscallrec):
-		contextcols = createrecord(syscallrec);
+	objectname = syscallrec['objectname'];
+	cmdargs = syscallrec['cmdargs'];
+	contextcols['fcntlcmd'] = re.split(', ',cmdargs,maxsplit=1)[0];
 
-	if (syscallrec['syscall'] in mullist):
-		contextcols = mulrecord(syscallrec);
+	if contextcols['fcntlcmd'] in ('F_GETFD', 'F_GETFL'):
+		fd = syscallrec['fd'];
+		contextcols['sessionid'] = settings.livefd[fd][4];
 
-	if (syscallrec['syscall'] in modlist) and ('fd' in syscallrec) and (syscallrec['fd']  != "-1"):
-		contextcols = getrecord(syscallrec);
+	elif contextcols['fcntlcmd'] in('F_SETFD'):
+		fd = syscallrec['fd'];
+		contextcols['sessionid'] = settings.livefd[fd][4];
+		contextcols['fcntlargs'] = re.split(', ',cmdargs,maxsplit=1)[1];
 
-	if (syscallrec['syscall'] in clonelist):
-		contextcols = clonerecord(syscallrec);
+	elif contextcols['fcntlcmd'] in ('F_DUPFD', 'F_DUPFD_CLOEXEC'):
 
-	if (syscallrec['syscall'] in dup2list):
-		contextcols = dup2record(syscallrec);
+		fd = syscallrec['fd'];
+		rcs = re.match('(\d+)\<(.*)\>', syscallrec['rc']).groups();
+		contextcols['fcntlargs'] = re.split(', ',cmdargs,maxsplit=1)[1];
+
+		starttime = syscallrec['u_epoch'];
+		stoptime = "";
+		pid = syscallrec['pid'];
+		r_fd = rcs[0];
+		r_objectname = rcs[1];
+		r_id=str(uuid.uuid4().hex)[:8];
+		settings.livefd[r_fd] = [pid,starttime,stoptime,r_objectname,r_id];
+
+		contextcols['sessionid'] = settings.livefd[fd][4];
+		contextcols['r_sessionid'] = r_id;
+		contextcols['r_fd'] = r_fd;
+		contextcols['r_objectname'] = objectname;
+
 
 
 	return contextcols;

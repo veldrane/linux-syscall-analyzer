@@ -9,36 +9,11 @@ from elasticsearch import helpers;
 from operator import itemgetter;
 from sparser import *;
 from context import *;
+from parselog import *;
 import settings;
 
 
 es = Elasticsearch (["elkdev1:9200"]);
-
-
-def log(message):
-
-	global logging;
-
-	if logging == False:
-		return 0;
-
-	localtime = datetime.datetime.now().strftime("%a %b %d %H:%M:%S %Y")
-	output = (localtime+' ---| '+message);
-	print (output);
-
-	return 0;
-
-def debug(message):
-
-	global debugging;
-
-	if debugging == False:
-		return 0;
-
-	print (message);
-
-	return 0;
-
 
 def parseargv():
 
@@ -54,7 +29,7 @@ def gettracefiles(target):
 
 	files = glob(target+'/'+'*');
 	tracelist = [];
-	log("Loooking for strace files in directory "+target);
+	log("Info: Loooking for strace files in directory "+target);
 
 	for i in files:
 		trace = open(i,'r');
@@ -65,8 +40,8 @@ def gettracefiles(target):
 		trace.close;
 
 	tracelist=sorted(tracelist, key=itemgetter(0));
-	log("Found "+(str(len(tracelist)))+" files");
-	log("First file "+str((tracelist[0])[2])+" will be processed...");
+	log("Info: Found "+(str(len(tracelist)))+" files");
+	log("Info: First file "+str((tracelist[0])[2])+" will be processed...");
 	return tracelist;
 
 def dotrace(member,indx):
@@ -75,6 +50,8 @@ def dotrace(member,indx):
 
 
 	speccols = {};
+
+	log("Info: processing file "+member);
 
 	patern = re.compile(r"(?P<epoch>\d+.\d+)\s(?P<syscall>\w+)\((?P<args>.*)\)\s+\=\s(?P<rc>.*)\s\<(?P<runt>\d+.\d+)\>\n");
 	pid = member.split('.')[-1];
@@ -129,9 +106,9 @@ def createindex(id):
 
 	try:
 #		es.indices.create(index = indx[0], ignore=400);
-		log('Index '+indx[0]+' has been created');
+		log('Info: Index '+indx[0]+' has been created');
 	except:
-		log('Index '+indx[0]+' was not created');
+		log('Error: Index '+indx[0]+' was not created!');
 
 	return indx;
 
@@ -141,8 +118,11 @@ def createindex(id):
 settings.init();
 
 args=parseargv();
-logging=args.log;
-debugging=args.debug;
+settings.logging=False;
+settings.debugging=False;
+
+settings.logging=args.log;
+settings.debugging=args.debug;
 traces=gettracefiles(args.directory);
 id=str(uuid4().hex)[:8];
 createindex(id);

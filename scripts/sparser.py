@@ -20,7 +20,7 @@ argregex = {
 	"mmap" :        '(?P<addr>.*)\,\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
 	"read" :        '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',
 	"write" :       '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"fcntl" :       '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmd>.*)',
+	"fcntl" :       '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmdargs>.*)',
 	"socket" :      '(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)',
 #	"socketpair" :  '(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)\,\s\[(?P<fd1>\d+)\<(?P<object1>.*)\>\,\s(?P<fd2>\d+)\<(?P<object2>.*)\>\]\>',
 	"socketpair" :  '(?P<domain>[A-Z]+.[A-Z]+)\,\s(?P<type>[A-Z]+.[A-Z]+)\,\s.\,\s\[(?P<fd1>\d+)\<(?P<object1>.*)\>,\s(?P<fd2>\d+)\<(?P<object2>.*)\>\]',

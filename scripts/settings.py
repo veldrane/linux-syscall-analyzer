@@ -12,10 +12,10 @@ def init():
   clonedfd = {};
 
   global logging;
-  logging = False;
+  logging = None;
 
   global debugging;
-  debugging = False;
+  debugging = None;
 
   global iddoc;
   iddoc = 1;
