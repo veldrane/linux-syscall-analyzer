@@ -17,5 +17,8 @@ def init():
   global debugging;
   debugging = None;
 
+  global numdocs
+  numdocs = 10000;
+
   global iddoc;
   iddoc = 1;

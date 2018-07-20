@@ -30,8 +30,19 @@
 
 - nakonec prepisujeme do pythonu :)
 - potrebuji postihnout context oteverinacyh a zaviranych objektu
-- trapi na mmap - ruzne regularni vyrazy pro argumenty
+- trapi me mmap - ruzne regularni vyrazy pro argumenty
 
 |---[  Wed Jun  13 08:35:15 EDT 2018  ]---|
 
 - u context.py je nutny refaktoring
+
+
+|---[  Fri Jul 13 13:34:59 CEST 2018  ]---|
+
+- Podarilo se mi zprovzni fctnl a to skoro kompletne
+- vcelku slusne je udelanej mmap, umi uz hledat dle descriptoru file a priradit k nemu session id
+  nicmene co jeste neumime a co budeme asi budu muset poresit je trackovani stranek pri alokaci, protoze
+  momentalne numim priradit spravny session id ktery poatri regionu ktery je mmapovan na konkretni soubor
+  a to je jedna z krucialnich veci proc tenhle klumpr pisu
+- predelal sem trochu logovani, ale bylo by dobry dodelat nejaky levely criticality paac ted je v tom dost bordel
+- heh u writu neni rozlisene objectname - potreba upravit

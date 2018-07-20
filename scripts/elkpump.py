@@ -10,6 +10,7 @@ from operator import itemgetter;
 from sparser import *;
 from context import *;
 from parselog import *;
+from copy import copy;
 import settings;
 
 
@@ -50,6 +51,9 @@ def dotrace(member,indx):
 
 
 	speccols = {};
+	bulkdata = [];
+	bulkheader = {};
+	testid = settings.iddoc;
 
 	log("Info: processing file "+member);
 
@@ -78,19 +82,28 @@ def dotrace(member,indx):
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
 		contextcols = addcontextcols({**basecols, **speccols, **argcols, **rccols});
 
+		bulkheader['index'] ={"_index": indx, "_type" : 'trace', "_id" : settings.iddoc};
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
 
-		debug(elkdoc);
-		debug(settings.livefd);
-#		debug(settings.clonedfd);
-		debug("");
-		debug("");
-		debug("");
+#		debug(elkdoc);
+#		debug("");
 
-#		es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
+
+	#	es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
+
+		bulkid = ((settings.iddoc + settings.numdocs)%settings.numdocs);
+		bulkdata.append(copy(bulkheader));
+		bulkdata.append(copy(elkdoc));
+
+		if (bulkid%settings.numdocs) == 0:
+
+			rs = es.bulk(index = indx, body = bulkdata,refresh = True);
+			bulkdata = [];
 
 		settings.iddoc += 1;
 
+
+	rs = es.bulk(index = indx, body = bulkdata,refresh = True);
 	trace.close;
 	return 0;
 
@@ -105,7 +118,7 @@ def createindex(id):
 	#indx[2] = ('linux.relations.'+id);
 
 	try:
-#		es.indices.create(index = indx[0], ignore=400);
+		es.indices.create(index = indx[0], ignore=400);
 		log('Info: Index '+indx[0]+' has been created');
 	except:
 		log('Error: Index '+indx[0]+' was not created!');
@@ -123,6 +136,9 @@ settings.debugging=False;
 
 settings.logging=args.log;
 settings.debugging=args.debug;
+
+
+
 traces=gettracefiles(args.directory);
 id=str(uuid4().hex)[:8];
 createindex(id);

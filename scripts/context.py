@@ -205,11 +205,50 @@ def fcntlrecord(syscallrec):
 		r_id=str(uuid.uuid4().hex)[:8];
 		settings.livefd[r_fd] = [pid,starttime,stoptime,r_objectname,r_id];
 
-		contextcols['sessionid'] = settings.livefd[fd][4];
-		contextcols['r_sessionid'] = r_id;
+		contextcols['sessionid'] = r_id;
+		contextcols['r_objectname'] = r_objectname;
 		contextcols['r_fd'] = r_fd;
-		contextcols['r_objectname'] = objectname;
-
 
 
 	return contextcols;
+
+def mmaprecord(syscallrec):
+
+	def mapfile(syscallrec):
+
+		contextcols = {};
+
+		try:
+			fd = syscallrec['fd'];
+			contextcols['sessionid'] = settings.livefd[fd][4];
+
+		except KeyError:
+			log('Error: During operation maprecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
+
+		return contextcols;
+
+
+	def mapanonymous(syscallrec):
+
+		contextcols = {};
+		mmapargs = [];
+		args = syscallrec['args'];
+
+		mmapargs = re.split(', ',args);
+
+		contextcols['addr'] = mmapargs[0];
+		contextcols['size'] = mmapargs[1];
+		contextcols['protection'] = mmapargs[2];
+		contextcols['flags'] = mmapargs[3];
+		contextcols['offset'] = mmapargs[5];
+
+		return contextcols;
+
+	contextcols = {};
+
+	if 'objectname' in syscallrec:
+		contextcols = mapfile(syscallrec);
+	else:
+		contextcols = mapanonymous(syscallrec);
+
+	return contextcols
