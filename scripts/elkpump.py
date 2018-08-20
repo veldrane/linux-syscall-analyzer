@@ -1,30 +1,114 @@
 # MAIN program
-
 import argparse;
 import re;
+import csv;
 from glob import glob;
 from uuid import uuid4;
+from copy import copy;
 from elasticsearch import Elasticsearch;
-from elasticsearch import helpers;
 from operator import itemgetter;
+
+
 from sparser import *;
 from context import *;
 from parselog import *;
-from copy import copy;
 import settings;
 
 
-es = Elasticsearch (["elkdev1:9200"]);
+bulkdata = [];
+outputcsv = None;
+
+def initglobals(args):
+
+	if args.server: settings.elkserver = args.server;
+	if args.log: settings.logging = args.log;
+	if args.debug: settings.debugging = args.debug;
+
+	return 0;
 
 def parseargv():
 
-	parser = argparse.ArgumentParser();
+	parser = argparse.ArgumentParser(prog='elkpump', description='elkpump is the tool for parsing and adding context strace output');
+	subparsers = parser.add_subparsers(help='sub-command help');
+
+	parser_elk = subparsers.add_parser('elk', help='elk help');
+	parser_elk.add_argument('-s','--server', help='Elastic search server destination, default connection: localhost:9200');
+	parser_elk.add_argument('-b','--buffer', help='Number of docs for bulk post, default: 10000');
+	parser_elk.add_argument('-i','--index', help='Index name, default: linux.main.<random_id>');
+
+	parser_elk = subparsers.add_parser('csv', help='csv help');
+	parser_elk.add_argument('-c','--csvfile', help='CSV out file, default file: output.csv');
+
+#	parser.add_argument("destination", help="Output destination");
 	parser.add_argument("directory", help="Working directory with raw strace dumps");
 	parser.add_argument("-l", "--log", help="Enable logging to terminal", action='store_true');
 	parser.add_argument("-d", "--debug", help="Enable debug output to terminal", action='store_true');
+
 	args = parser.parse_args();
 	args.directory = re.sub('(\/+)$','',args.directory);
 	return args;
+
+def pushtoelk(elkdoc):
+
+	global bulkdata;
+	global es;
+	bulkheader = {};
+
+	bulkheader['index'] = {"_index": settings.esindx, "_type" : 'trace', "_id" : settings.iddoc};
+	bulkid = ((settings.iddoc + settings.numdocs)%settings.numdocs);
+	bulkdata.append(copy(bulkheader));
+	bulkdata.append(copy(elkdoc));
+
+	if (bulkid%settings.numdocs) == 0:
+
+		rs = es.bulk(index = settings.esindx, body = bulkdata,refresh = True);
+		bulkdata = [];
+
+	return 0;
+
+def flushelk():
+
+	global bulkdata;
+	global es;
+	rs = es.bulk(index = settings.esindx, body = bulkdata,refresh = True);
+	bulkdata = [];
+
+	return 0
+
+def createcsv():
+
+	global outputcsv;
+
+	csvheader = ['epoch','syscall','args','rc','runt']
+	if settings.csvfile:
+		csvfile = settings.csvfile;
+	else:
+		csvfile = "output.csv";
+
+	outputcsv = open(csvfile,'w');
+	writer = csv.DictWriter(outputcsv,fieldnames = csvheader);
+	writer.writeheader();
+
+	return outputcsv;
+
+def pushtocsv(elkdoc):
+
+	global bulkdata;
+	global outputcsv;
+
+	tempdata=[elkdoc['epoch'],elkdoc['syscall'],elkdoc['args'],elkdoc['rc'],elkdoc['runt']];
+
+	bulkheader = {};
+
+	bulkid = ((settings.iddoc + settings.numdocs)%settings.numdocs);
+	bulkdata.append(copy(tempdata));
+
+	if (bulkid%settings.numdocs) == 0:
+
+		writer = csv.DictWriter(outputcsv,fieldnames = bulkdata);
+		writer.writerows();
+
+	return 0;
 
 def gettracefiles(target):
 
@@ -45,14 +129,11 @@ def gettracefiles(target):
 	log("Info: First file "+str((tracelist[0])[2])+" will be processed...");
 	return tracelist;
 
-def dotrace(member,indx):
+def dotrace(member):
 
 	global es;
 
-
 	speccols = {};
-	bulkdata = [];
-	bulkheader = {};
 	testid = settings.iddoc;
 
 	log("Info: processing file "+member);
@@ -69,7 +150,7 @@ def dotrace(member,indx):
 			basecols = patern.search(line).groupdict();
 
 		except AttributeError:
-			log("Error: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
+			log("Warning: Line \""+line[:35]+" ...\" in file "+member+" was not parsed!");
 			continue;
 
 		contextcols = {};
@@ -82,31 +163,17 @@ def dotrace(member,indx):
 		rccols = addrccols(basecols['syscall'],basecols['rc']);
 		contextcols = addcontextcols({**basecols, **speccols, **argcols, **rccols});
 
-		bulkheader['index'] ={"_index": indx, "_type" : 'trace', "_id" : settings.iddoc};
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
-
-#		debug(elkdoc);
-#		debug("");
-
+		debug(elkdoc);
+		pushtoelk(elkdoc);
+#		pushtocsv(elkdoc);
+		settings.iddoc += 1;
 
 	#	es.index(index=indx, doc_type='trace', id=settings.iddoc, body=elkdoc);
 
-		bulkid = ((settings.iddoc + settings.numdocs)%settings.numdocs);
-		bulkdata.append(copy(bulkheader));
-		bulkdata.append(copy(elkdoc));
-
-		if (bulkid%settings.numdocs) == 0:
-
-			rs = es.bulk(index = indx, body = bulkdata,refresh = True);
-			bulkdata = [];
-
-		settings.iddoc += 1;
-
-
-	rs = es.bulk(index = indx, body = bulkdata,refresh = True);
+	flushelk();
 	trace.close;
 	return 0;
-
 
 def createindex(id):
 	global es;
@@ -118,32 +185,31 @@ def createindex(id):
 	#indx[2] = ('linux.relations.'+id);
 
 	try:
-		es.indices.create(index = indx[0], ignore=400);
+		rc = es.indices.create(index = indx[0], ignore=400);
 		log('Info: Index '+indx[0]+' has been created');
 	except:
 		log('Error: Index '+indx[0]+' was not created!');
+		exit(1);
 
-	return indx;
+	return indx[0];
 
-
-# MAIN !
+###############
+####### MAIN !
 
 settings.init();
-
 args=parseargv();
-settings.logging=False;
-settings.debugging=False;
+initglobals(args);
 
-settings.logging=args.log;
-settings.debugging=args.debug;
-
-
+es = Elasticsearch([settings.elkserver]);
+if not es.ping():
+    raise ValueError("Connection failed")
 
 traces=gettracefiles(args.directory);
 id=str(uuid4().hex)[:8];
-createindex(id);
+settings.esindx = createindex(id);
+#outputcsv = createcsv();
 for trace in traces:
-	dotrace(trace[2],'linux.main.'+id);
+	dotrace(trace[2]);
 	#debug(settings.clonedfd);
 
 #print(*settings.clonedfd, sep='\n');

@@ -12,13 +12,25 @@ def init():
   clonedfd = {};
 
   global logging;
-  logging = None;
+  logging = False;
 
   global debugging;
-  debugging = None;
+  debugging = False;
+
+  global elkserver;
+  elkserver = "localhost:9200";
+
+  global csvfile;
+  csvfile = None;
 
   global numdocs
   numdocs = 10000;
 
+  global bulkdata
+  bulkdata = [];
+
   global iddoc;
   iddoc = 1;
+
+  global esindx;
+  esindx = "";

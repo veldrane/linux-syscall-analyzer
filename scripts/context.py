@@ -85,7 +85,7 @@ def getrecord(syscallrec):
 
 	except KeyError:
 
-		log('Error: During operation getrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
+		log('Warning: During operation getrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
 
 	return contextcols;
 
@@ -103,7 +103,7 @@ def delrecord(syscallrec):
 
 	except KeyError:
 
-		log('Error: During operation delrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
+		log('Warning: During operation delrecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
 		return contextcols;
 
 
@@ -223,7 +223,7 @@ def mmaprecord(syscallrec):
 			contextcols['sessionid'] = settings.livefd[fd][4];
 
 		except KeyError:
-			log('Error: During operation maprecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
+			log('Warning: During operation maprecord session was not found for descriptor: '+syscallrec['fd']+', time: '+str(syscallrec['epoch'])+', syscall: '+syscallrec['syscall']);
 
 		return contextcols;
 
@@ -237,7 +237,7 @@ def mmaprecord(syscallrec):
 		mmapargs = re.split(', ',args);
 
 		contextcols['addr'] = mmapargs[0];
-		contextcols['size'] = mmapargs[1];
+		contextcols['size'] = int(mmapargs[1]);
 		contextcols['protection'] = mmapargs[2];
 		contextcols['flags'] = mmapargs[3];
 		contextcols['offset'] = mmapargs[5];
