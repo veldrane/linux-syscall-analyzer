@@ -5,6 +5,34 @@ import uuid;
 import settings;
 from parselog import *;
 
+def initlivefd(pid):
+
+	global livefd;
+	global clonefd;
+
+	try:
+		settings.livefd = {**settings.clonedfd[pid]};
+
+	except KeyError:
+		log('Info: cloned descriptors not found for pid: ');
+
+	return 0
+
+def addcontextcols(syscallrec):
+
+	import cntxfnct;
+
+	contextcols = {};
+	syscall = syscallrec['syscall'];
+
+	try:
+		contextcols = cntxfnct.cntxfnct[syscall](syscallrec);
+
+	except KeyError:
+		pass
+
+	return contextcols;
+
 
 def createrecord(syscallrec):
 
@@ -44,36 +72,6 @@ def mulrecord(syscallrec):
 
 	contextcols['sessionid'] = id;
 	return contextcols;
-
-def dup2record(syscallrec):
-
-	contextcols = {};
-
-	starttime=syscallrec['u_epoch'];
-	pid=syscallrec['pid'];
-	id=str(uuid.uuid4().hex)[:8];
-
-	fd = syscallrec['n_fd'];
-
-	try:
-
-		settings.livefd[fd][2] = syscallrec['u_epoch'];
-		del settings.livefd[fd];
-
-	except KeyError:
-		log("Info: Renewed file descriptor not found during tracking dup2 syscall");
-
-	stoptime = "";
-	fd = syscallrec['r_fd'];
-	objectname=syscallrec['r_objectname'];
-	settings.livefd[fd] = [pid,starttime,stoptime,objectname,id];
-
-	#print(livefd);
-
-	contextcols['sessionid'] = id;
-	return contextcols;
-
-
 
 def getrecord(syscallrec):
 
@@ -141,35 +139,34 @@ def clonerecord(syscallrec):
 
 	return contextcols;
 
-def initlivefd(pid):
 
-	global livefd;
-	global clonefd;
-
-	try:
-		settings.livefd = {**settings.clonedfd[pid]};
-
-	except KeyError:
-		log('Info: cloned descriptors not found for pid: ');
-
-	return 0
-
-
-def addcontextcols(syscallrec):
-
-	import cntxfnct;
+def dup2record(syscallrec):
 
 	contextcols = {};
-	syscall = syscallrec['syscall'];
+
+	starttime=syscallrec['u_epoch'];
+	pid=syscallrec['pid'];
+	id=str(uuid.uuid4().hex)[:8];
+
+	fd = syscallrec['n_fd'];
 
 	try:
-		contextcols = cntxfnct.cntxfnct[syscall](syscallrec);
+
+		settings.livefd[fd][2] = syscallrec['u_epoch'];
+		del settings.livefd[fd];
 
 	except KeyError:
-		pass
+		log("Info: Renewed file descriptor not found during tracking dup2 syscall");
 
+	stoptime = "";
+	fd = syscallrec['r_fd'];
+	objectname=syscallrec['r_objectname'];
+	settings.livefd[fd] = [pid,starttime,stoptime,objectname,id];
+
+	#print(livefd);
+
+	contextcols['sessionid'] = id;
 	return contextcols;
-
 
 def fcntlrecord(syscallrec):
 

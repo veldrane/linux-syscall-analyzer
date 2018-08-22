@@ -8,7 +8,7 @@ argregex = {
 	"openat" :      '(?P<dirfd>.*)\,\s\"(?P<objectname>.*)\"\,\s(?P<mode>.*)',
 	"close" :       '(?P<fd>\d+)\<(?P<objectname>.*)\>',
 	"pipe" :        '(?P<fd1>\d+)\<(?P<object1>.*)\>,\s(?P<fd2>\d+)\<(?P<object2>.*)\>',
-	"pipe2" :        '(?P<fd1>\d+)\<(?P<object1>.*)\>,\s(?P<fd2>\d+)\<(?P<object2>.*)\>',
+	"pipe2" :       '(?P<fd1>\d+)\<(?P<object1>.*)\>,\s(?P<fd2>\d+)\<(?P<object2>.*)\>',
 	"listen" :      '(?P<fd>\d+)\<(?P<objectname>.*)\>,\s(?P<backlog>\d+)',
 	"bind" :		'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s\{(?P<sockaddr>.*)\}.*',
 	"accept" :		'(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s\{(?P<sockaddr>.*)\}.*',
@@ -20,7 +20,10 @@ argregex = {
 	"mmap" :        '(?P<addr>.*)\,\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*)\<(?P<objectname>.*)\>\,\s(?P<offset>.*)',
 #	"mmap" :        '(?P<addr>.*)\,\s(?P<size>\d+)\,\s(?P<protection>.*)\,\s(?P<flags>.*)\,\s(?P<fd>.*).*\,\s(?P<offset>.*)',
 	"read" :        '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',
-	"write" :       '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"pread64" :     '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+),\s(?P<offset>\d+)',
+#	"write" :       '(?P<fd>\d+).*\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"write" :        '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+)',
+	"pwrite64" :     '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<data>.*)\,\s(?P<size>\d+),\s(?P<offset>\d+)',
 	"fcntl" :       '(?P<fd>\d+)\<(?P<objectname>.*)\>\,\s(?P<cmdargs>.*)',
 	"socket" :      '(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)',
 #	"socketpair" :  '(?P<domain>.*)\,\s(?P<type>.*)\,\s(?P<protocol>.*)\,\s\[(?P<fd1>\d+)\<(?P<object1>.*)\>\,\s(?P<fd2>\d+)\<(?P<object2>.*)\>\]\>',
@@ -58,12 +61,24 @@ def addcolumns(basecols):
 def addargcols(syscall,args):
 
 	global argregex;
+	parsed = {};
 
 	try:
 		argpatern = re.compile(argregex[syscall]);
 		parsed = argpatern.search(args).groupdict();
+
+		if 'size' in parsed:
+			parsed['size'] = int(parsed['size']);
+
+		if 'offset' in parsed:
+			try:
+				parsed['offset'] = int(parsed['offset']);
+			except:
+				pass
+
 	except:
-		parsed = {};
+		pass
+
 
 	return parsed;
 
@@ -71,11 +86,12 @@ def addargcols(syscall,args):
 def addrccols(syscall,rc):
 
 	global rcregex;
+	parsed = {};
 
 	try:
 		argpatern = re.compile(rcregex[syscall]);
 		parsed = argpatern.search(rc).groupdict();
 	except:
-		parsed = {};
+		pass
 
 	return parsed;
