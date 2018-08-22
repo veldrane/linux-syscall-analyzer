@@ -1,0 +1,501 @@
+[
+  {
+    "_id": "9eadda80-9f1a-11e8-9798-a75eab983b95",
+    "_type": "dashboard",
+    "_source": {
+      "title": "global.dashboard.sessions.overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":3,\"w\":12,\"h\":5,\"i\":\"1\"},\"version\":\"6.2.4\",\"type\":\"search\",\"id\":\"5a88bd10-9eda-11e8-9798-a75eab983b95\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"2\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"8ca507d0-9f17-11e8-9798-a75eab983b95\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":3,\"i\":\"3\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"52e2b940-9f15-11e8-9798-a75eab983b95\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e2ecc620-9ed9-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.activeopen.lib",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "u_epoch",
+        "pid",
+        "r_fd",
+        "objectname",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(syscall:('open') && objectname:*lib && _exists_:sessionid)\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b4600a50-9f16-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.readwrite.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "sessionid",
+        "size",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"_exists_:sessionid && syscall:('read','write','pread','pwrite','pread64','pwrite64')\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e5c6ef20-9f50-11e8-8e00-9bc112d2e492",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.justfiles.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "sessionid",
+        "size",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"_exists_:sessionid && syscall:(\\\"open\\\",\\\"read\\\",\\\"write\\\",\\\"close\\\") && !objectname:(\\\"socket*\\\",\\\"pipe*\\\")\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c8280d40-9ed9-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.activeopen.nolib",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "pid",
+        "_id",
+        "syscall",
+        "objectname",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(!objectname:*lib* && _exists_:sessionid)\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5a88bd10-9eda-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "session.search.syscalls.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "size",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"_exists_:sessionid\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9e64a5b0-9edc-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "mmap.search.onfile.private.nolib",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "size",
+        "protection",
+        "flags",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:mmap && _exists_:sessionid && !objectname:*lib* && flags:MAP_PRIVATE\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b137d170-9ed8-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.clone.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "args",
+        "rc",
+        "u_runt"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:clone\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "344dfc80-9edc-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "mmap.search.onfile.nolib",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "size",
+        "protection",
+        "flags",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:mmap && _exists_:sessionid && !objectname:*lib*\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b519c9c0-9edc-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "mmap.search.onfile.shared.nolib",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "objectname",
+        "size",
+        "protection",
+        "flags",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:mmap && _exists_:sessionid && !objectname:*lib* && flags:MAP_SHARED\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2cf38d00-9edd-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "mmap.search.anonymous.all",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "@timestamp",
+        "u_epoch",
+        "pid",
+        "syscall",
+        "size",
+        "protection",
+        "flags",
+        "sessionid",
+        "u_runt"
+      ],
+      "sort": [
+        "u_epoch",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:mmap && !_exists_:sessionid && flags:MAP_ANONYMOUS\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "971f2090-a5ea-11e8-a360-37931205425c",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.clonexec.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_id",
+        "pid",
+        "syscall",
+        "args",
+        "rc",
+        "u_runt"
+      ],
+      "sort": [
+        "_id",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:(\\\"execve\\\",\\\"clone\\\")\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2bcb04d0-9ed8-11e8-9798-a75eab983b95",
+    "_type": "search",
+    "_source": {
+      "title": "global.search.execve.summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_id",
+        "pid",
+        "syscall",
+        "args",
+        "rc",
+        "u_runt"
+      ],
+      "sort": [
+        "_id",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"syscall:execve\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d46453e0-9f13-11e8-9798-a75eab983b95",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.mmap.perprocess",
+      "visState": "{\"title\":\"global.visual.mmap.perprocess\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"pid.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "2cf38d00-9edd-11e8-9798-a75eab983b95",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "52e2b940-9f15-11e8-9798-a75eab983b95",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.sessions.bypid",
+      "visState": "{\"title\":\"global.visual.sessions.bypid\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"sessionid.keyword\",\"customLabel\":\"FD sessions without lib\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pid.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"PID\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "c8280d40-9ed9-11e8-9798-a75eab983b95",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "56900270-9f18-11e8-9798-a75eab983b95",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.session.count",
+      "visState": "{\"title\":\"global.visual.session.count\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":18}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"sessionid.keyword\",\"customLabel\":\"Total number of fd sessions\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "5a88bd10-9eda-11e8-9798-a75eab983b95",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8ca507d0-9f17-11e8-9798-a75eab983b95",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.sessions.top20",
+      "visState": "{\"title\":\"global.visual.sessions.top20\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"right\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"BottomAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"sessionid.keyword\",\"otherBucket\":true,\"otherBucketLabel\":\"Others\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Sessions\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "b4600a50-9f16-11e8-9798-a75eab983b95",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "eb827620-9f17-11e8-9798-a75eab983b95",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.syscall.count",
+      "visState": "{\"title\":\"global.visual.syscall.count\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":13}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total parsed syscalls\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "fca8dcb0-a5ec-11e8-a360-37931205425c",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.pid.ioload",
+      "visState": "{\"title\":\"global.visual.pid.ioload\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"size\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pid.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"filter\":[{\"meta\":{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"type\":\"phrase\",\"key\":\"sessionid.keyword\",\"value\":\"24bb6766\",\"params\":{\"query\":\"24bb6766\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"sessionid.keyword\":{\"query\":\"24bb6766\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"_exists_:sessionid && syscall:(\\\"read\\\",\\\"pread\\\",\\\"pread64\\\",\\\"write\\\",\\\"pwrite\\\",\\\"pwrite64\\\")\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "17ac7de0-a5ee-11e8-a360-37931205425c",
+    "_type": "visualization",
+    "_source": {
+      "title": "global.visual.pid.fileioload",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"field\":\"size\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"pid.keyword\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":10},\"schema\":\"segment\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"field\":\"sessionid.keyword\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":10},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":true,\"truncate\":100,\"values\":true},\"legendPosition\":\"right\",\"type\":\"pie\"},\"title\":\"global.visual.pid.fileioload\",\"type\":\"pie\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"69e92450-a5e9-11e8-a360-37931205425c\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"_exists_:sessionid && syscall:(\\\"read\\\",\\\"pread\\\",\\\"pread64\\\",\\\"write\\\",\\\"pwrite\\\",\\\"pwrite64\\\") && !objectname:(\\\"socket*\\\",\\\"pipe*\\\",\\\"/dev/*\\\")\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]
