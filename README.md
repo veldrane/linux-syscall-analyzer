@@ -114,9 +114,9 @@ After start second command strace start writing traces to current directory for 
 elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 CSV subcommand is not supported yet.
 
-Â´Â´Â´text
 
 
+    ´´´text
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
