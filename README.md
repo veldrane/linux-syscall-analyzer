@@ -114,9 +114,22 @@ After start second command strace start writing traces to current directory for 
 elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 CSV subcommand is not supported yet.
 
+    (my_env) [veldrane@elkdev1 scripts]$ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
+    Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
+    Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
+    Thu Nov 22 17:30:55 2018 ---| Info: First file /data/tests/oracle/sqlplus.2620 will be processed...
+    Thu Nov 22 17:30:56 2018 ---| Info: Index linux.main.f82a63d7 has been created
+    Thu Nov 22 17:30:56 2018 ---| Info: processing file /data/tests/oracle/sqlplus.2620
+    Thu Nov 22 17:30:56 2018 ---| Info: cloned descriptors not found for pid: 
+    Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
+    Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018125, syscall: write
+    Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018251, syscall: write
+    ...
+    ...
+
 ### Usual workflow ###
 
-- run strace on the analized application and store the output (prepare fs for posible huge amount of data)
+- run strace on the analyzed application and store the output (prepare fs for posible huge amount of data)
 - run elasticsearch and kibana
 - run elkpump agains the trace output and elkserver
 - login to kibana and register index.
@@ -125,11 +138,11 @@ CSV subcommand is not supported yet.
 
 ### Limitation and BUGS ###
 	
-- elkpump doesnt support strace output from attaching pid. Supported is just running application for the beginning to the 
+- elkpump doesn't support strace output from attaching pid. Supported is just running application for the beginning to the 
   end. Tool probably does own job, but was not tested under this circumstances
-- elkpump doesnt support https connection with elasticsearch server
-- elkpump doesnt check duplication sessionid so it's a little chance that two same sessionid can be generated
-- elkpump doesnt support the message fd creation (ehm systemd :))
+- elkpump doesn't support https connection with elasticsearch server
+- elkpump doesn't check duplication sessionid so it's a little chance that two same sessionid can be generated
+- elkpump doesn't support the message fd creation (ehm systemd :))
 - csv is not supported yet (plan for the near future version)
 - some syscalls variation is not probably supported (for example read, pread, read64 etc - these are supported but
   there is a huge list of them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
