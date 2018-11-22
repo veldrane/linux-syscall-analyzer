@@ -23,7 +23,7 @@ could be really usefull for:
  - Getting the status of the application in certain point of the time from the os prospective
  - Application resource analysis
 
- ... and so on.
+ . and so on.
 
 	
 Elkpump means elasticsearch pump what is meaningless so in some future time will be renamed :).
@@ -125,8 +125,8 @@ CSV subcommand is not supported yet.
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018125, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018251, syscall: write
-    ...
-    ...
+    .
+    .
 
 
 After finish of the elkpump.py you can check the status of new created index in elasticsearch
