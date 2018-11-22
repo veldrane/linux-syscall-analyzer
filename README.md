@@ -129,9 +129,11 @@ This README would normally document whatever steps are necessary to get your app
 	- csv is not supported yet (plan for the near future version)
 	- some syscalls variation is not probably supported (for example read, pread, read64 etc - these are supported but
 	  i there is huge list if them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
+	- elasticsearch doesn't support microsecond precision yet.
 
 ### Future ###
 	
+	- Documentation of the elasticsearch doc api is missing. Should be created soon (I hope :)
 	- Full CSV format support
 	- Appropriate .r files for analysing csv in R	
 	- Adding more dashboards, visualisation and search to the Kibana.

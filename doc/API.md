@@ -3,7 +3,8 @@
 After parsing and processing the data, elkpump create thousands and thousands documents in elasticsearch or just (in the future) one big
 CSV. One syscall row in the trace means one doc in elasticsearch. Columns have been unsualy named based on their definitian in the 
 syscall(2) man page. Because duplication ocured i tried to distuinguis between arguments value and return (return values have r_ prfiex).
-Parsing is proceed in three main phases:
+Parsing is done in three main phases: base parsing of the whole syscall line, parsing of the arguments and return code, and finaly adding
+context keys and taking into consideration special behaviour of some syscalls.
 	
 	- elkpump.py -> function do_trace() -> variable pattern
 		- this is the base parsing of the syscall itself. Program get the info about the time of running, syscall, raw arguments
@@ -28,6 +29,12 @@ The following keys can be used for the analysis like a result of the process des
 the kibana or elasticsearch.
 
 ### API ###
+
+
+#### epoch (type time) #####
+
+Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch @datetime array. Unfortunatelly 
+elasticsearch itself doesnt have support for microseconds so last 3 digits are cutted (see BUGS and LIMITATION in readme file).
 
 
 
