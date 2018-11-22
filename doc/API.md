@@ -21,7 +21,7 @@ context keys and taking into consideration special behaviour of some syscalls.
 
     the same process like before is applied to raw return code.
 
-** cntxfnct.py -> array cntxfnct
+* cntxfnct.py -> array cntxfnct
 
     for the special syscalls the context or additional informations are attached. For this purpose each syscall listed in the
     array is processed via the procedure listed like a key in the array. In this step sessionid or special keys are added 
