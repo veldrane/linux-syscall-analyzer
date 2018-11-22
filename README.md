@@ -116,7 +116,7 @@ CSV subcommand is not supported yet.
 
 
 
-    ´´´´text
+´´´text
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
@@ -127,8 +127,8 @@ CSV subcommand is not supported yet.
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018125, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018251, syscall: write
-    .
-    .
+´´´
+    
 
 
 After finish of the elkpump.py you can check the status of new created index in elasticsearch
