@@ -17,17 +17,16 @@ This README would normally document whatever steps are necessary to get your app
 	mmap: anonymous vs file maped), map some usefull information to integer of float before the ending to the backend. Toolset 
 	could be really usefull for:
 
-	- Revealing internal architecture of the application from the linux point of view
-	- Building tight security policies
-	- Visualising data flows inside the traced application
-	- Getting the status of the application in certain point of the time from the os prospective
-	- Application resource analysis
-	-
+	 - Revealing internal architecture of the application from the linux point of view
+	 - Building tight security policies
+	 - Visualising data flows inside the traced application
+	 - Getting the status of the application in certain point of the time from the os prospective
+	 - Application resource analysis
 	
-	... and so on.
+       ... and so on.
 
 	
-	Elkpump means elasticsearch pump what is meaningless so in some future time will be renamed :).
+       Elkpump means elasticsearch pump what is meaningless so in some future time will be renamed :).
 
 
 	
