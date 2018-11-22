@@ -6,11 +6,11 @@ This README would normally document whatever steps are necessary to get your app
 
 * Quick summary
 
-	Toolset for the syscall analysis of the linus binary. Tool tries parsing strace logs, store them in elasticsearch db
-	and open them for further analysis. Some kibana dashboards are attached as well. The main tool elkpump.py writen 
-	python. Main goal is the aggregation some syscalls (at the momemnt related to fd) via unique id to groups and open them for 
-	analysis based on their lifecycle, transfered data, etc. Elkmpump tracks the filedescriptor from the beginning, knows not 
-	only open syscall but dup, dup2, duplication via fcntl, via clone syscall etc, only creation via messages is not supported
+	Toolset for the syscall analysis of the linux binary, it tries parsing strace logs, store them in elasticsearch db
+	and open them for further analysis. Some kibana dashboards are attached as well. The main tool elkpump.py is writen in
+	python. Main goal is the aggregation of some syscalls (at the momemnt related to fd) via unique id to groups and open them for 
+	analysis based on their lifecycle, transfered data, etc. Elkmpump tracks the filedescriptor from the beginning to the end, knows not 
+	only open syscall but dup, dup2, duplication via fcntl, via clone syscall etc. Only creation via messages is not supported
 	yet. When a fd is born, sessionid is assigned and all related syscalls are marked with the same id. If the fd
 	is inherit via clone syscall, new sessionid is created. At the moment no collision detection is implemented against the 
 	sessionid :). Elkpump support also internal processing of some syscalls, their diferent behaviour in some cases (for example
