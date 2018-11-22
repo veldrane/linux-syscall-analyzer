@@ -114,6 +114,7 @@ After start second command strace start writing traces to current directory for 
 elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 CSV subcommand is not supported yet.
 
+
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
@@ -127,7 +128,9 @@ CSV subcommand is not supported yet.
     ...
     ...
 
+
 After finish of the elkpump.py you can check the status of new created index in elasticsearch
+
 
     $ curl http://elkdev1:9200/_cat/indices?v
     health status index               uuid                   pri rep docs.count docs.deleted store.size pri.store.size
