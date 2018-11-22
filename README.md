@@ -4,7 +4,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
+===== Quick summary =====
 
 Toolset for the syscall analysis of the linux binary, it tries parsing strace logs, store them in elasticsearch db
 and open them for further analysis. Some kibana dashboards are attached as well. The main tool elkpump.py is writen in
@@ -30,7 +30,7 @@ Elkpump means elasticsearch pump what is meaningless so in some future time will
 
 
 	
-* Version
+===== Version =====
 	
 0.00001b :)
 
@@ -38,7 +38,7 @@ Elkpump means elasticsearch pump what is meaningless so in some future time will
 ### How do I get set up? ###
 
 
-* Repository info:
+===== Repository info: =====
 
 ./kibana:
  - export of some kibana search, visualisation and the dashboards
@@ -55,44 +55,38 @@ Elkpump means elasticsearch pump what is meaningless so in some future time will
  - strace export of running sshd - usefull for initial testing
 
 
-* Summary of set up
+===== Summary of set up =====
 
-	Following packages should be installed:
-	  - server side (database backend):
-		elasticsearch-6.2.3-1.noarch
-		kibana-6.2.3-1.x86_64
+Following packages should be installed:
+ - server side (database backend):
+    elasticsearch-6.2.3-1.noarch
+    kibana-6.2.3-1.x86_64
 
-	  - client side (elkpump.py script):
-		python3
-		modules: argparse, re, uuid, glob, copy, Elasticsearch, itemgetter, csv (is not used)
+ - client side (elkpump.py script):
+    python3
+    modules: argparse, re, uuid, glob, copy, Elasticsearch, itemgetter, csv (is not used)
 	  
-	  - strace requirements:
-		tested version: 4.12 (lower version can have a problem with missing information in some syscalls)
+ - strace requirements:
+    tested version: 4.12 (lower version can have a problem with missing information in some syscalls)
 
 
-* Elasticsearch Configuration
+===== Elasticsearch Configuration =====
 
-	Elasticsearch database must be visible via tcp ip.	
-
-
-* Strace configuration
-
-	Traces must be captured in certain format:
+Elasticsearch database must be visible via tcp ip.	
 
 
+===== Strace configuration =====
 
+Traces must be captured in certain format:
 
-	strace -y -T -ttt -ff -x -qq -o <FILE_PREFIX> <COMMAND>
+    strace -y -T -ttt -ff -x -qq -o <FILE_PREFIX> <COMMAND>
 	
-	Examples:
+Examples:
 
+    [oracle@oradb1 ~]$ export COMMAND='sqlplus / as sysdba'
+    [oracle@oradb1 ~]$ strace -y -T -ttt -ff -x -qq -o sqlplus $COMMAND
 
-
-
-	[oracle@oradb1 ~]$ export COMMAND='sqlplus / as sysdba'
-	[oracle@oradb1 ~]$ strace -y -T -ttt -ff -x -qq -o sqlplus $COMMAND
-
-	After start second command strace start writing traces to current directory for current process and all childs. 
+After start second command strace start writing traces to current directory for current process and all childs. 
 
 
 ### Run elkpump ###
