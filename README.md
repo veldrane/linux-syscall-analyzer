@@ -78,15 +78,19 @@ This README would normally document whatever steps are necessary to get your app
 * Strace configuration
 
 	Traces must be captured in certain format:
-	...
+
+
+
+
 	strace -y -T -ttt -ff -x -qq -o <FILE_PREFIX> <COMMAND>
-	...
 	
 	Examples:
-	...
+
+
+
+
 	[oracle@oradb1 ~]$ export COMMAND='sqlplus / as sysdba'
 	[oracle@oradb1 ~]$ strace -y -T -ttt -ff -x -qq -o sqlplus $COMMAND
-	...
 
 	After start second command strace start writing traces to current directory for current process and all childs. 
 
