@@ -31,12 +31,25 @@ the kibana or elasticsearch.
 ### API ###
 
 
-#### epoch (type time) #####
+#### epoch (type time), u_epoch #####
 
-Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch \@datetime array. Unfortunatelly 
-elasticsearch itself doesnt have support for microseconds so last 3 digits are cutted (see BUGS and LIMITATION in readme file).
+Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch datetime array. Unfortunatelly 
+elasticsearch itself doesnt have support for microseconds so last 3 digits are cutted (see BUGS and LIMITATION in readme file), for this
+purpose u_runt is created and it is stored like a usual integer.
 
 
+#### syscall (type string) #####
 
-		  
+Key describe syscall name
 
+#### args (type string) #####
+
+Raw arguments line
+
+#### rc (type string) #####
+
+Raw return code line
+
+#### runt (type float) u_runt(type integer) #####
+
+Time spent in the syscall itself, urunt is derived from runt multiplaing by 1000000 (time in miliseconds - more readable)
