@@ -116,7 +116,7 @@ CSV subcommand is not supported yet.
 
 
 
-    ´´´text
+    ´´´´text
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
