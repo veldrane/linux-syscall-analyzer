@@ -54,6 +54,9 @@ Elkpump means elasticsearch pump what is meaningless so in some future time will
   ./test/raw:
  - strace export of running sshd - usefull for initial testing
 
+./doc:
+- some documentation
+
 
 ##### Summary of set up #####
 
@@ -134,7 +137,7 @@ CSV subcommand is not supported yet.
 
 ### Future ###
 	
-- Documentation of the elasticsearch doc api is missing. Should be created soon (I hope :)
+- Extend documentation of the all columns of output documents - see the doc/ directory
 - Full CSV format support
 - Appropriate .r files for analysing csv in R	
 - Adding more dashboards, visualisation and search to the Kibana.
