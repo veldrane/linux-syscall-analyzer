@@ -31,25 +31,45 @@ the kibana or elasticsearch.
 ### API ###
 
 
-#### epoch (type time), u_epoch #####
+#### epoch (type time), u_epoch (type int) #####
 
 Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch datetime array. Unfortunatelly 
 elasticsearch itself doesnt have support for microseconds so last 3 digits are cutted (see BUGS and LIMITATION in readme file), for this
 purpose u_runt is created and it is stored like a usual integer.
 
 
-#### syscall (type string) #####
+#### syscall (type str) #####
 
 Key describe syscall name
 
-#### args (type string) #####
+#### args (type str) #####
 
 Raw arguments line
 
-#### rc (type string) #####
+#### rc (type str) #####
 
 Raw return code line
 
-#### runt (type float) u_runt(type integer) #####
+#### runt (type float) u_runt(type int) #####
 
 Time spent in the syscall itself, urunt is derived from runt multiplaing by 1000000 (time in miliseconds - more readable)
+
+#### size (type int) #####
+
+Some syscalls provide information about size of the object. For example write or read reports how many bytes were transfered etc.
+This key is valuable when you need to know amount of transfered data etc
+
+#### offset (type str) #####
+
+Information about the offset in specified object (mmap syscall, seek etc)
+
+#### objectname (type str) ####
+
+Information about object in arguments of the syscall. It can be filename, socketname, pipe etc.)Its a usefull if you are looking
+for per file statistics etc .R_objectname is the same but for the return code (some sycalls have object in arguments and return code).
+For example: it is valuable for detecting simlink acess as well, because in this case the objectname and r_objectname are different.
+
+
+
+
+
