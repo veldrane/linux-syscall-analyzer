@@ -22,9 +22,10 @@ This README would normally document whatever steps are necessary to get your app
 	- Visualising data flows inside the traced application
 	- Getting the status of the application in certain point of the time from the os prospective
 	- Application resource analysis
-	.
+	-
 	
 	... and so on.
+
 	
 	Elkpump means elasticsearch pump what is meaningless so in some future time will be renamed :).
 
