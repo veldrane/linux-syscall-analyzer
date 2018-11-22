@@ -88,7 +88,7 @@ This README would normally document whatever steps are necessary to get your app
 	After start second command strace start writing traces to current directory for current process and all childs. 
 
 
-* Run elkpump 
+### Run elkpump ###
 
 	$ python elkpump.py elk -h
 	usage: elkpump elk [-h] [-s SERVER] [-b BUFFER] [-i INDEX]
@@ -110,7 +110,7 @@ This README would normally document whatever steps are necessary to get your app
 	elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 	CSV subcommand is not supported yet.
 
-* Usual wroflow
+### Usual workflow ###
 
 	- run strace on the analized application and store the output (prepare fs for posible huge amount of data)
 	- run elasticsearch and kibana
@@ -119,7 +119,7 @@ This README would normally document whatever steps are necessary to get your app
 	- optional: load the dashboards from ./kibana directory and pair them with the index
 	- analyze what ever you want.
 
-* Limitation and BUGS
+### Limitation and BUGS ###
 	
 	- elkpump doesnt support strace output from attaching pid. Supported is just running application for the beginning to the 
 	  end. Tool probably does own job, but was not tested under this circumstances
@@ -130,7 +130,7 @@ This README would normally document whatever steps are necessary to get your app
 	- some syscalls variation is not probably supported (for example read, pread, read64 etc - these are supported but
 	  i there is huge list if them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
 
-* Future
+### Future ###
 	
 	- Full CSV format support
 	- Appropriate .r files for analysing csv in R	
@@ -141,5 +141,3 @@ This README would normally document whatever steps are necessary to get your app
 	- Support for strace attach pid functionality (not so important)
 	- Describe in detail as much syscalls as possible
 	
-
-
