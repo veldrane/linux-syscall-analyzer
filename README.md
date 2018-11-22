@@ -118,7 +118,7 @@ CSV subcommand is not supported yet.
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
     Thu Nov 22 17:30:55 2018 ---| Info: First file /data/tests/oracle/sqlplus.2620 will be processed...
-    Thu Nov 22 17:30:56 2018 ---| Info: Index <mark> linux.main.f82a63d7</mark> has been created
+    Thu Nov 22 17:30:56 2018 ---| Info: Index <pre>linux.main.f82a63d7</pre> has been created
     Thu Nov 22 17:30:56 2018 ---| Info: processing file /data/tests/oracle/sqlplus.2620
     Thu Nov 22 17:30:56 2018 ---| Info: cloned descriptors not found for pid: 
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
@@ -134,7 +134,7 @@ After finish of the elkpump.py you can check the status of new created index in 
     green  open   .kibana             yr45Pp9dRwWzDms0hsWc1A   1   0         23            1     43.2kb         43.2kb
     yellow open   linux.main.d4c48ea0 TFMdrRYNQMGg-gaiUhfytg   5   1    1754821            0      284mb          284mb
     yellow open   linux.main.1c2e1767 BVncpzmwRburCDQqRYYwaA   5   1     835858            0    136.6mb        136.6mb
-    yellow open   <mark>linux.main.f82a63d7</mark> zp-QDG1XSVeWCX3OauTFKA   5   1    1760508            0      288mb          288mb
+    yellow open   ```linux.main.f82a63d7``` zp-QDG1XSVeWCX3OauTFKA   5   1    1760508            0      288mb          288mb
 
 
 
