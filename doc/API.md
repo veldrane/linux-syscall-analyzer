@@ -26,9 +26,10 @@ context keys and taking into consideration special behaviour of some syscalls.
 		  sessionid.
 
 The following keys can be used for the analysis like a result of the process described above. Based on them you can create searches in 
-the kibana or elasticsearch.
+the kibana or elasticsearch. Not all keys are described here, if you are interested in please have a look to the syscall(2) man pages
+for appropriate variables
 
-### API ###
+### Fields description ###
 
 
 #### epoch (type time), u_epoch (type int) #####
@@ -63,13 +64,22 @@ This key is valuable when you need to know amount of transfered data etc
 
 Information about the offset in specified object (mmap syscall, seek etc)
 
-#### objectname (type str) ####
+#### objectname, r_objectname, n_objectname (type str) ####
 
 Information about object in arguments of the syscall. It can be filename, socketname, pipe etc.)Its a usefull if you are looking
 for per file statistics etc .R_objectname is the same but for the return code (some sycalls have object in arguments and return code).
 For example: it is valuable for detecting simlink acess as well, because in this case the objectname and r_objectname are different.
 
+n_objectname is used for new object creation from current (dup, dup2, dup3 syscall). Probably will be deprecated in the near future
 
+#### sessionid (type str) #####
 
-
+When the fd is created, sessionid is generated assigned to output doc and stored in the internal structure. For the next syscall 
+manipulate with certain fd, elkpump tries to search this sessionid based on the fd number and pid. If the keys is found, output 
+document with the syscall is marked with the same string. After close syscall sessionid is deleted from internal structure, so 
+the same or different file opened in other point of time have a different id and are distuinguish with each other. All syscalls 
+realated to one sessionid is can be marked like one "session". During the analysis in kibana or any other tool you are able to
+found how many times the file has been opened, how much data have been transfered via one session or as whole etc etc, so you can
+quickly find information about data flow, time spent by fd operation, architecture etc. It does worth to mention that sessionid
+is not created just in case of fileopen but socket are supported as well. On the other hand not all syscalls are suppored yet.
 
