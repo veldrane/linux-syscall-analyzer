@@ -33,7 +33,7 @@ the kibana or elasticsearch.
 
 #### epoch (type time) #####
 
-Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch @datetime array. Unfortunatelly 
+Start of the each syscall in unix time with microseconds precision. This key is mapped to elasticsearch \@datetime array. Unfortunatelly 
 elasticsearch itself doesnt have support for microseconds so last 3 digits are cutted (see BUGS and LIMITATION in readme file).
 
 
