@@ -93,7 +93,7 @@ After start second command strace start writing traces to current directory for 
 
 
 ### Run elkpump ###
-
+```text
 	$ python elkpump.py elk -h
 	usage: elkpump elk [-h] [-s SERVER] [-b BUFFER] [-i INDEX]
 
@@ -110,12 +110,14 @@ After start second command strace start writing traces to current directory for 
 	Example:
 
 	python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
-	
+```
+    
+    
 elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 CSV subcommand is not supported yet.
 
 
-
+```text
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
@@ -126,7 +128,7 @@ CSV subcommand is not supported yet.
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018125, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018251, syscall: write
-    
+```
     
 
 
