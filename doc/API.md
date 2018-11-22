@@ -7,8 +7,8 @@ Parsing is done in four main phases: base parsing of the whole syscall line, par
 context keys and taking into consideration special behaviour of some syscalls.
 	
 * elkpump.py -> function do_trace() -> variable pattern
-> this is the base parsing of the syscall itself. Program get the info about the time of running, syscall, raw arguments
-> and raw return code
++ this is the base parsing of the syscall itself. Program get the info about the time of running, syscall, raw arguments
++ and raw return code
 
 - sparser.py -> array argregex 
   after base parsing, program get the syscall name a try to parse arguments in more detail way. It tries to find apropriate 
