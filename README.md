@@ -108,39 +108,38 @@ After start second command strace start writing traces to current directory for 
 
 	python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
 	
-	elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
-	CSV subcommand is not supported yet.
+elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
+CSV subcommand is not supported yet.
 
 ### Usual workflow ###
 
-	- run strace on the analized application and store the output (prepare fs for posible huge amount of data)
-	- run elasticsearch and kibana
-	- run elkpump agains the trace output and elkserver
-	- login to kibana and register index.
-	- optional: load the dashboards from ./kibana directory and pair them with the index
-	- analyze what ever you want.
+- run strace on the analized application and store the output (prepare fs for posible huge amount of data)
+- run elasticsearch and kibana
+- run elkpump agains the trace output and elkserver
+- login to kibana and register index.
+- optional: load the dashboards from ./kibana directory and pair them with the index
+- analyze what ever you want.
 
 ### Limitation and BUGS ###
 	
-	- elkpump doesnt support strace output from attaching pid. Supported is just running application for the beginning to the 
-	  end. Tool probably does own job, but was not tested under this circumstances
-	- elkpump doesnt support https connection with elasticsearch server
-	- elkpump doesnt check duplication sessionid so it's a little chance that two same sessionid can be generated
-	- elkpump doesnt support the message fd creation (ehm systemd :))
-	- csv is not supported yet (plan for the near future version)
-	- some syscalls variation is not probably supported (for example read, pread, read64 etc - these are supported but
-	  i there is huge list if them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
-	- elasticsearch doesn't support microsecond precision yet.
+- elkpump doesnt support strace output from attaching pid. Supported is just running application for the beginning to the 
+  end. Tool probably does own job, but was not tested under this circumstances
+- elkpump doesnt support https connection with elasticsearch server
+- elkpump doesnt check duplication sessionid so it's a little chance that two same sessionid can be generated
+- elkpump doesnt support the message fd creation (ehm systemd :))
+- csv is not supported yet (plan for the near future version)
+- some syscalls variation is not probably supported (for example read, pread, read64 etc - these are supported but
+  there is a huge list of them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
+- elasticsearch doesn't support microsecond precision yet.
 
 ### Future ###
 	
-	- Documentation of the elasticsearch doc api is missing. Should be created soon (I hope :)
-	- Full CSV format support
-	- Appropriate .r files for analysing csv in R	
-	- Adding more dashboards, visualisation and search to the Kibana.
-	- Full memory allocation and dealocation support to elkpump (feasible ?)
-	- Better thread and process spawn (contexting clone, exec, fork etc)
-	- Adding support for signal familly syscalls 
-	- Support for strace attach pid functionality (not so important)
-	- Describe in detail as much syscalls as possible
-	
+- Documentation of the elasticsearch doc api is missing. Should be created soon (I hope :)
+- Full CSV format support
+- Appropriate .r files for analysing csv in R	
+- Adding more dashboards, visualisation and search to the Kibana.
+- Full memory allocation and dealocation support to elkpump (feasible ?)
+- Better thread and process spawn (contexting clone, exec, fork etc)
+- Adding support for signal familly syscalls 
+- Support for strace attach pid functionality (not so important)
+- Describe in detail as much syscalls as possible
