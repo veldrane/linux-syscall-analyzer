@@ -134,7 +134,7 @@ After finish of the elkpump.py you can check the status of new created index in 
     green  open   .kibana             yr45Pp9dRwWzDms0hsWc1A   1   0         23            1     43.2kb         43.2kb
     yellow open   linux.main.d4c48ea0 TFMdrRYNQMGg-gaiUhfytg   5   1    1754821            0      284mb          284mb
     yellow open   linux.main.1c2e1767 BVncpzmwRburCDQqRYYwaA   5   1     835858            0    136.6mb        136.6mb
-    yellow open   ```linux.main.f82a63d7 zp-QDG1XSVeWCX3OauTFKA   5   1    1760508            0      288mb          288mb
+    yellow open   linux.main.f82a63d7 zp-QDG1XSVeWCX3OauTFKA   5   1    1760508            0      288mb          288mb
 
 
 
