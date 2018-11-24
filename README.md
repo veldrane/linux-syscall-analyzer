@@ -4,6 +4,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
+
 ##### Quick summary #####
 
 Toolset for the syscall analysis of the linux binary, it tries parsing strace logs, store them in elasticsearch db
@@ -92,6 +93,7 @@ Examples:
 After start second command strace start writing traces to current directory for current process and all childs. 
 
 
+
 ### Run elkpump ###
 ```text
 	$ python elkpump.py elk -h
@@ -153,6 +155,8 @@ After finish of the elkpump.py you can check the status of new created index in 
 - optional: load the dashboards from ./kibana directory and pair them with the index
 - analyze what ever you want.
 
+
+
 ### Limitation and BUGS ###
 	
 - elkpump doesn't support strace output from attaching pid. Supported is just running application for the beginning to the 
@@ -165,11 +169,20 @@ After finish of the elkpump.py you can check the status of new created index in 
   there is a huge list of them. Adding similar syscalls is not rocket science - please check sparser.py and argregex array)
 - elasticsearch doesn't support microsecond precision yet.
 
+
+
+### Dark side of the Force ###
+
+- Please keep in mind that the usage of the strace usualy means siginficant overhead for the application itslef. This must be 
+  considered when you trying to analyze application on the production environment.
+
+  
+  
 ### Future ###
 	
 - Extend documentation of the all columns of output documents - see the doc/ directory
-- Full CSV format support
-- Appropriate .r files for analysing csv in R	
+- Full CSV/JSON format support
+- Appropriate .r files for analysing in R	
 - Adding more dashboards, visualisation and search to the Kibana.
 - Full memory allocation and dealocation support to elkpump (feasible ?)
 - Better thread and process spawn (contexting clone, exec, fork etc)
