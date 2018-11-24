@@ -93,7 +93,7 @@ After start second command strace start writing traces to current directory for 
 
 
 ### Run elkpump ###
-
+```text
 	$ python elkpump.py elk -h
 	usage: elkpump elk [-h] [-s SERVER] [-b BUFFER] [-i INDEX]
 
@@ -110,11 +110,14 @@ After start second command strace start writing traces to current directory for 
 	Example:
 
 	python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
-	
+```
+    
+    
 elkpump will start and process all logs in /data/tests/oracle, produce logging and store all data on the server elkdev1:9200
 CSV subcommand is not supported yet.
 
 
+```text
     $ python elkpump.py elk --server elkdev1:9200 /data/tests/oracle -l
     Thu Nov 22 17:30:55 2018 ---| Info: Loooking for strace files in directory /data/tests/oracle
     Thu Nov 22 17:30:55 2018 ---| Info: Found 655 files
@@ -125,20 +128,20 @@ CSV subcommand is not supported yet.
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.017823, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018125, syscall: write
     Thu Nov 22 17:30:56 2018 ---| Warning: During operation getrecord session was not found for descriptor: 1, time: 1533726043.018251, syscall: write
-    .
-    .
+```
+    
 
 
 After finish of the elkpump.py you can check the status of new created index in elasticsearch
 
-
+```text
     $ curl http://elkdev1:9200/_cat/indices?v
     health status index               uuid                   pri rep docs.count docs.deleted store.size pri.store.size
     green  open   .kibana             yr45Pp9dRwWzDms0hsWc1A   1   0         23            1     43.2kb         43.2kb
     yellow open   linux.main.d4c48ea0 TFMdrRYNQMGg-gaiUhfytg   5   1    1754821            0      284mb          284mb
     yellow open   linux.main.1c2e1767 BVncpzmwRburCDQqRYYwaA   5   1     835858            0    136.6mb        136.6mb
     yellow open   linux.main.f82a63d7 zp-QDG1XSVeWCX3OauTFKA   5   1    1760508            0      288mb          288mb
-
+```
 
 
 ### Usual workflow ###
