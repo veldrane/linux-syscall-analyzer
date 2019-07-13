@@ -23,6 +23,9 @@ def init():
   global csvfile;
   csvfile = None;
 
+  global jsonfile;
+  jsonfile = None;
+
   global numdocs
   numdocs = 10000;
 
@@ -34,3 +37,6 @@ def init():
 
   global esindx;
   esindx = "";
+
+  global dest;
+  dest = "";

@@ -2,6 +2,7 @@
 import argparse;
 import re;
 import csv;
+import json;
 from glob import glob;
 from uuid import uuid4;
 from copy import copy;
@@ -29,15 +30,19 @@ def initglobals(args):
 def parseargv():
 
 	parser = argparse.ArgumentParser(prog='elkpump', description='elkpump is the tool for parsing and adding context strace output');
-	subparsers = parser.add_subparsers(help='sub-command help');
+	subparsers = parser.add_subparsers(help='sub-command help', dest='destination');
 
 	parser_elk = subparsers.add_parser('elk', help='elk help');
 	parser_elk.add_argument('-s','--server', help='Elastic search server destination, default connection: localhost:9200');
 	parser_elk.add_argument('-b','--buffer', help='Number of docs for bulk post, default: 10000');
 	parser_elk.add_argument('-i','--index', help='Index name, default: linux.main.<random_id>');
 
-	parser_elk = subparsers.add_parser('csv', help='csv help');
-	parser_elk.add_argument('-c','--csvfile', help='CSV out file, default file: output.csv');
+	parser_csv = subparsers.add_parser('csv', help='csv help');
+	parser_csv.add_argument('-c','--csvfile', help='CSV out file, default file: output.csv');
+
+	parser_json = subparsers.add_parser('json', help='json help');
+	parser_json.add_argument('-c','--jsonfile', help='json out file, default file: output.json');
+
 
 #	parser.add_argument("destination", help="Output destination");
 	parser.add_argument("directory", help="Working directory with raw strace dumps");
@@ -110,6 +115,38 @@ def pushtocsv(elkdoc):
 
 	return 0;
 
+def createjson():
+
+	global outputjson;
+
+	if settings.jsonfile:
+		jsonfile = settings.jsonfile;
+	else:
+		jsonfile = "output.json";
+
+	outputjson = open(jsonfile,'w');
+
+	return outputjson;
+
+
+def pushtojson(elkdoc):
+
+	global outputjson;
+
+	elkdoc['args'] = re.sub(r'\{|\}','',elkdoc['args'])
+
+	if (settings.iddoc) == 1:
+		json.dump(elkdoc, outputjson);
+		return 0
+	else:
+		pass
+	outputjson.write("\n")
+#	outputjson.write(',');
+	json.dump(elkdoc, outputjson);
+
+	return 0;
+
+
 def gettracefiles(target):
 
 	files = glob(target+'/'+'*');
@@ -166,6 +203,7 @@ def dotrace(member):
 		elkdoc = {**basecols, **speccols, **argcols, **rccols, **contextcols};
 		debug(elkdoc);
 		pushtoelk(elkdoc);
+#		pushtojson(elkdoc)
 #		pushtocsv(elkdoc);
 		settings.iddoc += 1;
 
@@ -207,9 +245,11 @@ if not es.ping():
 traces=gettracefiles(args.directory);
 id=str(uuid4().hex)[:8];
 settings.esindx = createindex(id);
-#outputcsv = createcsv();
+#output = createjson();
 for trace in traces:
 	dotrace(trace[2]);
 	#debug(settings.clonedfd);
+
+#outputjson.close();
 
 #print(*settings.clonedfd, sep='\n');
