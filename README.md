@@ -1,3 +1,8 @@
+# Deprecated!
+
+Please look at the syscall-analyzer-ng.
+
+
 # README #
 
 This README would normally document whatever steps are necessary to get your application up and running.
